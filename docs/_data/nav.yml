@@ -1,19 +1,31 @@
 toc:
   - title: 1.Simulation model
     subfolderitems:
-      - page: Related work and motivation
+      - page: Use-Case Model
         url: /rrcf/related-work.html
-      - page: Tree construction
+      - page: Analysis Model
         url: /rrcf/tree-construction.html
-      - page: Insertion and deletion of points
+      - page: Design Model
         url: /rrcf/insert-and-delete.html
       - page: Anomaly scoring
         url: /rrcf/anomaly-scoring.html
   - title: 2.Package API
     subfolderitems:
-      - page: RCTree data structure
+      - page: execution moduls experimentX
+        url: /rrcf/random-cut-tree.html
+      - page: mms.mms module
+        url: /rrcf/random-cut-tree.html
+      - page: mms.resacherInstruments module
+        url: /rrcf/random-cut-tree.html
+      - page: mms.pintResult module
+        url: /rrcf/random-cut-tree.html
+      - page: mms.graths module
         url: /rrcf/random-cut-tree.html
   - title: 3.Experiments
     subfolderitems:
-      - page: RCTree data structure
+      - page: The time dilation (experiment1 module)
+        url: /rrcf/random-cut-tree.html
+      - page: The Lorentz Contraction
+        url: /rrcf/random-cut-tree.html
+      - page: Velosety and energy versus momentum
         url: /rrcf/random-cut-tree.html
