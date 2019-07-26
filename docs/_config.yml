@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
-title: rrcf
-description: 🌲 Implementation of the mms for anomaly detection on streams
+title: mms
+description: Implementation of the
+non-numeric space-time model with the Minkovsky metric
