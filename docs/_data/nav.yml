@@ -1,0 +1,19 @@
+toc:
+  - title: 1.Simulation model
+    subfolderitems:
+      - page: Related work and motivation
+        url: /rrcf/related-work.html
+      - page: Tree construction
+        url: /rrcf/tree-construction.html
+      - page: Insertion and deletion of points
+        url: /rrcf/insert-and-delete.html
+      - page: Anomaly scoring
+        url: /rrcf/anomaly-scoring.html
+  - title: 2.Package API
+    subfolderitems:
+      - page: RCTree data structure
+        url: /rrcf/random-cut-tree.html
+  - title: 3.Experiments
+    subfolderitems:
+      - page: RCTree data structure
+        url: /rrcf/random-cut-tree.html
