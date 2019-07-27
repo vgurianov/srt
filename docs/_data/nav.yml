@@ -1,6 +1,5 @@
 toc:
-  - title: Home
-  - title: Simulation model
+  - title: 1. Simulation model
     subfolderitems:
       - page: Use-Case Model
         url: /rrcf/related-work.html
@@ -8,7 +7,7 @@ toc:
         url: /rrcf/tree-construction.html
       - page: Design Model
         url: /rrcf/insert-and-delete.html
-  - title: Package API
+  - title: 2. Package API
     subfolderitems:
       - page: execution moduls experimentX
         url: /rrcf/random-cut-tree.html
@@ -20,7 +19,7 @@ toc:
         url: /rrcf/random-cut-tree.html
       - page: mms.graths module
         url: /rrcf/random-cut-tree.html
-  - title: Experiments
+  - title: 3. Experiments
     subfolderitems:
       - page: The time dilation (experiment1 module)
         url: /rrcf/random-cut-tree.html
