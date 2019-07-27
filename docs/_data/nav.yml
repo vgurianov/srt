@@ -8,8 +8,6 @@ toc:
         url: /rrcf/tree-construction.html
       - page: Design Model
         url: /rrcf/insert-and-delete.html
-      - page: Anomaly scoring
-        url: /rrcf/anomaly-scoring.html
   - title: 2.Package API
     subfolderitems:
       - page: execution moduls experimentX
@@ -19,6 +17,8 @@ toc:
       - page: mms.resacherInstruments module
         url: /rrcf/random-cut-tree.html
       - page: mms.pintResult module
+        url: /rrcf/random-cut-tree.html
+      - page: mms.graths module
         url: /rrcf/random-cut-tree.html
   - title: 3.Experiments
     subfolderitems:
