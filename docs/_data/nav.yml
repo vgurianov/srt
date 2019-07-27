@@ -1,7 +1,5 @@
 toc:
   - title: Home
-      - page: index.html
-      url: /rrcf/related-work.html
   - title: 1.Simulation model
     subfolderitems:
       - page: Use-Case Model
