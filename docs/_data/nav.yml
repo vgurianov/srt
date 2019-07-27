@@ -20,8 +20,6 @@ toc:
         url: /rrcf/random-cut-tree.html
       - page: mms.pintResult module
         url: /rrcf/random-cut-tree.html
-      - page: mms.graths module
-        url: /rrcf/random-cut-tree.html
   - title: 3.Experiments
     subfolderitems:
       - page: The time dilation (experiment1 module)
