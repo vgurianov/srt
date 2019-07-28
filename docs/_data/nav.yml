@@ -9,21 +9,23 @@ toc:
         url: /srt/design.html
   - title: 2. Package API
     subfolderitems:
-      - page: execution moduls experimentX
-        url: /rrcf/random-cut-tree.html
+      - page: overview mms package
+        url: /srt/overview.html
       - page: mms.mms module
-        url: /rrcf/random-cut-tree.html
+        url: /srt/mms.html
       - page: mms.resacherInstruments module
-        url: /rrcf/random-cut-tree.html
-      - page: mms.pintResult module
-        url: /rrcf/random-cut-tree.html
+        url: /srt/resacherInstruments.html
+      - page: mms.printResult module
+        url: /srt/printResult.html
       - page: mms.graths module
         url: /rrcf/random-cut-tree.html
   - title: 3. Experiments
     subfolderitems:
+      - Getting Started
+        url: /srt/started.html
       - page: The time dilation (experiment1 module)
-        url: /rrcf/random-cut-tree.html
+        url: /srt/experiment1.html
       - page: The Lorentz Contraction
-        url: /rrcf/random-cut-tree.html
-      - page: Velosety and energy versus momentum
-        url: /rrcf/random-cut-tree.html
+        url: /srt/random-cut-tree.html
+      - page: Velosity and energy as function from momentum
+        url: /srt/experiment2.html
