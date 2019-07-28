@@ -1,1 +1,0 @@
-analyses_model
