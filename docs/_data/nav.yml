@@ -9,7 +9,7 @@ toc:
         url: /srt/design.html
   - title: 2. Package API
     subfolderitems:
-      - page: overview mms package
+      - page: package overview  
         url: /srt/overview.html
       - page: mms.mms module
         url: /srt/mms.html
