@@ -2,11 +2,11 @@ toc:
   - title: 1. Simulation model
     subfolderitems:
       - page: Use-Case Model
-        url: /rrcf/related-work.html
+        url: /srt/use-case.html
       - page: Analysis Model
         url: /srt/analysis_model.html
       - page: Design Model
-        url: /rrcf/insert-and-delete.html
+        url: /srt/design.html
   - title: 2. Package API
     subfolderitems:
       - page: execution moduls experimentX
