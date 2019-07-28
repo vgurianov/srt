@@ -4,7 +4,7 @@ toc:
       - page: Use-Case Model
         url: /rrcf/related-work.html
       - page: Analysis Model
-        url: /rrcf/tree-construction.html
+        url: /srt/analysis_model.html
       - page: Design Model
         url: /rrcf/insert-and-delete.html
   - title: 2. Package API
