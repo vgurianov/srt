@@ -13,9 +13,9 @@ toc:
         url: /srt/overview.html
       - page: mms.mms module
         url: /srt/mms.html
-      - page: mms.resacherInstruments module
+      - page: mms.resacher_instruments module
         url: /srt/resacherInstruments.html
-      - page: mms.printResult module
+      - page: mms.print_result module
         url: /srt/printResult.html
       - page: mms.graths module
         url: /rrcf/random-cut-tree.html
