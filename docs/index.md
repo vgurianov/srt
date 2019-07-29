@@ -11,7 +11,7 @@ Use case model is function requirements to software.
 
 1.2. Analysis Model  
 Analysis model is simulation model. It is ontology of mechanical motion. This semantic net define follow concept:  
-		1.1. Synchronization (Minkovsky metric)  
+		1.1. Synchronization (Minkowsky metric)  
 		1.2. Motion  
 		1.3. Interaction  
 		1.4. Measurements  
@@ -21,18 +21,15 @@ Analysis model is simulation model. It is ontology of mechanical motion. This se
 Design model in Python
 
 ## 2. Package API  
-Overview is component diagram
-
-2.1. experimentX  
-	It is execution modules  
+2.1. Overview is component diagram.
 
 2.2. mms.mms module  
 It is base modules of simulation model  
 
-2.3. mms.resacherInstruments module  
+2.3. mms.resacher_instruments module  
 It is classes of measurements and process of data  
 
-2.4. mms.pintResult module  
+2.4. mms.pint_result module  
 It is output data to print  
 
 2.5. mms.graths module  
