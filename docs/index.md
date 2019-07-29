@@ -1,12 +1,11 @@
-# mms
-About non-numeric models
-and UML2 SP
+# MMS: the Minkovski Metric Simulation
+MMS is a software package that can be used to simulate of the Minkovski metric. 
+It uses UML2 SP language to non-numeric modeling.  
+About non-numeric modelsand UML2 SP
 mms is the Minkovski Metric Simulation  
 Special Reletivity Software  
-Srt is a software package that can be used to simulate of the Minkovski metric. 
-It uses UML2 SP language to non-numeric modeling.  
 
-# 1. Simulation model  
+## 1. Simulation model  
 We use Unified Process and it is reflect in structure of site. Unified Process include 6th  workflow: Requirements, Analysis, Design and Realisation.  
 
 1.1.Use-Case Model  
@@ -23,7 +22,7 @@ Analysis model is simulation model. It is ontology of mechanical motion. This se
 1.3. Design Model  
 Design model in Python
 
-# 2. Package API  
+## 2. Package API  
 Overview is component diagram
 
 2.1. experimentX  
