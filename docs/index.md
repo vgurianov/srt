@@ -1,4 +1,4 @@
-# MMS: the Minkovski Metric Simulation
+# MMS: The Minkovski Metric Simulation
 MMS is a software package that can be used to simulate of the Minkovski metric. 
 It uses UML2 SP language to non-numeric modeling.  
 About non-numeric modelsand UML2 SP
@@ -40,13 +40,11 @@ It is output data to print
 2.5. mms.graths module  
 It is output data to graphics  
 
-3. Getting Started  
+
+## 3. Experiments  
+3.1. Getting Started  
 Install and execute.  
+3.2. The time dilation (experiment1 module)  
+3.3. The Lorentz Contraction  
+3.4. Velosety versus momentum (experiment2 module) and Energy versus momentum (experiment2 module)  
 
-4. Experiments  
-3.1. The time dilation (experiment1 module)  
-3.2. The Lorentz Contraction  
-3.3. Velosety versus momentum (experiment2 module)  
-3.4. Energy versus momentum (experiment2 module)  
-
-5. Usege and   
