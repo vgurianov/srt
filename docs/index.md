@@ -15,7 +15,7 @@ Analysis model is simulation model. It is ontology of mechanical motion. This se
 		1.2. Motion  
 		1.3. Interaction  
 		1.4. Measurements  
-	We show class and communication diagram, and model in pseudo-code C++  
+We present class and communication diagrams, and model in pseudo-code C++  
 
 1.3. Design Model  
 Design model in Python
@@ -33,7 +33,7 @@ It is classes of measurements and process of data
 It is output data to print  
 
 2.5. mms.graths module  
-It is output data to graphics  
+It is output data in plot forms
 
 
 ## 3. Experiments  
