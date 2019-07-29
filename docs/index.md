@@ -1,12 +1,10 @@
-# MMS: The Minkovski Metric Simulation
-MMS is a software package that can be used to simulate of the Minkovski metric. 
+# MMS: The Minkowski Metric Simulation
+MMS is a software package that can be used to simulate of the Minkowski metric.  
 It uses UML2 SP language to non-numeric modeling.  
-About non-numeric modelsand UML2 SP
-mms is the Minkovski Metric Simulation  
-Special Reletivity Software  
+
 
 ## 1. Simulation model  
-We use Unified Process and it is reflect in structure of site. Unified Process include 6th  workflow: Requirements, Analysis, Design and Realisation.  
+We use Unified Process and it is reflect in structure of site. Unified Process include 4th  workflow: Requirements, Analysis, Design and Realisation.  
 
 1.1.Use-Case Model  
 Use case model is function requirements to software.
