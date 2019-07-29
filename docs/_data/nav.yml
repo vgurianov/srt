@@ -23,7 +23,7 @@ toc:
     subfolderitems:
       - page: Getting Started
         url: /srt/started.html
-      - page: The time dilation (experiment1 module)
+      - page: The time dilation
         url: /srt/experiment1.html
       - page: The Lorentz Contraction
         url: /srt/random-cut-tree.html
