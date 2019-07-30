@@ -5,31 +5,31 @@ Description:
   - class *DataProcessing* is processor of data.  
   
 ## Class *Table*
-Description: class *Table* is a data recorder
-Bases: object  
-Parameters:	None
+Description: class *Table* is a data recorder  
+Bases: object    
+Parameters:	None  
 
 ### Attributes: 
-    - obtG = []
-    - obt = []
-    - obx = []
-    - localT = []
-    - particleT = []
+  - obtG - array of global time
+  - obt - array of local time of cell
+  - obx - array of particle location
+  - localT 
+  - particleT - array of particle time
 
 ### Operations:  
-*fixIt(self,tG, tt, xx, locT, prtT)*
-Description: Operation write data about time and location
-Parameters:
+*fixIt(self, tG, tt, xx, locT, prtT)*  
+Description: Operation write data about time and location  
+Parameters:  
 - tG
 - tt
 - xx
 - locT
-- prtT
+- prtT  
 Return: None
 
 *detect(self, tG, c)*  
-Description: Operation write data about intaraction
-Parameters:
+Description: Operation write data about intaraction  
+Parameters:  
 - tG
-- c
+- c  
 Return: None
