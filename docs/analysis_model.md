@@ -1,15 +1,16 @@
 # Analysis model
-![Fig2](Fig_2.png)
-Figure 2. Class diagram  
-All epistemology entities has standard types (int, bool, and itc.).
 
-
-IV.	SPACETIME MODEL
 Предположение 1. Синхронизация выполняется методом «ожидания»
 Semantic net definition.
 Concepts are System, Cell of space, Time of System, Local Time, and Synchronization.
 We propose a following model of Minkowski spacetime.
-"Composite" class is a model of a physical spacetime (fig.1). We will view one-dimension space. Physical space is linked list, where "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space. 
+"Composite" class is a model of a physical spacetime (fig.1). 
+![Fig2](Fig_2.png)
+Figure 2. Class diagram  
+All epistemology entities has standard types (int, bool, and itc.).
+
+SPACETIME MODEL  
+We will view one-dimension space. Physical space is linked list, where "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space. 
 Attribute "temp" is one-direction linked list and it is a model of physical time.
 Class "ListItem" is model of a physical space cell. The cell has a local time; it is "temp" attribute. The time of "Composite" class and the time "ListItem" class must be synchronization.
 Procedure “Synchronization”  
