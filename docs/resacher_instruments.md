@@ -10,6 +10,14 @@ Bases: object
 Parameters:	None  
 
 ### Attributes: 
+Name | Type | Description
+------------ | ------------- | ---------------------
+obtG | int | array of global time
+obt | int | array of local time of cell
+obx | int | array of particle location
+localT | int | array of local time of cell
+particleT | int | array of particle time
+
   - obtG - array of global time
   - obt - array of local time of cell
   - obx - array of particle location
@@ -17,7 +25,7 @@ Parameters:	None
   - particleT - array of particle time
 
 ### Operations:  
-*fixIt(self, tG, tt, xx, locT, prtT)*  
+**def fixIt(self, tG, tt, xx, locT, prtT)**  
 Description: Operation write data about time and location  
 Parameters:  
 - tG
@@ -27,7 +35,7 @@ Parameters:
 - prtT  
 Return: None
 
-*detect(self, tG, c)*  
+**detect(self, tG, c)**  
 Description: Operation write data about intaraction  
 Parameters:  
 - tG
