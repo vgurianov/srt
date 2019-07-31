@@ -13,51 +13,58 @@ Parameters:	None
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-obtG | int | array of global time
-obt | int | array of local time of cell
+obtG | int | array of time in the rest frame
+obt | int | array of local time of cell, refined time obtG
 obx | int | array of particle location
 localT | int | array of local time of cell
 particleT | int | array of particle time
 
-  - obtG - array of global time
-  - obt - array of local time of cell
-  - obx - array of particle location
-  - localT 
-  - particleT - array of particle time
-
 ### Operations:  
 **def fixIt(self, tG, tt, xx, locT, prtT)**  
-Description: Operation write data about time and location  
+Description: Operation of write data about time and location  
 Parameters:  
-- tG
-- tt
-- xx
-- locT
-- prtT  
+
+Name | Type | Description  
+---- | ---- | ----------- 
+tG | int | array of time in the rest frame
+tt | int | array of local time of cell, refined time obtG
+xx | int | array of particle location
+locT | int | array of local time of cell
+prtT | int | array of particle time
+
 Return: None
 
 **detect(self, tG, c)**  
 Description: Operation write data about intaraction  
 Parameters:  
-- tG
-- c  
+Name | Type | Description  
+---- | ---- | ----------- 
+tG | int | time in the rest frame
+c | Currer instance| Currer intaraction
+
 Return: None
 
 ## Class "DataProcessing"
 Description: class *DataProcessing* is a processor of data  
 Bases: object    
-Parameters:	ob, v, st, ct  
+Parameters:	ob, v, st, ct 
+
+Name | Type | Description  
+---- | ---- | ----------- 
+ob | int | array of global time
+v | int | array of local time of cell
+st | int | array of particle location
+ct | int | array of particle location
+
+### Attributes: 
+
 Name | Type | Description  
 ---- | ---- | ----------- 
 obtG | int | array of global time
 obt | int | array of local time of cell
 obx | int | array of particle location
 
-### Attributes: 
-
-Name | Type | Description  
----- | ---- | ----------- 
-    obs = None
+obs = None
     particle_velosety = None
     sizeTick = None
     countTick = None
@@ -104,7 +111,7 @@ Parameters:
 Description: experimental error measurement of velocity  
 Parameters: 
 
-**def momentumCalculate(self)**  
+**def velAnalytical(self, p)**  
 Description: analytical velocity as function from momentum   
 Parameters: 
 
@@ -116,7 +123,7 @@ Parameters:
 Description: analytical energy calculated   
 Parameters: 
 
-**def energeCalculate(self)**  
-Description: obligatory caculation   
+**def baseCalculate(self)**  
+Description: This operation call all operations from top. It is obligatory calculation.   
 Parameters: None
 
