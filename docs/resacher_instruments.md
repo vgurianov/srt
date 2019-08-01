@@ -26,11 +26,11 @@ Parameters:
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-tG | int | array of time in the rest frame
-tt | int | array of local time of cell, refined time obtG
-xx | int | array of particle location
-locT | int | array of local time of cell
-prtT | int | array of particle time
+tG | int | moment of time in the rest frame
+tt | int | moment of local time of cell, refined time obtG
+xx | int | particle location
+locT | int | moment of local time of cell
+prtT | int | moment of particle time
 
 Return: None
 
@@ -52,17 +52,18 @@ Bases: object
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-ob | int | array of global time
-v | int | array of local time of cell
-st | int | array of particle location
-ct | int | array of particle location
+ob | Table instance | primary data table
+v | int | initial velocity of particle
+st | int | size tick of time
+ct | int | count tick of time
 
 ### Attributes: 
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-obs | Table instance | data table
-particle_velosety | int | init velocety of particle 
+obs | Table instance | primary data table
+particle_velosety | int | initial velocity of particle
+sizeTick | int | size tick of time
 countTick | int | count tick of time
 mass | int | mass = 1.0, mass of particle
 lightVel | int | lightVel = 1.0 # light velocity
