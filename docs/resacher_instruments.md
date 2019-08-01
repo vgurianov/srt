@@ -7,7 +7,7 @@ Description:
 ## Class "Table"
 Description: class *Table* is a data recorder  
 Bases: object    
-def __init__(self)  
+`def __init__(self)`  
 
 ### Attributes: 
 
@@ -36,7 +36,8 @@ Return: None
 
 **detect(self, tG, c)**  
 Description: Operation write data about intaraction  
-Parameters:  
+Parameters:
+
 Name | Type | Description  
 ---- | ---- | ----------- 
 tG | int | time in the rest frame
@@ -47,7 +48,7 @@ Return: None
 ## Class "DataProcessing"
 Description: class *DataProcessing* is a processor of data  
 Bases: object    
-def __init__(self, ob, v, st, ct) 
+`def __init__(self, ob, v, st, ct)` 
 
 Name | Type | Description  
 ---- | ---- | ----------- 
@@ -60,28 +61,27 @@ ct | int | array of particle location
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-obs | int | array of global time
-particle_velosety | int | array of local time of cell
-countTick | int | array of particle location
+obs | Table instance | data table
+particle_velosety | int | init velocety of particle 
+countTick | int | count tick of time
 mass | int | mass = 1.0, mass of particle
 lightVel | int | lightVel = 1.0 # light velocity
 nu_t | int | time coefficient of conversion
 nu_x | int | length coefficient of conversion
 nu_m | int | mass coefficient of conversion
 x | int | array of particle location
-t| int | array of particle location
-t_err | int | array of particle location
-t_acc | int | array of particle location
-t_local_err | int | array of particle location
+t| int | array of time moments
+t_err | int | time measurement error
+t_acc | int | accurate time
+t_local_err | int | local error of time
 vel_t | int | experimental value of velocity
 vel_t_err | int | experimental error measurement
 velAnl | int | alytical velocity as function from momentum
-momentum_t | int | array of particle location
-eng_t_acc | int | array of particle location
-eng_t | int | array of particle location
-eng_t_err | int | array of particle location
-countTick | int | array of particle location
-countTick | int | array of particle location
+momentum_t | int | momentum of particle
+eng_t_acc | int | accurate energy
+eng_t | int | measurement energy
+eng_t_err | int | energy measurement error
+
 
 ### Operations: 
 **def baseCalculate(self)**  
