@@ -7,7 +7,7 @@ Description:
 ## Class "Table"
 Description: class *Table* is a data recorder  
 Bases: object    
-Parameters:	None  
+def __init__(self)  
 
 ### Attributes: 
 
@@ -47,7 +47,7 @@ Return: None
 ## Class "DataProcessing"
 Description: class *DataProcessing* is a processor of data  
 Bases: object    
-Parameters:	ob, v, st, ct 
+def __init__(self, ob, v, st, ct) 
 
 Name | Type | Description  
 ---- | ---- | ----------- 
@@ -60,36 +60,33 @@ ct | int | array of particle location
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-obtG | int | array of global time
-obt | int | array of local time of cell
-obx | int | array of particle location
-
-obs = None
-    particle_velosety = None
-    sizeTick = None
-    countTick = None
-    mass = 1.0 # mass of particle
-    lightVel = 1.0 # light velocity
-    nu_t = 0.0  # time coefficient of conversion
-    nu_x = 0.0  # length coefficient of conversion
-    nu_m = 0.0  # mass coefficient of conversion 
-
-    x = []
-    t = []
-    t_err = []
-    t_acc = []
-    t_local_err = []
-    
-    vel_t = []      # experimental value of velocity
-    vel_t_err = []  # experimental error measurement
-    velAnl = []     # analytical velocity as function from momentum
-
-    momentum_t = []
-    eng_t_acc = []
-    eng_t = []
-    eng_t_err = []
+obs | int | array of global time
+particle_velosety | int | array of local time of cell
+countTick | int | array of particle location
+mass | int | mass = 1.0, mass of particle
+lightVel | int | lightVel = 1.0 # light velocity
+nu_t | int | time coefficient of conversion
+nu_x | int | length coefficient of conversion
+nu_m | int | mass coefficient of conversion
+x | int | array of particle location
+t| int | array of particle location
+t_err | int | array of particle location
+t_acc | int | array of particle location
+t_local_err | int | array of particle location
+vel_t | int | experimental value of velocity
+vel_t_err | int | experimental error measurement
+velAnl | int | alytical velocity as function from momentum
+momentum_t | int | array of particle location
+eng_t_acc | int | array of particle location
+eng_t | int | array of particle location
+eng_t_err | int | array of particle location
+countTick | int | array of particle location
+countTick | int | array of particle location
 
 ### Operations: 
+**def baseCalculate(self)**  
+Description: This operation call all operations from bottom. It is obligatory calculation.   
+Parameters: None
 
 **def xtCalculate(self)**  
 Description: Operation write data about t and x  
@@ -123,7 +120,4 @@ Parameters:
 Description: analytical energy calculated   
 Parameters: 
 
-**def baseCalculate(self)**  
-Description: This operation call all operations from top. It is obligatory calculation.   
-Parameters: None
 
