@@ -1,6 +1,6 @@
 # Analysis model
 
-Semantic net definition.
+Semantic net definition.  
 Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
   
 ![Fig2](Fig21.png)
