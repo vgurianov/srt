@@ -1,9 +1,9 @@
 # Analysis model
 
 Semantic net definition.  
-Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
+Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.2). 
   
-![Fig2](Fig21.png)
+![Fig2](Fig_23.png)
 Figure 2. Class diagram  
 All epistemology entities has standard types (int, bool, and itc.).
 
