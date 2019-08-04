@@ -104,11 +104,11 @@ $$
   
 where  
 \\(\tau\\) is measurement data ,i.e. the variable value *tt*, class *Table*,   
-\\(\rho\\) is measurement data ,i.e. the variable value *xx*, class *Table*, 
+\\(\rho\\) is measurement data ,i.e. the variable value *xx*, class *Table*,  
 \\(\nu_{t}\\) is the variable value *nu_t*,  
 \\(\nu_{x}\\) is the variable value *nu_x*,  
-t is the value array *t*, [m] 
-x is the array value *x*, [m]. 
+t is the value array *t*, [m]  
+x is the array value *x*, [m].  
   
   
 
