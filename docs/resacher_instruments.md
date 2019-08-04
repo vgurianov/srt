@@ -101,6 +101,12 @@ Time \\(t\\) and coordinate \\(x\\) calculate as
 
 where \\(x\\) is the point to be removed, \\(Z\\) is the point set, \\(T\\) is an RRCT tree,
 and \\(f(y, Z, T)\\)
+\alpha
+\sqrt{k}  
+When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$  
+$$ax^2+bx+c=0$$  
+$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$  
 
 **def xtAccurate(self)**  
 Description: accurate t (analytical formula)  
