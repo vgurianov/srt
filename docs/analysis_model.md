@@ -35,8 +35,10 @@ In operation runItem(t), t compared with attribute "marked" of current node of "
 			};
 		};
     }
+    
 Both Newton's time and time of special relativity has same synchronization mechanism but different rule of define "marked" label. In Newton's mechanics, the time of "Composite" class and the time "ListItem" class have same lengths of linked list "temp" and label "marked" has same number with number of node "temp". For example, for node number one of "temp", all cells of space has label "one" in attribute "marked" and all cells do one tick at the same time.
 Time of special relativity has following rule. We take more details grid, let is be 100 x 100 grid (rs=100) of time-space. Each ten node is marked as lb = true; it is "bearing" node. Further, cells mark as
+
 
 	Temp *tt; ListItem *ll; int s; Temp *st;
 	tt = tmp;
@@ -55,4 +57,6 @@ Time of special relativity has following rule. We take more details grid, let is
 		};
 	tt = tt->next;
 	};
-i.e. used formula is  . The operation appTemp(tm) create new node of type Temp in cell and mark it as tm.
+	
+i.e. used formula is  .  
+The operation appTemp(tm) create new node of type Temp in cell and mark it as tm.
