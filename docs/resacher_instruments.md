@@ -94,6 +94,11 @@ Description: Operation write data about t and x
 Parameters: None
 We will use International System of Units (SI).  
 Time \\(t\\) and coordinate \\(x\\) calculate as
+$$
+\begin{align*}
+t = \frac{\tau}{\lambda}
+\end{align*}
+$$
 
 \begin{equation}
     t = \sum_{T, y \in Z - \{x\}} Pr[T] \biggl( f(y, Z, T) - f(y, Z - \{x\}, T \biggr)
