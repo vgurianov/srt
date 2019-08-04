@@ -93,10 +93,11 @@ Parameters: None
 Description: Operation write data about t and x  
 Parameters: None
 We will use International System of Units (SI).  
-Time \\(t\\) and coordinate \\(x\\) calculate as
+Time \\(t\\) and coordinate \\(x\\) calculate as  
 $$
 \begin{align*}
-t = \frac{\tau}{\lambda}
+t = \frac{\tau}{\lambda_{t}}
+x = \frac{\ro}{\lambda}
 \end{align*}
 $$
 
