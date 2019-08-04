@@ -96,10 +96,12 @@ We will use International System of Units (SI).
 Time \\(t\\) and coordinate \\(x\\) calculate as  
 $$
 \begin{align*}
-t = \frac{\tau}{\lambda_{t}}
-x = \frac{\ro}{\lambda}
+t = \frac{\tau}{\lambda_{t}}  
+x = \frac{\rho}{\lambda_{x}}
 \end{align*}
-$$
+$$  
+where \\(\tau\\) is the point to be removed,  
+\\(\rho\\) is the point set  
 
 \begin{equation}
     t = \sum_{T, y \in Z - \{x\}} Pr[T] \biggl( f(y, Z, T) - f(y, Z - \{x\}, T \biggr)
