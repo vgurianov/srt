@@ -87,13 +87,16 @@ eng_t_err | int | energy measurement error
 ### Operations: 
 **def baseCalculate(self)**  
 Description: This operation call all operations from bottom. It is obligatory calculation.   
-Parameters: None
+Parameters: None  
+We will use International System of Units (SI) ([m], [s], [kg]).   
+Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the speed of light.
 
 **def xtCalculate(self)**  
-Description: Operation write data about t and x  
+Description: Operation calculate t and x in SI   
 Parameters: None  
-We will use International System of Units (SI) ([m], [s], [kg]).  
-Time \\(t\\) and coordinate \\(x\\) calculate as  
+Let \\(\tau\\) be the measurement data ,i.e. the variable value *tt* (class *Table*).  
+Let \\(\rho\\) be the variable value *xx* (class *Table*). It is location particle in moment tt.  
+Then time \\(t\\) and coordinate \\(x\\) calculate as  
   
 $$
 \begin{align*}
@@ -103,12 +106,10 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where  
-\\(\tau\\) is measurement data ,i.e. the variable value *tt*, class *Table*,   
-\\(\rho\\) is measurement data ,i.e. the variable value *xx*, class *Table*,  
 \\(\nu_{t}\\) is the variable value *nu_t*,  
 \\(\nu_{x}\\) is the variable value *nu_x*,  
-t is the value array *t*, [m]  
-x is the array value *x*, [m].  
+t is the value *t* in [s],  
+x is the  value *x* in [m].  
   
   
 
