@@ -94,6 +94,8 @@ Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the spe
 **def xtCalculate(self)**  
 Description: Operation calculate t and x in SI   
 Parameters: None  
+Algorithm:  
+  
 Let \\(\tau\\) be the variable value *tt* (class *Table*), i.e. the measurement data.  
 Let \\(\rho\\) be the variable value *xx* (class *Table*). It is location particle in moment tt.  
 Then time \\(t\\) and coordinate \\(x\\) calculate as  
