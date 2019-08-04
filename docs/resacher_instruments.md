@@ -91,8 +91,8 @@ Parameters: None
 
 **def xtCalculate(self)**  
 Description: Operation write data about t and x  
-Parameters: None
-We will use International System of Units (SI).  
+Parameters: None  
+We will use International System of Units (SI) ([m], [s], [kg]).  
 Time \\(t\\) and coordinate \\(x\\) calculate as  
   
 $$
@@ -103,12 +103,12 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where  
-\\(\t\\) is the array value *t*,  
-\\(\x\\) is the array value *x*,  
-\\(\tau\\) is the variable value *tt* class *Table*,  
-\\(\rho\\) is the variable value *xx* class *Table*,  
-\\(\mu_{t}\\) is the variable value *nu_t*,  
+\\(\tau\\) is measurement data ,i.e. the variable value *tt*, class *Table*,   
+\\(\rho\\) is measurement data ,i.e. the variable value *xx*, class *Table*, 
+\\(\nu_{t}\\) is the variable value *nu_t*,  
 \\(\nu_{x}\\) is the variable value *nu_x*,  
+t is the value array *t*, [m] 
+x is the array value *x*, [m]. 
   
   
 
