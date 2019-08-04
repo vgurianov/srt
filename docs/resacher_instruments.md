@@ -94,14 +94,21 @@ Description: Operation write data about t and x
 Parameters: None
 We will use International System of Units (SI).  
 Time \\(t\\) and coordinate \\(x\\) calculate as  
+  
 $$
 \begin{align*}
-t = \frac{\tau}{\lambda_{t}} \\
-x = \frac{\rho}{\lambda_{x}} \\
+t = \frac{\tau}{\nu_{t}} \\
+x = \frac{\rho}{\nu_{x}} \\
 \end{align*}
 $$  
-where \\(\tau\\) is the point to be removed,  
-\\(\rho\\) is the point set  
+  
+where  
+\\(\tau\\) is the variable value *t*,  
+\\(\rho\\) is the variable value *x*,  
+\\(\nu_{t}\\) is the variable value *nu_t*,  
+\\(\nu_{t}\\) is the variable value *nu_t*,  
+  
+  
 
 \begin{equation}
     t = \sum_{T, y \in Z - \{x\}} Pr[T] \biggl( f(y, Z, T) - f(y, Z - \{x\}, T \biggr)
