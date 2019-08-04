@@ -107,10 +107,8 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where  
-\\(\nu_{t}\\) is the variable value *nu_t*,  
-\\(\nu_{x}\\) is the variable value *nu_x*,  
-t is the value *t* in [s],  
-x is the  value *x* in [m].  
+\\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
+t and x write to arrays *t* and *x* (class *DataProcessing*).  
 
 **def xtAccurate(self)**  
 Description: accurate t (analytical formula)  
