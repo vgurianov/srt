@@ -103,10 +103,12 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where  
-\\(\tau\\) is the variable value *t*,  
-\\(\rho\\) is the variable value *x*,  
-\\(\nu_{t}\\) is the variable value *nu_t*,  
-\\(\nu_{t}\\) is the variable value *nu_t*,  
+\\(\t\\) is the array value *t*,  
+\\(\x\\) is the array value *x*,  
+\\(\tau\\) is the variable value *tt* class *Table*,  
+\\(\rho\\) is the variable value *xx* class *Table*,  
+\\(\mu_{t}\\) is the variable value *nu_t*,  
+\\(\nu_{x}\\) is the variable value *nu_x*,  
   
   
 
