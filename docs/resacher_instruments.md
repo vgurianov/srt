@@ -106,8 +106,7 @@ x = \frac{\rho}{\nu_{x}} \\
 \end{align*}
 $$  
   
-where  
-\\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
+where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
 t and x write to arrays *t* and *x* (class *DataProcessing*).  
 
 **def xtAccurate(self)**  
