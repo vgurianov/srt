@@ -94,7 +94,7 @@ Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the spe
 **def xtCalculate(self)**  
 Description: Operation calculate t and x in SI   
 Parameters: None  
-Let \\(\tau\\) be the measurement data ,i.e. the variable value *tt* (class *Table*).  
+Let \\(\tau\\) be the variable value *tt* (class *Table*), i.e. the measurement data.  
 Let \\(\rho\\) be the variable value *xx* (class *Table*). It is location particle in moment tt.  
 Then time \\(t\\) and coordinate \\(x\\) calculate as  
   
@@ -110,21 +110,6 @@ where
 \\(\nu_{x}\\) is the variable value *nu_x*,  
 t is the value *t* in [s],  
 x is the  value *x* in [m].  
-  
-  
-
-\begin{equation}
-    t = \sum_{T, y \in Z - \{x\}} Pr[T] \biggl( f(y, Z, T) - f(y, Z - \{x\}, T \biggr)
-\end{equation}
-
-where \\(x\\) is the point to be removed, \\(Z\\) is the point set, \\(T\\) is an RRCT tree,
-and \\(f(y, Z, T)\\)
-\alpha
-\sqrt{k}  
-When $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$  
-$$ax^2+bx+c=0$$  
-$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$  
 
 **def xtAccurate(self)**  
 Description: accurate t (analytical formula)  
