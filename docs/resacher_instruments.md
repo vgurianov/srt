@@ -96,8 +96,8 @@ We will use International System of Units (SI).
 Time \\(t\\) and coordinate \\(x\\) calculate as  
 $$
 \begin{align*}
-t = \frac{\tau}{\lambda_{t}}  
-x = \frac{\rho}{\lambda_{x}}
+t = \frac{\tau}{\lambda_{t}} \\
+x = \frac{\rho}{\lambda_{x}} \\
 \end{align*}
 $$  
 where \\(\tau\\) is the point to be removed,  
