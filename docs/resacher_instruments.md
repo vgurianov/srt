@@ -94,6 +94,7 @@ Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the spe
 **def xtCalculate(self)**  
 Description: Operation calculate t and x in SI   
 Parameters: None  
+  
 Algorithm:  
 Let \\(\tau\\) be the variable value *tt* (class *Table*), i.e. the measurement data.  
 Let \\(\rho\\) be the variable value *xx* (class *Table*). It is location particle in moment tt.  
@@ -108,10 +109,11 @@ $$
   
 where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
 t and x write to arrays *t* and *x* (class *DataProcessing*).  
+  
 Example:  
 If sizeTick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
 For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).  
-Particle in cell \\(\rho\\) = 10 and coordinate particle is 1 [m].
+If particle in cell \\(\rho\\) = 10 then particle coordinate is 1 [m].
 
 
 **def xtAccurate(self)**  
