@@ -107,11 +107,25 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
-t and x write to arrays *t* and *x* (class *DataProcessing*).  
+t and x write to arrays *t* and *x* (class *DataProcessing*). 
+Example:  
+If sizeTick = 10 then \nu_{t} = 10 and \nu_{x} = 10
+For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).  
+Particle in cell \\(\rho\\) = 10 and coordinate particle is 1 [m].
+
 
 **def xtAccurate(self)**  
 Description: accurate t (analytical formula)  
-Parameters: 
+Parameters: None  
+Algorithm:  
+Let s be the variable value *tG* (class *Table*). It is an invariant interval.  
+Then 
+
+$$
+\begin{align*} 
+t_{a} = \sqrt{s^2 + x^2}  
+\end{align*}  
+$$  
 
 **def velocityCalculate(self)**  
 Description: experimental value of velocity  
