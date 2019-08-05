@@ -70,10 +70,10 @@ lightVel | int | lightVel = 1.0 # light velocity
 nu_t | int | time coefficient of conversion
 nu_x | int | length coefficient of conversion
 nu_m | int | mass coefficient of conversion
-x | int | array of particle location
-t| int | array of time moments
+x | float | array of particle location
+t| float | array of time moments
 t_err | int | time measurement error
-t_acc | int | accurate time
+t_acc | float | accurate time
 t_local_err | int | local error of time
 vel_t | int | experimental value of velocity
 vel_t_err | int | experimental error measurement
@@ -107,9 +107,9 @@ x = \frac{\rho}{\nu_{x}} \\
 $$  
   
 where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
-t and x write to arrays *t* and *x* (class *DataProcessing*). 
+t and x write to arrays *t* and *x* (class *DataProcessing*).  
 Example:  
-If sizeTick = 10 then \nu_{t} = 10 and \nu_{x} = 10
+If sizeTick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
 For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).  
 Particle in cell \\(\rho\\) = 10 and coordinate particle is 1 [m].
 
@@ -126,6 +126,8 @@ $$
 t_{a} = \sqrt{s^2 + x^2}  
 \end{align*}  
 $$  
+\\(\t_{a}\\) write to array *t_acc* (class *DataProcessing*). 
+\\(\t_{a}\\) compare with t.  
 
 **def velocityCalculate(self)**  
 Description: experimental value of velocity  
