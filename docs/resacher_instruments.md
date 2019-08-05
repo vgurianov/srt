@@ -119,6 +119,7 @@ If particle in cell \\(\rho\\) = 10 then particle coordinate is 1 [m].
 **def xtAccurate(self)**  
 Description: accurate t (analytical formula)  
 Parameters: None  
+  
 Algorithm:  
 Let s be the variable value *tG* (class *Table*). It is an invariant interval.  
 Then 
@@ -128,6 +129,7 @@ $$
 t_{a} = \sqrt{s^2 + x^2}  
 \end{align*}  
 $$  
+  
 \\(t_{a}\\) write to array *t_acc* (class *DataProcessing*).  
 \\(t_{a}\\) compare with t.  
 
