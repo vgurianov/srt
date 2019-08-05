@@ -136,7 +136,7 @@ $$
   
 $$
 \begin{align*} 
-\epsilon = \frac{\t_{a} - t}{\t_{a}}   \bmod{g}
+\epsilon = \frac{t_{a} - t}{t_{a}}  
 \end{align*}  
 $$ 
   
