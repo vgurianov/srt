@@ -131,7 +131,16 @@ t_{a} = \sqrt{s^2 + x^2}
 $$  
   
 \\(t_{a}\\) write to array *t_acc* (class *DataProcessing*).  
-\\(t_{a}\\) compare with t.  
+  
+\\(t_{a}\\) compare with t  
+  
+$$
+\begin{align*} 
+\epsilon = \frac{\t_{a} - t}{\t_{a}}   \bmod{g}
+\end{align*}  
+$$ 
+  
+\\(\epsilon\\) write to array *t_local_err* (class *DataProcessing*). 
 
 **def velocityCalculate(self)**  
 Description: experimental value of velocity  
