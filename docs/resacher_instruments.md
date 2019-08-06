@@ -127,7 +127,7 @@ Then
 $$
 \begin{align*} 
 t_{a} = \sqrt{s^2 + x^2}  
-\end{align*}  
+\end{vmatrix}  
 $$  
   
 \\(t_{a}\\) write to array *t_acc* (class *DataProcessing*).  
