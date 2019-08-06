@@ -136,7 +136,7 @@ Value \\(t_{a}\\) compare with t
   
 $$
 \begin{align*} 
-\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 %
+\epsilon = | \frac{t_{a} - t}{t_{a}} | \times 100 %
 \end{align*}  
 $$ 
   
