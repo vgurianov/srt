@@ -127,7 +127,7 @@ Then
 $$
 \begin{align*} 
 t_{a} = \sqrt{s^2 + x^2}  
-\end{vmatrix}  
+\end{align*}  
 $$  
   
 \\(t_{a}\\) write to array *t_acc* (class *DataProcessing*).  
@@ -136,7 +136,7 @@ $$
   
 $$
 \begin{align*} 
-\epsilon = \frac{t_{a} - t}{t_{a}}  
+\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} 
 \end{align*}  
 $$ 
   
