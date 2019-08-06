@@ -136,11 +136,11 @@ Value \\(t_{a}\\) compare with t
   
 $$
 \begin{align*} 
-\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \bigotimes X 100 %
+\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 %
 \end{align*}  
 $$ 
   
-\\(\epsilon\\) write to array *t_local_err* (class *DataProcessing*). 
+Value \\(\epsilon\\) write to array *t_local_err* (class *DataProcessing*). 
 
 **def velocityCalculate(self)**  
 Description: experimental value of velocity  
