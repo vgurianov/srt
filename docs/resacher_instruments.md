@@ -132,11 +132,11 @@ $$
   
 \\(t_{a}\\) write to array *t_acc* (class *DataProcessing*).  
   
-\\(t_{a}\\) compare with t  
+Value \\(t_{a}\\) compare with t  
   
 $$
 \begin{align*} 
-\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} 
+\epsilon = \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \bigotimes X 100 %
 \end{align*}  
 $$ 
   
