@@ -144,7 +144,16 @@ Value \\(\epsilon\\) write to array *t_local_err* (class *DataProcessing*).
 
 **def velocityCalculate(self)**  
 Description: experimental value of velocity  
-Parameters: 
+Parameters: None
+
+Algorithm:  
+Let v be the particle velosity then 
+
+$$
+\begin{equation} 
+v = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-1}}}  
+\end{equation}  
+$$  
 
 **def velErrorCalculate(self, dt, dx)**  
 Description: experimental error measurement of velocity  
