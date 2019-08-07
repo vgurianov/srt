@@ -147,8 +147,8 @@ Description: experimental value of velocity
 Parameters: None
 
 Algorithm:  
-Let v_{i} be the particle velosity in moment tG and  
-Let v_{0} be the variable value *particle_velosety* (initial velocity of particle)  
+Let \\(v_{i}\\) be the particle velosity in moment tG and  
+let \\(v_{0}\\) be the variable value *particle_velosety* (initial velocity of particle)  
 then 
 
 $$
@@ -157,7 +157,7 @@ v_{i} = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-
 \end{equation}  
 $$  
   
-Value v_{i} write to array *vel_t*  
+Value \\(v_{i}\\) write to array *vel_t*  
    
 **def velErrorCalculate(self, dt, dx)**  
 Description: experimental error measurement of velocity  
