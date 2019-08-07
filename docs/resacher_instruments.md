@@ -150,9 +150,9 @@ Algorithm:
 Let v be the particle velosity then 
 
 $$
-\begin{equation} 
-v = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-1}}}  
-\end{equation}  
+\begin{align*}  
+v = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-1}} }  
+\end{align*}  
 $$  
 
 **def velErrorCalculate(self, dt, dx)**  
