@@ -160,9 +160,19 @@ $$
 Value \\(v_{i}\\) write to array *vel_t*  
    
 **def velErrorCalculate(self, dt, dx)**  
-Description: experimental error measurement of velocity  
-Parameters: 
+Description: experimental error of velocity  measurement  
+Parameters:
 
+Algorithm:  
+Let s be the variable value *tG* (class *Table*). It is an invariant interval.  
+Then 
+
+$$
+\begin{align*} 
+\Delta v = \sqrt{ (\frac{\delta v}{\delta x})^2  }  
+\end{align*}  
+$$  
+  
 **def momentumCalculate(self)**  
 Description: experimental error measurement of velocity  
 Parameters: 
