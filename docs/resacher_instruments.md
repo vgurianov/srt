@@ -169,7 +169,7 @@ Then
 
 $$
 \begin{align*} 
-\Delta v = \sqrt{ (\frac{\delta v}{\delta x})^2  }  
+\Delta v = \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial x} \Delta \hat(x))^2 }  
 \end{align*}  
 $$  
   
