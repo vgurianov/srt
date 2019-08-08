@@ -169,7 +169,7 @@ Then
 
 $$
 \begin{align*} 
-\Delta v = \sqrt{ (\frac{\partial v}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial v}{\partial x_{i-1}} \Delta x_{i-1})^2 + (\frac{\partial v}{\partial t_{i}} \Delta t_{i})^2 + (\frac{\partial v}{\partial t_{i-1}} \Delta t_{i-1})^2 } \\
+\Delta v &= \sqrt{ (\frac{\partial v}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial v}{\partial x_{i-1}} \Delta x_{i-1})^2 + (\frac{\partial v}{\partial t_{i}} \Delta t_{i})^2 + (\frac{\partial v}{\partial t_{i-1}} \Delta t_{i-1})^2 } \\
 &= \sqrt{2} \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial t_{i}} \Delta t_{i})^2 }
 \end{align*} 
 $$  
