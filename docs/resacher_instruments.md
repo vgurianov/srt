@@ -173,6 +173,13 @@ $$
 &= \sqrt{2} \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial t_{i}} \Delta t_{i})^2 }
 \end{align*} 
 $$  
+where  
+$$
+\begin{align*} 
+\frac{\partial v}{\partial x} = 1 \\  
+\frac{\partial v}{\partial t} = v_{i} \\  
+\end{align*} 
+$$  
   
 **def momentumCalculate(self)**  
 Description: experimental error measurement of velocity  
