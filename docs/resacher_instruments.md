@@ -164,7 +164,9 @@ Description: experimental error of velocity  measurement
 Parameters:
 
 Algorithm:  
-Let s be the variable value *tG* (class *Table*). It is an invariant interval.  
+Further, we will assume that \\(\nu_{t}\\) = sizeTick = 10 and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
+Then absolute measurement error \Delta t = \frac{1}{2} \frac{1}{sizeTick} and \Delta x = \Delta t.  
+Let \Delta v be the absolute measurement error of particle velocity v.   
 Then 
 
 $$
