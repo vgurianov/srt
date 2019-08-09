@@ -165,8 +165,8 @@ Parameters:
 
 Algorithm:  
 Further, we will assume that \\(\nu_{t}\\) = sizeTick = 10 and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
-Then absolute measurement error \Delta t = \frac{1}{2} \frac{1}{sizeTick} and \Delta x = \Delta t.  
-Let \Delta v be the absolute measurement error of particle velocity v.   
+Then absolute measurement error \\(\Delta t = \frac{1}{2} \frac{1}{sizeTick}\\) and \\(\Delta x = \Delta t\\).  
+Let \\(\Delta v\\) be the absolute measurement error of particle velocity v.   
 Then 
 
 $$
