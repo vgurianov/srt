@@ -186,7 +186,7 @@ where
 $$
 \begin{align*} 
 \frac{\partial v}{\partial x} = \frac{1}{dt} \\  
-\frac{\partial v}{\partial t} = \frac{v_{i}}{dt} \\  
+\frac{\partial v}{\partial t} = \frac{1}{dt} \frac{dx}{dt} \\  
 \end{align*} 
 $$  
   
