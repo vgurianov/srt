@@ -109,7 +109,8 @@ $$
   
 where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
 t and x write to arrays *t* and *x* (class *DataProcessing*).  
-  
+Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
+     
 Example:  
 If sizeTick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
 For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).  
@@ -190,6 +191,7 @@ $$
 \end{align*} 
 $$  
   
+Value \\(\Delta v\\) write to array *vel_t_err*. 
   
 **def momentumCalculate(self)**  
 Description: experimental error measurement of velocity  
