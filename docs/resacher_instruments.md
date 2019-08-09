@@ -163,9 +163,15 @@ Value \\(v_{i}\\) write to array *vel_t*
 Description: experimental error of velocity  measurement  
 Parameters:
 
+Name | Type | Description  
+---- | ---- | ----------- 
+dt | float | time change (in SI)  
+dx | float| change of coordinate (in SI)  
+  
+  
 Algorithm:  
 Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
-Then absolute measurement error \\(\Delta t = \frac{1}{2} \frac{1}{sizeTick}\\) and \\(\Delta x = \Delta t\\).  
+Then absolute measurement errors are \\(\Delta t = \frac{1}{2} \frac{1}{sizeTick}\\) and \\(\Delta x = \Delta t\\).  
 Let \\(\Delta v\\) be the absolute measurement error of particle velocity v.   
 Then 
 
