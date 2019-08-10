@@ -171,6 +171,7 @@ dx | float| change of coordinate (in SI)
   
   
 Algorithm:  
+In general case, coefficient \\(\nu_{t}\\) = k*sizeTick, where k is positive integer if you need high accuracy.  
 Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
 Then absolute measurement errors are \\(\Delta t = \frac{1}{2} \frac{1}{sizeTick}\\) and \\(\Delta x = \Delta t\\).  
 Let \\(\Delta v\\) be the absolute measurement error of particle velocity v.   
