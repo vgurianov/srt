@@ -199,8 +199,14 @@ Description: calculate particle momentum
 Parameters: None  
   
 Algorithm:  
-Let \\(\iota \\) be the variable value *pulseT*. It is count of interaction acts in moment tG.  
-From p = mv follow that  
+Let \\(\iota \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity).  
+From  
+$$
+\begin{align*}  
+p = \sum_{i=0}^{tG} f \Delta t = \frac{\mu}{\nu_{m}} \frac{\rho}{\nu_{x}} {\frac{\nu_{t}}{\tau}}^2  \iota
+\end{align*} 
+$$  
+follow that  
   
 $$
 \begin{align*}  
