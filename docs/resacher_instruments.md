@@ -204,7 +204,7 @@ From p = mv follow that
   
 $$
 \begin{align*}  
-p = \frac{\mu}{\nu_{m}} \frac{\rho}{\nu_{x}} \frac{\nu_{t} {\tau} }  \iota \\  
+p = \frac{\mu}{\nu_{m}} \frac{\rho}{\nu_{x}} \frac{\nu_{t}}{\tau}  \iota \\  
 \end{align*} 
 $$  
 , i.e.  
