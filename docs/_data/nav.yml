@@ -15,10 +15,8 @@ toc:
         url: /srt/mms.html
       - page: mms.resacher_instruments module
         url: /srt/resacher_instruments.html
-      - page: mms.print_result module
+      - page: mms.print_result and mms.graths modules
         url: /srt/print_result.html
-      - page: mms.graths module
-        url: /rrcf/random-cut-tree.html
   - title: 3. Experiments
     subfolderitems:
       - page: Getting Started
