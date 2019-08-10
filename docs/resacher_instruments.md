@@ -200,11 +200,16 @@ Parameters: None
   
 Algorithm:  
 Let \\(\iota \\) be the variable value *pulseT*. It is count of interaction acts in moment tG.  
-From p = mv follow that p = \\(\frac{\mu}{\nu_{m} \frac{\rho}{\nu_{x} \frac{\nu_{t} {\tau} \\), i.e.  
-  
+From p = mv follow that  
 $$
 \begin{align*} 
-\p = frac{\nu_{t}}{\nu_{x}} \iota = \frac{1}{dt} \\  
+p = p = \frac{\mu}{\nu_{m} \frac{\rho}{\nu_{x} \frac{\nu_{t} {\tau} \\  
+\end{align*} 
+$$ 
+, i.e. 
+$$
+\begin{align*} 
+p = frac{\nu_{t}}{\nu_{x}} \iota \\  
 \end{align*} 
 $$  
 
