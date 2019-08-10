@@ -31,7 +31,7 @@ tt | int | moment of local time of cell, refined time obtG
 xx | int | particle location
 locT | int | moment of local time of cell
 prtT | int | moment of particle time
-
+pulseT | int | count of interaction acts
 Return: None
 
 **detect(self, tG, c)**  
@@ -148,7 +148,7 @@ Description: experimental value of velocity
 Parameters: None
 
 Algorithm:  
-Let \\(v_{i}\\) be the particle velosity in moment tG and  
+Let \\(v_{i}\\) be the particle velocity in moment tG and  
 let \\(v_{0}\\) be the variable value *particle_velosety* (initial velocity of particle)  
 then 
 
@@ -195,8 +195,18 @@ $$
 Value \\(\Delta v\\) write to array *vel_t_err*. 
   
 **def momentumCalculate(self)**  
-Description: experimental error measurement of velocity  
-Parameters: 
+Description: calculate particle momentum  
+Parameters: None  
+  
+Algorithm:  
+Let \\(\iota \\) be the variable value *pulseT*. It is count of interaction acts in moment tG.  
+From p = mv follow that p = \\(\frac{\mu}{\nu_{m} \frac{\rho}{\nu_{x} \frac{\nu_{t} {\tau} \\), i.e.  
+  
+$$
+\begin{align*} 
+\p = frac{\nu_{t}}{\nu_{x}} \iota = \frac{1}{dt} \\  
+\end{align*} 
+$$  
 
 **def velAnalytical(self, p)**  
 Description: analytical velocity as function from momentum   
