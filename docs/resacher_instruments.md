@@ -203,7 +203,7 @@ Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction 
 From  
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t &asymp; \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+p = \int_0^t f \mathrm{d}t \asymp \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
 \end{align*} 
 $$  
 , i.e.  
