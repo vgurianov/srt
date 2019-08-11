@@ -203,21 +203,14 @@ Let \\(\iota \\) be the variable value *pulseT*. It is count of interaction acts
 From  
 $$
 \begin{align*}  
-p = \sum_{i=0}^{tG} f \Delta t = \frac{\mu}{\nu_{m}} \frac{\rho}{\nu_{x}} {\frac{\nu_{t}}{\tau}}^2  \iota
-\end{align*} 
-$$  
-follow that  
-  
-$$
-\begin{align*}  
-p = \frac{\mu}{\nu_{m}} \frac{\rho}{\nu_{x}} \frac{\nu_{t}}{\tau}  \iota \\  
+p = \int_0^t \mathrm{f},\mathrm{d}t = \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \iota
 \end{align*} 
 $$  
 , i.e.  
   
 $$
 \begin{align*} 
-p_{i+1} = p_{i} + \frac{\nu_{t}}{\nu_{x}} \iota \\  
+p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota \\  
 \end{align*} 
 $$  
   
