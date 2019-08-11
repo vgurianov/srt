@@ -247,22 +247,23 @@ Description: energy as function from momentum
 Parameters: None
   
 Algorithm:  
-Let \\(E \\) be the analitic energy of particle.     
+Let \\(E_{acc} \\) be the analitic energy of particle.     
 Then  
   
 $$
 \begin{align*} 
-E =  \sqrt{m_{0}^2 c^4 + p^2 c^2}  \\ 
+E_{acc} =  \sqrt{m_{0}^2 c^4 + p^2 c^2}  \\ 
 \end{align*} 
 $$  
   
-Value E write to array *eng_t_acc*.  
+Value \\(E_acc\\) write to array *eng_t_acc*.  
     
 **def energeCalculate(self)**  
 Description: measured energy calculate   
 Parameters: None  
   
 Algorithm:  
+Let \\(E \\) be the energy of particle.     
 From  
   
 $$
@@ -280,5 +281,16 @@ E_{i+1} = E_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2} \iota_{i} (\rho_
 $$  
   
 Value \\(E_{i}\\) write to array *eng_t*.  
+  
+Measure erorr is
+  
+$$
+\begin{align*} 
+\Delta E &= \sqrt{ (\frac{\partial E}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial E}{\partial x_{i-1}} \Delta x_{i-1})^2} \\  
+\end{align*} 
+$$  
+  
+Value \\(E_{i}\\) write to array *eng_t_err*.    
+
   
 
