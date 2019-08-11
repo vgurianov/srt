@@ -199,20 +199,22 @@ Description: calculate particle momentum
 Parameters: None  
   
 Algorithm:  
-Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list "jump" and, сonsequently, particle velocity.   
+Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
 From  
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
 \end{align*} 
 $$  
 , i.e.  
   
 $$
 \begin{align*} 
-p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota \\  
+p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
 \end{align*} 
 $$  
+Value p_{i} write to array *momentum_t*.  
+  
   
 **def velAnalytical(self, p)**  
 Description: analytical velocity as function from momentum   
