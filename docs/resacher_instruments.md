@@ -219,9 +219,28 @@ Value \\(p_{i}\\) write to array *momentum_t*.
   
   
 **def velAnalytical(self, p)**  
-Description: analytical velocity as function from momentum   
-Parameters: 
-
+Description: velocity as function from momentum   
+Parameters: p is the calculated momentum of particle  
+  
+Algorithm:  
+Let \\(v_{a} \\) be the analitic velocite of particle.     
+From  
+  
+$$
+\begin{align*} 
+p = \frac{m__{0}v}{\sqrt{m+\frac{v^2}{c^2} } }  \\
+\end{align*} 
+$$  
+follows   
+   
+$$
+\begin{align*} 
+v = \frac{p}{\sqrt{m_{0}+\frac{p^2}{c^2} } }  \\ 
+\end{align*} 
+$$   
+  
+Value v write to array *velAnl*.  
+  
 **def energeAccurate(self)**  
 Description: analytical accurate energy calculated   
 Parameters: 
