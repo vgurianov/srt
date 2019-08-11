@@ -183,8 +183,7 @@ $$
 &= \sqrt{2} \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial t} \Delta t)^2 }
 \end{align*} 
 $$  
-where  
-  
+where   
 $$
 \begin{align*} 
 \frac{\partial v}{\partial x} = \frac{1}{dt} \\  
@@ -201,11 +200,13 @@ Parameters: None
 Algorithm:  
 Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
 From  
+  
 $$
 \begin{align*}  
 p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
 \end{align*} 
 $$  
+  
 , i.e.  
   
 $$
@@ -213,7 +214,8 @@ $$
 p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
 \end{align*} 
 $$  
-Value p_{i} write to array *momentum_t*.  
+  
+Value \\(p_{i}\\) write to array *momentum_t*.  
   
   
 **def velAnalytical(self, p)**  
