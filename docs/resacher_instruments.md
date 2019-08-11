@@ -10,7 +10,7 @@ Bases: object
 `def __init__(self)`  
 
 ### Attributes: 
-
+  
 Name | Type | Description  
 ---- | ---- | ----------- 
 obtG | int | array of time in the rest frame
@@ -18,7 +18,7 @@ obt | int | array of local time of cell, refined time obtG
 obx | int | array of particle location
 localT | int | array of local time of cell
 particleT | int | array of particle time
-
+  
 ### Operations:  
 **def fixIt(self, tG, tt, xx, locT, prtT)**  
 Description: Operation of write data about time and location  
