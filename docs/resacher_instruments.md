@@ -231,22 +231,54 @@ $$
 p = \frac{m_{0} v}{\sqrt{1 + \frac{v^2}{c^2} } }  \\ 
 \end{align*} 
 $$  
+  
 follows   
    
 $$
 \begin{align*} 
-v = \frac{p}{\sqrt{m_{0}+\frac{p^2}{c^2} } }  \\ 
+v = \frac{p}{\sqrt{m_{0}^2+\frac{p^2}{c^2} } }  \\ 
 \end{align*} 
 $$   
   
 Value v write to array *velAnl*.  
   
 **def energeAccurate(self)**  
-Description: analytical accurate energy calculated   
-Parameters: 
-
+Description: energy as function from momentum   
+Parameters: None
+  
+Algorithm:  
+Let \\(E \\) be the analitic energy of particle.     
+Then  
+  
+$$
+\begin{align*} 
+E =  \sqrt{m_{0}^2 c^4 + p^2 c^2}  \\ 
+\end{align*} 
+$$  
+  
+Value E write to array *eng_t_acc*.  
+    
 **def energeCalculate(self)**  
-Description: analytical energy calculated   
-Parameters: 
-
-
+Description: measured energy calculate   
+Parameters: None  
+  
+Algorithm:  
+From  
+  
+$$
+\begin{align*}  
+E = \int_0^t fv \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} v_{i}\Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2}  \sum_{i=0}^{tG} \iota_{i} \iota_{i} (\rho_{i} - \rho_{i-1})  \\
+\end{align*} 
+$$  
+  
+, i.e.  
+  
+$$
+\begin{align*} 
+E_{i+1} = E_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
+\end{align*} 
+$$  
+  
+Value \\(E_{i}\\) write to array *eng_t*.  
+  
+  
