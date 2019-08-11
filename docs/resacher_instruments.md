@@ -199,11 +199,11 @@ Description: calculate particle momentum
 Parameters: None  
   
 Algorithm:  
-Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity).  
+Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list "jump" and, сonsequently, particle velocity.   
 From  
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t = \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+p = \int_0^t f \mathrm{d}t &asymp; \sum_{i=0}^{tG} f \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
 \end{align*} 
 $$  
 , i.e.  
