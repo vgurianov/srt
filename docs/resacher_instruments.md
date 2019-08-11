@@ -267,7 +267,7 @@ From
   
 $$
 \begin{align*}  
-E = \int_0^t fv \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} v_{i}\Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2}  \sum_{i=0}^{tG} \iota_{i} \iota_{i} (\rho_{i} - \rho_{i-1})  \\
+E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t = m_{0} c^2 + \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2}  \sum_{i=1}^{tG} \iota_{i} (\rho_{i} - \rho_{i-1})  \\
 \end{align*} 
 $$  
   
@@ -275,10 +275,10 @@ $$
   
 $$
 \begin{align*} 
-E_{i+1} = E_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
+E_{i+1} = E_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2} \iota_{i} (\rho_{i} - \rho_{i-1}) \\  
 \end{align*} 
 $$  
   
 Value \\(E_{i}\\) write to array *eng_t*.  
   
-  
+
