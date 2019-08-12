@@ -3,21 +3,6 @@ Description: modul is definition of base classes
   
 Modul use packedgs:
 - import math
-
-## class ResultsPrint (self, dat)  
-Description: class is the data print  
-Bases: object    
-`def __init__(self, dat)`  
-   
-Name | Type | Description  
----- | ---- | ----------- 
-dat | Inctance of class “DataProcessing” | experiment data  
-
-### Attributes:  
-  
-Name | Type | Description  
----- | ---- | ----------- 
-dp | Inctance of class “DataProcessing” | experiment data 
   
   
 ### Operations:  
@@ -81,15 +66,15 @@ Bases: object
 `def __init__(self, t)`
 Name | Type | Description  
 ---- | ---- | ----------- 
-t | Inctance of class Temp | time stamp for measurement
+t | Inctance of class Temp | time stamp for measurement  
   
 ### Attributes:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-next | Inctance of class Temp | next node
-t | int | time counter
-marked  | Inctance of class Time | time marked
+next | Inctance of class Temp | next node  
+t | int | time counter  
+marked  | Inctance of class Time | time marked  
 lb | bool | time counter  
 
 ## class ListItem:
@@ -132,26 +117,25 @@ Bases: object
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | size Tick of
+sizeTick | int | size Tick of time  
 sizeTick | int | detector  
-observer | Inctance of class Table | detector  
+observer | Inctance of class Table | detector   
   
 ### Attributes:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-x | int | coordinate stamp for measurement
+tmp | int | time  
+lst | int | space  
+carr | int | interaction carrier  
+tick | int | counter time  
 
-tmp = None  # time
-    lst = None  # space
-    carr = None   # interaction carrier
-
-    tick = 0     # counter time
-
-
-   
-    def move(self):
-    def interaction(self, carIn):
-    def run(self):
+### Operations:    
+**def move(self)**  
+Description: operation is the  
+**def interaction(self, carIn)**  
+Description: operation is the  
+**def run(self)**  
+Description: operation is the  
 
 
