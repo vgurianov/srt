@@ -5,8 +5,6 @@ Modul use packedgs:
 - import math
   
   
-### Operations:  
-
 ## class Carrier  
 Description: class is the interaction carrier  
 Bases: object    
@@ -56,16 +54,23 @@ Description: operation is the
 Description: operation is the  
 **def doImpact(self, car)**  
 Description: operation is the  
+Parameters:  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+car | Inctance of class Carrier | interaction carrier   
+  
 **def interaction(self,car)**  
 Description: operation is the  
 
 ## class Temp  
-Description: class is the particle  
+Description: class is the moments of time   
 Bases: object    
    
-`def __init__(self, t)`
+`def __init__(self, t)` 
+  
 Name | Type | Description  
----- | ---- | ----------- 
+---- | ---- | -----------  
 t | Inctance of class Temp | time stamp for measurement  
   
 ### Attributes:  
@@ -103,8 +108,22 @@ observer | Inctance of class Table | detector
 ### Operations:    
 **def appTemp(self, tm)**  
 Description: operation is the  
+Parameters:  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+tm | Inctance of class Temp | current time moment  
+  
 **def ItemRun(self, tt, tGlob, c)**  
-Description: operation is the  
+Description: operation is the 
+Parameters:  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+tt | Inctance of class Temp | current time moment  
+tGlob | int | current tick   
+c | Inctance of class Carrier | interaction carrier   
+  
 **def resetTmp(self)**  
 Description: operation is the  
     
@@ -117,17 +136,17 @@ Bases: object
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | size Tick of time  
-sizeTick | int | detector  
+sizeTick | int | time tick size  
+countTick | int | ticks count   
 observer | Inctance of class Table | detector   
   
 ### Attributes:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-tmp | int | time  
-lst | int | space  
-carr | int | interaction carrier  
+tmp | Inctance of class Temp | time (list)  
+lst | Inctance of class ListItem | space (list)   
+carr | Inctance of class Carrier | interaction carrier  
 tick | int | counter time  
 
 ### Operations:    
