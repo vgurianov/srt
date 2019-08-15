@@ -14,7 +14,7 @@ Figure 2. Use-Case diagram
     2. While time isn't stop
 	2.1. step motion
 	2.2. control print 
-      next moment of time
+        2.3. next moment of time   
     • Postconditions: Data table is full
-    • Secondary scenarios:
-    1. syncError
+    • Secondary scenarios:  
+        1. syncError
