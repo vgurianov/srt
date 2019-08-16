@@ -18,3 +18,12 @@ Figure 2. Use-Case diagram
     • Postconditions: Data table is full
     • Secondary scenarios:  
         1. syncError
+	
+  
+Use case: Run |   
+---- | 
+Use case: Run| 
+Short description: execution experiment | 
+
+  
+
