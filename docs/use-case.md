@@ -26,7 +26,7 @@ Short description: execution experiment |
 Actor: Experimenter|  
 Preconditions: System is prepare, parameters is define|  
 Flow of events:|  
-1. The use case starts when Experimenter execution operation Run  2. While time isn't stop|  
+1. The use case starts when Experimenter execution operation Run   2. While time isn't stop|  
 Postconditions: Data table is full|  
 Secondary scenarios:   1. syncError| 
 
