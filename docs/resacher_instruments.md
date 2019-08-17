@@ -228,7 +228,7 @@ From
   
 $$
 \begin{align*} 
-p = \frac{m_{0} v}{\sqrt{1 + \frac{v^2}{c^2} } }  \\ 
+p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\ 
 \end{align*} 
 $$  
   
