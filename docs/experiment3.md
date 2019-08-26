@@ -14,21 +14,62 @@ Find dependence
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
-The numerical results of the experiments are given in natural units (conversion to GHS or SI, see [3]), the speed of light c = 1.
+
+The data of the experiments are given in SI. The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then c = 1.  
 Parameters:  
-m = 1 kg, mass 
+m = 1 kg, rest mass  
+qE = 0.1 N, force  
+  
+countTick= 8 sizeTick= 10  
+Particle velosety = 0  
+nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
+mass = 1 , lightVel = 1.0  
+  
+With an increase in resolution, the measurement accuracy increases markedly, therefore, we consider an experiment with a minimum resolution, which is more indicative. Let the resolution of the time step be 10 elements of the unidirectional Temp list. The absolute error in the measurement of coordinates and time will then be 0.05. 
+With this resolution, you can perform 8 clock cycles of the system (then an error typical of relativistic models arises, which can be called “synchronization failure”, you need to increase the resolution).  
+
 
 ## 2. Results of experiment
 
-We put qE = 1, the rest mass of the particle is m = 1, the particle initially rests at the origin of the laboratory reference frame.
-With an increase in resolution, the measurement accuracy increases markedly, therefore, we consider an experiment with a minimum resolution, which is more indicative. Let the resolution of the time step be 10 elements of the unidirectional Temp list. The absolute error in the measurement of coordinates and time will then be 0.05. 
-With this resolution, you can perform 8 clock cycles of the system (then an error typical of relativistic models arises, which can be called “synchronization failure”, you need to increase the resolution).  
-The results are shown in Table 1. 
-The data are presented so that speed and energy can be considered as functions of the momentum.
+The results are shown in Table 1.
+Name | Type | Description  
+---- | ---- | ----------- 
+obtG | int | array of time in the rest frame
+
+Analytical (xa, pa, va) and numerical (xe) solution
++----+-----+-----+------+------+------+------+-----+------+
+| Tw |  t  |  x  |  xa  |  xe  |  p   |  pa  |  v  |  va  |
++----+-----+-----+------+------+------+------+-----+------+
+| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0  | 0.0  | 0.0 | 0.0  |
+| 1  | 1.1 | 0.1 | 0.06 | 0.0  | 0.09 | 0.11 | 0.0 | 0.11 |
+| 2  | 2.1 | 0.3 | 0.22 | 0.11 | 0.19 | 0.21 | 0.0 | 0.21 |
+| 3  | 3.1 | 0.6 | 0.47 | 0.31 | 0.29 | 0.31 | 0.0 | 0.3  |
+| 4  | 4.2 | 1.0 | 0.85 | 0.64 | 0.38 | 0.42 | 0.0 | 0.39 |
+| 5  | 5.3 | 1.5 | 1.32 | 1.07 | 0.47 | 0.53 | 0.0 | 0.47 |
+| 6  | 6.4 | 2.1 | 1.87 | 1.58 | 0.56 | 0.64 | 1.0 | 0.54 |
+| 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.65 | 0.76 | 1.0 | 0.61 |
++----+-----+-----+------+------+------+------+-----+------+
+
 Following is an example of a graphic and caption (“Figure” style).
 ![Fig1](Fig3-1.png)  
-Figure 1. Motion plot 
-
+Figure 1. Motion plot  
+  
+The data are presented so that speed and energy can be considered as functions of the momentum.  
+  
+Velocity end energy of particle as function from momentum  
++----+------+------+------+--------+------+------+--------+
+| Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
++----+------+------+------+--------+------+------+--------+
+| 0  | 0.0  | 0.0  | 0.0  |  0.0   | 1.0  | 1.0  |  0.0   |
+| 1  | 0.09 | 0.09 | 0.09 |  0.41  | 1.01 | 1.0  |  0.41  |
+| 2  | 0.19 | 0.2  | 0.19 |  6.65  | 1.03 | 1.02 |  1.0   |
+| 3  | 0.29 | 0.3  | 0.28 |  7.4   | 1.06 | 1.04 |  1.61  |
+| 4  | 0.38 | 0.36 | 0.36 |  1.94  | 1.09 | 1.07 |  1.95  |
+| 5  | 0.47 | 0.45 | 0.43 |  6.36  | 1.13 | 1.11 |  2.4   |
+| 6  | 0.56 | 0.55 | 0.49 | 11.09  | 1.18 | 1.15 |  2.99  |
+| 7  | 0.65 | 0.58 | 0.54 |  7.39  | 1.23 | 1.19 |  3.34  |
++----+------+------+------+--------+------+------+--------+  
+  
 The following notation is introduced in this table: No. is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in%
 The exact speed value is calculated by the formula
 ![Fig2](Fig3-2.png)  
@@ -40,5 +81,25 @@ Figure 3. Energy as function from momentum
 Graphs of the dependence of speed on momentum are shown in Fig. 1. Points are measurement data, a continuous line is an analytical curve. For clarity, a graph of the dependence of speed on momentum for the classical case is also given (straight line).
   
 ## 3. Description of experiment2 modul
-  
 
+### Class "simpleIteraction(mms.Composite)"
+Description: class *Table* is a data recorder  
+Bases: object    
+`def __init__(self)`  
+
+### Attributes: 
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+obtG | int | array of time in the rest frame
+  
+### Class originalToolkit(ri.DataProcessing)  
+Description: class *Table* is a data recorder  
+Bases: object    
+`def __init__(self)`  
+
+### Attributes: 
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+obtG | int | array of time in the rest frame
