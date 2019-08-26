@@ -35,7 +35,7 @@ The results are shown in Table 1.
 Name | Type | Description  
 ---- | ---- | ----------- 
 obtG | int | array of time in the rest frame
-
+```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
 | Tw |  t  |  x  |  xa  |  xe  |  p   |  pa  |  v  |  va  |
@@ -49,13 +49,13 @@ Analytical (xa, pa, va) and numerical (xe) solution
 | 6  | 6.4 | 2.1 | 1.87 | 1.58 | 0.56 | 0.64 | 1.0 | 0.54 |
 | 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.65 | 0.76 | 1.0 | 0.61 |
 +----+-----+-----+------+------+------+------+-----+------+
-
+```
 Following is an example of a graphic and caption (“Figure” style).
 ![Fig1](Fig3-1.png)  
 Figure 1. Motion plot  
   
 The data are presented so that speed and energy can be considered as functions of the momentum.  
-  
+```  
 Velocity end energy of particle as function from momentum  
 +----+------+------+------+--------+------+------+--------+
 | Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
@@ -69,7 +69,7 @@ Velocity end energy of particle as function from momentum
 | 6  | 0.56 | 0.55 | 0.49 | 11.09  | 1.18 | 1.15 |  2.99  |
 | 7  | 0.65 | 0.58 | 0.54 |  7.39  | 1.23 | 1.19 |  3.34  |
 +----+------+------+------+--------+------+------+--------+  
-  
+```  
 The following notation is introduced in this table: No. is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in%
 The exact speed value is calculated by the formula
 ![Fig2](Fig3-2.png)  
@@ -84,19 +84,23 @@ Graphs of the dependence of speed on momentum are shown in Fig. 1. Points are me
 
 ### Class "simpleIteraction(mms.Composite)"
 Description: class *Table* is a data recorder  
-Bases: object    
-`def __init__(self)`  
+Bases: mms.Composite    
+`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
 
-### Attributes: 
+#### Attributes: 
   
 Name | Type | Description  
 ---- | ---- | ----------- 
 obtG | int | array of time in the rest frame
-  
+#### Operations: 
+def interaction(self, car)
+    
 ### Class originalToolkit(ri.DataProcessing)  
 Description: class *Table* is a data recorder  
-Bases: object    
-`def __init__(self)`  
+Bases: ResacherInstruments.DataProcessing    
+`def __init__(self, observer,particle_velosety, sizeTick, countTick)`  
+#### Operations: 
+def interaction(self, car)
 
 ### Attributes: 
   
