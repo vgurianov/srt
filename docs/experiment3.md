@@ -20,21 +20,19 @@ Parameters:
 m = 1 kg, rest mass  
 qE = 0.1 N, force  
   
-countTick= 8 sizeTick= 10  
-Particle velosety = 0  
+Variable values:  
+countTick= 8, sizeTick= 10  
+Particle velosety = 0  (initial velocity)
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
 mass = 1 , lightVel = 1.0  
   
-With an increase in resolution, the measurement accuracy increases markedly, therefore, we consider an experiment with a minimum resolution, which is more indicative. Let the resolution of the time step be 10 elements of the unidirectional Temp list. The absolute error in the measurement of coordinates and time will then be 0.05. 
+With an increase in resolution, the measurement accuracy increases markedly, therefore, we consider an experiment with a minimum resolution, which is more indicative. Let the resolution of the time step be 10 elements of the unidirectional Temp list. The absolute error in the measurement of coordinates and time will then be 0.5. 
 With this resolution, you can perform 8 clock cycles of the system (then an error typical of relativistic models arises, which can be called “synchronization failure”, you need to increase the resolution).  
 
 
 ## 2. Results of experiment
 
-The results are shown in Table 1.
-Name | Type | Description  
----- | ---- | ----------- 
-obtG | int | array of time in the rest frame
+The results are shown in Table 1.  
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
@@ -48,10 +46,11 @@ Analytical (xa, pa, va) and numerical (xe) solution
 | 5  | 5.3 | 1.5 | 1.32 | 1.07 | 0.47 | 0.53 | 0.0 | 0.47 |
 | 6  | 6.4 | 2.1 | 1.87 | 1.58 | 0.56 | 0.64 | 1.0 | 0.54 |
 | 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.65 | 0.76 | 1.0 | 0.61 |
+| 8  | 8.8 | 3.6 | 3.32 | 2.95 | 0.73 | 0.88 | 1.0 | 0.66 |
 +----+-----+-----+------+------+------+------+-----+------+
 ```
 Following is an example of a graphic and caption (“Figure” style).
-![Fig1](Fig3-1.png)  
+![Fig1](Fig3-3-1.png)  
 Figure 1. Motion plot  
   
 The data are presented so that speed and energy can be considered as functions of the momentum.  
@@ -68,15 +67,16 @@ Velocity end energy of particle as function from momentum
 | 5  | 0.47 | 0.45 | 0.43 |  6.36  | 1.13 | 1.11 |  2.4   |
 | 6  | 0.56 | 0.55 | 0.49 | 11.09  | 1.18 | 1.15 |  2.99  |
 | 7  | 0.65 | 0.58 | 0.54 |  7.39  | 1.23 | 1.19 |  3.34  |
-+----+------+------+------+--------+------+------+--------+  
+| 8  | 0.73 | 0.67 | 0.59 | 13.04  | 1.29 | 1.24 |  3.89  |
++----+------+------+------+--------+------+------+--------+
 ```  
 The following notation is introduced in this table: No. is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in%
 The exact speed value is calculated by the formula
-![Fig2](Fig3-2.png)  
+![Fig2](Fig3-3-2.png)  
 Figure 2. Velocity as function from momentum 
 
 The exact energy value is calculated by the formula
-![Fig3](Fig3-3.png)  
+![Fig3](Fig3-3-3.png)  
 Figure 3. Energy as function from momentum
 Graphs of the dependence of speed on momentum are shown in Fig. 1. Points are measurement data, a continuous line is an analytical curve. For clarity, a graph of the dependence of speed on momentum for the classical case is also given (straight line).
   
