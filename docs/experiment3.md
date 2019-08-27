@@ -6,20 +6,15 @@ We consider motion of charge q in constant electric field E. Motion equation is
 \begin{equation}
     \frac{dp}{dt} = qE
 \end{equation}
-where  
-p - particle momentum,  
-qE - force.  
-Initial condition is x = 0, p = 0 in moment t = 0.  
+where p - particle momentum, qE - force. Initial condition is x = 0, p = 0 in moment t = 0.  
 We find dependence  
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
 
-The data of the experiments are given in SI. The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then c = 1.  
-Parameters:  
-m = 1 kg, rest mass  
-qE = 0.1, force \\(0.1*c^2\\)
+The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then c = 1. 
   
+Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1 (i.e.\\(0.1c^2\\) N)  
 Variable values:  
 countTick= 8, sizeTick= 10  
 Particle velosety = 0  (initial velocity)
@@ -76,7 +71,7 @@ Plot of the dependence of speed on momentum are shown in Fig. 2.
 Figure 2. Velocity as function from momentum  
   
 Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
-Plot of the dependence of speed on momentum are shown in Fig. 3.  
+Plot of the dependence of energy on momentum are shown in Fig. 3.  
 ![Fig3](Fig3-3-3.png)  
 Figure 3. Energy as function from momentum
   
@@ -84,28 +79,56 @@ Points are measurement data, a continuous line is an analytical curved. Dash lin
   
 ## 3. Description of experiment2 modul
 
-### Class "simpleIteraction(mms.Composite)"
+### Class "simpleIteraction"
 Description: class *Table* is a data recorder  
 Bases: mms.Composite    
 `def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
-
-#### Attributes: 
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-obtG | int | array of time in the rest frame
+sizeTick | int | size of time tact
+countTick | int | count of tacts
+particle_velosety | int | inicial speed particle
+observer | Table instance | Detector and recorder
+  
 #### Operations: 
 def interaction(self, car)
+Description:  action of electric field 
+Parameters: "car" is "Currer" instance  
     
-### Class originalToolkit(ri.DataProcessing)  
-Description: class *Table* is a data recorder  
+### Class "originalToolkit"   
+Description: new procedures join to processor of data  
 Bases: ResacherInstruments.DataProcessing    
 `def __init__(self, observer,particle_velosety, sizeTick, countTick)`  
-#### Operations: 
-def interaction(self, car)
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+observer | Table instance | Detector and recorder
+particle_velosety | int | inicial speed particle
+sizeTick | int | size of time tact
+countTick | int | count of tacts
 
 ### Attributes: 
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-obtG | int | array of time in the rest frame
+xAtrack | int array | x, analitical solution  
+xNtrack | int array| x, numerical solution 
+pA | int array| momentum, analitical solution  
+vA | int array| velocity, analitical solution  
+vN | int array| velocity, numerical solution
+eN | int array| energy, numerical solution
+  
+  
+#### Operations: 
+**def anlSolution(self)**  
+Description: accurate x (analytical formula)  
+Parameters: None  
+  
+Algorithm: 
+
+**def numSolution(self)**  
+Description: numerical solution of motion differential equation  (Euler method)   
+Parameters: None  
+  
+Algorithm: 
