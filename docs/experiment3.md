@@ -1,5 +1,5 @@
 # Velocity, momentum, and energy
-
+  
 ## 1. Experiment description
 We consider motion of charge q in constant electric field E. Motion equation is  
 
@@ -77,10 +77,10 @@ Figure 3. Energy as function from momentum
   
 Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). 
   
-## 3. Description of experiment2 modul
+## 3. Description of experiment3 modul
 
 ### Class "simpleIteraction"
-Description: class *Table* is a data recorder  
+Description: the class is a simulation model  
 Bases: mms.Composite    
 `def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
   
@@ -92,8 +92,8 @@ particle_velosety | int | inicial speed particle
 observer | Table instance | Detector and recorder
   
 #### Operations: 
-def interaction(self, car)
-Description:  action of electric field 
+def interaction(self, car)  
+Description:  action of electric field  
 Parameters: "car" is "Currer" instance  
     
 ### Class "originalToolkit"   
@@ -108,7 +108,7 @@ particle_velosety | int | inicial speed particle
 sizeTick | int | size of time tact
 countTick | int | count of tacts
 
-### Attributes: 
+#### Attributes: 
   
 Name | Type | Description  
 ---- | ---- | ----------- 
@@ -126,9 +126,24 @@ Description: accurate x (analytical formula)
 Parameters: None  
   
 Algorithm: 
+  
+$$
+\begin{align*} 
+p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\ 
+\end{align*} 
+$$  
 
 **def numSolution(self)**  
 Description: numerical solution of motion differential equation  (Euler method)   
 Parameters: None  
   
 Algorithm: 
+$$
+\begin{equation}
+v_{i} = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-1}} \\
+\end{equation}  
+$$  
+  
+Value \\(v_{i}\\) write to array *vel_t*  
+  
+  
