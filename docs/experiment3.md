@@ -1,16 +1,16 @@
 # Velocity, momentum, and energy
 
 ## 1. Experiment description
-We consider motion of charge in constant electric field. Motion equation is  
+We consider motion of charge q in constant electric field E. Motion equation is  
 
 \begin{equation}
     \frac{dp}{dt} = qE
 \end{equation}
 where  
 p - particle momentum,  
-qE - force  
-Initial condition (t = 0) is x = 0 and p = 0.  
-Find dependence  
+qE - force.  
+Initial condition is x = 0, p = 0 in moment t = 0.  
+We find dependence  
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
@@ -18,7 +18,7 @@ Find dependence
 The data of the experiments are given in SI. The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then c = 1.  
 Parameters:  
 m = 1 kg, rest mass  
-qE = 0.1 N, force  
+qE = 0.1, force \\(0.1*c^2\\)
   
 Variable values:  
 countTick= 8, sizeTick= 10  
@@ -70,15 +70,17 @@ Velocity end energy of particle as function from momentum
 | 8  | 0.73 | 0.67 | 0.59 | 13.04  | 1.29 | 1.24 |  3.89  |
 +----+------+------+------+--------+------+------+--------+
 ```  
-The following notation is introduced in this table: No. is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in%
-The exact speed value is calculated by the formula
+The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in %.  
+Plot of the dependence of speed on momentum are shown in Fig. 2.  
 ![Fig2](Fig3-3-2.png)  
-Figure 2. Velocity as function from momentum 
-
-The exact energy value is calculated by the formula
+Figure 2. Velocity as function from momentum  
+  
+Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
+Plot of the dependence of speed on momentum are shown in Fig. 3.  
 ![Fig3](Fig3-3-3.png)  
 Figure 3. Energy as function from momentum
-Graphs of the dependence of speed on momentum are shown in Fig. 1. Points are measurement data, a continuous line is an analytical curve. For clarity, a graph of the dependence of speed on momentum for the classical case is also given (straight line).
+  
+Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). 
   
 ## 3. Description of experiment2 modul
 
