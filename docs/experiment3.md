@@ -29,7 +29,7 @@ With this resolution, you can perform 8 clock cycles of the system (then an erro
 
 ## 2. Results of experiment
 
-The results are shown in Table 1.  
+The results experiment are shown in Table 1. It is traectory of particle. 
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
@@ -45,8 +45,9 @@ Analytical (xa, pa, va) and numerical (xe) solution
 | 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.65 | 0.76 | 1.0 | 0.61 |
 | 8  | 8.8 | 3.6 | 3.32 | 2.95 | 0.73 | 0.88 | 1.0 | 0.66 |
 +----+-----+-----+------+------+------+------+-----+------+
-```
-Following is an example of a graphic and caption (“Figure” style).
+```  
+Values t,x,p, and v are measurement data, values xa, pa, va are analitical solution (see class "originalToolkit"), xe - numerical solution.  
+Following is plot of traectory (Fig.1).
 ![Fig1](Fig3-3-1.png)  
 Figure 1. Motion plot  
   
@@ -81,9 +82,10 @@ Points are measurement data. Dash line is numerical solution (Euler method). The
   
 $$
 \begin{align*}  
-v = \sqrt{m^2c^2 + p^2c^2 }   \\  
+E = \sqrt{m^2c^2 + p^2c^2 }   \\  
 \end{align*}  
 $$   
+  
   
 ## 3. Description of experiment3 modul
 
@@ -150,7 +152,7 @@ Algorithm:
   
 $$
 \begin{equation}  
-p_{i} = p_{i-1} + qE \Delta t  \\
+p_{i} = p_{i-1} + qE \Delta t \\  
 v_{i-1} = \frac{p_{i-1}} {\sqrt{m^2 + p_{i-1}^2/c^2 } \\  
 x_{i} = x_{i-1} + v_{i-1} \Delta t  \\  
 e_{i} = e_{i-1} + qE \Delta x \\  
