@@ -29,7 +29,7 @@ With this resolution, you can perform 8 clock cycles of the system (then an erro
 
 ## 2. Results of experiment
 
-The results experiment are shown in Table 1. It is traectory of particle. 
+The results experiment are shown in Table 1. It is trajectory of particle. 
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
@@ -47,7 +47,7 @@ Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
 ```  
 Values t,x,p, and v are measurement data, values xa, pa, va are analitical solution (see class "originalToolkit"), xe - numerical solution.  
-Following is plot of traectory (Fig.1).
+Following is plot of trajectory (Fig.1).
 ![Fig1](Fig3-3-1.png)  
 Figure 1. Motion plot  
   
@@ -139,7 +139,7 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1 \Big)  \\  
+x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\  
 v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
