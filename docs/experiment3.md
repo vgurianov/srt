@@ -4,7 +4,7 @@
 We consider motion of charge *q* in constant electric field *E*. Motion equation is  
 
 \begin{equation}
-    \frac{dp}{dt} = qE
+    \frac{dp}{dt} = qE           (1)
 \end{equation}
 where p - particle momentum, qE - force. Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
 We find dependence  
@@ -129,8 +129,8 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE}{\sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1}  (2) \\  
-v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }  (3) \\  
+x = \frac{mc^2}{qE}{\sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1}  \\  
+v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
 
@@ -143,14 +143,14 @@ Algorithm:
 $$
 \begin{equation}
 p_{i} = p_{i-1} + qE \Delta t  \\
-v_{i} = \frac{p_{i-1} {\sqrt{m^2 + \frac{p^2}{c^2} } \\  
+v_{i} = \frac{p_{i-1}} {\sqrt{m^2 + \frac{p^2}{c^2} } \\  
 x_{i} = x_{i-1} + v_{i-1} \Delta t  \\  
 e_{i} = e_{i-1} + qE \Delta x \\  
 \end{equation}  
 $$  
   
-where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = mc^2\\)  
+where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = mc^2\\).  
   
-Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*
+Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*.  
     
     
