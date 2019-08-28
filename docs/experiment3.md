@@ -139,6 +139,7 @@ Description: numerical solution of motion differential equation  (Euler method)
 Parameters: None  
   
 Algorithm: 
+  
 $$
 \begin{equation}
 p_{i} = p_{i-1} + qE \Delta t  \\
