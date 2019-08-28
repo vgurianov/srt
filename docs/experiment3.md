@@ -1,23 +1,23 @@
 # Velocity, momentum, and energy
   
 ## 1. Experiment description
-We consider motion of charge q in constant electric field E. Motion equation is  
+We consider motion of charge *q* in constant electric field *E*. Motion equation is  
 
 \begin{equation}
     \frac{dp}{dt} = qE
 \end{equation}
-where p - particle momentum, qE - force. Initial condition is x = 0, p = 0 in moment t = 0.  
+where p - particle momentum, qE - force. Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
 We find dependence  
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
 
-The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then c = 1. 
+The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then *c* = 1. 
   
-Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1 (i.e.\\(0.1c^2\\) N)  
+Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1 (i.e.\\(0.1c^2\\) [N])  
 Variable values:  
 countTick= 8, sizeTick= 10  
-Particle velosety = 0  (initial velocity)
+Particle velosety = 0  (initial velocity)  
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
 mass = 1 , lightVel = 1.0  
   
@@ -129,7 +129,8 @@ Algorithm:
   
 $$
 \begin{align*} 
-p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\ 
+x = \frac{mc^2}{qE}{\sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1}  (2) \\  
+v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }  (3) \\  
 \end{align*} 
 $$  
 
@@ -140,10 +141,15 @@ Parameters: None
 Algorithm: 
 $$
 \begin{equation}
-v_{i} = \frac{\nu_{t}}{\nu_{x}} \frac{\rho_{i} - \rho_{i-1}}{\tau_{i} - \tau_{i-1}} \\
+p_{i} = p_{i-1} + qE \Delta t  \\
+v_{i} = \frac{p_{i-1} {\sqrt{m^2 + \frac{p^2}{c^2} } \\  
+x_{i} = x_{i-1} + v_{i-1} \Delta t  \\  
+e_{i} = e_{i-1} + qE \Delta x
 \end{equation}  
 $$  
   
-Value \\(v_{i}\\) write to array *vel_t*  
+where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = mc^2\\)  
   
-  
+Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*
+    
+    
