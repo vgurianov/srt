@@ -7,13 +7,14 @@ We consider motion of charge *q* in constant electric field *E*. Motion equation
 \begin{equation}
     \frac{dp}{dt} = qE           (1)
 \end{equation}
-where p - particle momentum, qE - force. Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
+where *p* - particle momentum, *qE* - force.  
+Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
 We find dependence  
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
 
-The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], wher c is speed of light, then *c* = 1. 
+The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], where c is speed of light, then *c* = 1. 
   
 Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1 (i.e.\\(0.1c^2\\) [N])  
 Variable values:  
@@ -136,7 +137,7 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE} \Big{ \sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1 \Big}  \\  
+x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1 \Big)  \\  
 v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
@@ -150,7 +151,7 @@ Algorithm:
 $$
 \begin{equation}  
 p_{i} = p_{i-1} + qE \Delta t  \\
-v_{i-1} = \frac{p_{i-1}} {\sqrt{m^2 + \frac{p_{i-1}^2}{c^2}} } \\  
+v_{i-1} = \frac{p_{i-1}} {\sqrt{m^2 + p_{i-1}^2/c^2 } \\  
 x_{i} = x_{i-1} + v_{i-1} \Delta t  \\  
 e_{i} = e_{i-1} + qE \Delta x \\  
 \end{equation}  
