@@ -1,4 +1,5 @@
 # Velocity, momentum, and energy
+Modul experiment3.py simulate dynamic relativistic effects.  
   
 ## 1. Experiment description
 We consider motion of charge *q* in constant electric field *E*. Motion equation is  
@@ -73,9 +74,15 @@ Figure 2. Velocity as function from momentum
 Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
 Plot of the dependence of energy on momentum are shown in Fig. 3.  
 ![Fig3](Fig3-3-3.png)  
-Figure 3. Energy as function from momentum
+Figure 3. Energy as function from momentum  
   
-Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). 
+Points are measurement data. Dash line is numerical solution (Euler method). The continuous line is an analytical curved and compute on formule (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
+  
+$$
+\begin{align*}  
+v = \sqrt{m^2c^2 + p^2c^2 }   \\  
+\end{align*}  
+$$   
   
 ## 3. Description of experiment3 modul
 
@@ -129,7 +136,7 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE}{\sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1}  \\  
+x = \frac{mc^2}{qE} \Big{ \sqrt{ 1 + (\frac{qEt}{mc^2})^2 } -1 \Big}  \\  
 v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
