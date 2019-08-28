@@ -153,7 +153,7 @@ Algorithm:
 $$
 \begin{equation}  
 p_{i} = p_{i-1} + qE \Delta t \\  
-v_{i-1} = \frac{p_{i-1}} {\sqrt{m^2 + p_{i-1}^2/c^2 } \\  
+v_{i-1} = \frac{p_{i-1}} {\sqrt{m^2 + p_{i-1}^2 \over c^2 } \\  
 x_{i} = x_{i-1} + v_{i-1} \Delta t  \\  
 e_{i} = e_{i-1} + qE \Delta x \\  
 \end{equation}  
