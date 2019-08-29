@@ -33,7 +33,7 @@ Column gTime is number of step (button "Tick"). Column Time-Anl is analytic calc
 
 
 
-![Fig1](Figure3-1-3.png)  
+![Fig1](Fig3-1-3.png)  
 Figure 1. A Minkowski spacetime diagram 
 
 We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.
