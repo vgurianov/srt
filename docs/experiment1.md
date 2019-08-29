@@ -59,8 +59,9 @@ In case of small velocity, graph depicted in Fig.6
 ### Class "freeMotion"  
 
 Description: the class is a simulation model  
-Bases: mms.Composite  
-`def __init__(self, sizeTick, countTick, particle_velosety, observer)`    
+Bases: mms.Composite   
+`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
+  
 Name | Type | Description  
 ---- | ---- | ----------- 
 sizeTick | int | size of time tact
@@ -78,8 +79,8 @@ Parameters: "car" is "Currer" instance
 ### Class "originalToolkit"
 
 Description: new procedures join to processor of data
-Bases: ResacherInstruments.DataProcessing
-`def __init__(self, observer,particle_velosety, sizeTick, countTick)`
+Bases: ResacherInstruments.DataProcessing  
+`def __init__(self, observer,particle_velosety, sizeTick, countTick)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
@@ -94,7 +95,12 @@ Description: incline k calculate and error
 Parameters: None  
   
 Algorithm: 
+Analytical incline ka can deduce from formula of invariant interval
+\(s^2 = x^2 + t^2\).  From \(x=vs -> s=x/v \) then
+\(t' = \sqrt(s^2 + x^2)= \sqrt((x/v)^2 + x^2) = x \sqrt(1+1/v^2)\), i.e.  
+\ a_{an} = \sqrt(1+1/v^2)\)  
   
+    
 $$
 \begin{align*} 
 x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\  
