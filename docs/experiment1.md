@@ -15,33 +15,30 @@ mass = 1 , lightVel = 1.0
 In Table 1 is depicted result of simulation.  
   
 ```
-Trajectory of particle and local time
-+----+-----+-----+------+------+
-| Tw |  x  |  t  |  ta  | err% |
-+----+-----+-----+------+------+
-| 0  | 0.0 | 0.0 | 0.0  | 0.0  |
-| 1  | 0.5 | 1.2 | 1.12 | 7.33 |
-| 2  | 1.0 | 2.3 | 2.24 | 2.86 |
-| 3  | 1.5 | 3.4 | 3.35 | 1.37 |
-| 4  | 2.0 | 4.5 | 4.47 | 0.62 |
-| 5  | 2.5 | 5.6 | 5.59 | 0.18 |
-| 6  | 3.0 | 6.8 | 6.71 | 1.37 |
-+----+-----+-----+------+------+
+Trajectory of particle and time particle
++----+-----+-----+------+------+----+
+| Tw |  x  |  t  |  ta  | err% | tp |
++----+-----+-----+------+------+----+
+| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0  |
+| 1  | 0.5 | 1.2 | 1.12 | 7.33 | 1  |
+| 2  | 1.0 | 2.3 | 2.24 | 2.86 | 2  |
+| 3  | 1.5 | 3.4 | 3.35 | 1.37 | 3  |
+| 4  | 2.0 | 4.5 | 4.47 | 0.62 | 4  |
+| 5  | 2.5 | 5.6 | 5.59 | 0.18 | 5  |
+| 6  | 3.0 | 6.8 | 6.71 | 1.37 | 6  |
++----+-----+-----+------+------+----+
 ```
   
-Column gTime is number of step (button "Tick"). Column Time-Anl is analytic calculation to formula t = sqrt(s2+x2). Column Time is t0, i.o. time in motionless frame of reference. Column x - coordinate of particle in moment gTime. Column pTime is time of particle. Column localTime is local time in cell x.
-
+Column Tw is number of tact of model time. Column ta is analytic calculation to formula ta = sqrt(s2+x2). Column x - coordinate of particle in moment t. Column tp is time of particle.  
+This result is depictid on fig.1
 
 
 ![Fig1](Fig3-1-1.png)  
 Figure 1. A Minkowski spacetime diagram 
 
 We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.
-Following is an example of a graphic and caption (“Figure” style).
-
-We processing of data and calculate of incline k (green line)
-
-and
+  
+We processing of data and calculate of incline k (green line)  
   
 ```
 Analytical incline k_an= 2.24 ,1/v= 2.0
@@ -104,3 +101,7 @@ x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\
 v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
+
+### Class "originalPrint"
+Description: rewrite procedure xtPrintPrettyTable
+Bases: printResult.TablePrint
