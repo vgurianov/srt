@@ -104,8 +104,12 @@ then
 i.e.  
 \\( a_{an} = \sqrt{1+1/v^2} \\)  
   
-  
-    
+The experiment data processing is  
+\\( \Delta t = \t_{i} - \t_{i-4}  \\)  
+\\( \Delta x = \x_{i} - \x_{i-4}  \\)  
+\\( \k_{i} = \frac{\Delta t}{\Delta x}  \\)  
+\\( k_{ar} = \sum_{i=0}^{n} k_i \\)  
+      
 
 ### Class "originalPrint"
 Description: rewrite procedure xtPrintPrettyTable
