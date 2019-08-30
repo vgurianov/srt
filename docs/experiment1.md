@@ -96,15 +96,15 @@ Parameters: None
   
 Algorithm:  
 Analytical incline \\(k_{an}\\) can deduce from formula of invariant interval  
-    
-$$
-\begin{align} 
-s^2 = c^2t^2 - x^2  \\  
-x = vs -> s = x/v \\  
-t = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2} \\ ,  
-a_{an} = \sqrt{1+1/v^2}  
-\end{align}  
-$$  
+\\( s^2 = c^2t^2 - x^2  \\)  
+From  
+\\( x = vs -> s = x/v \\)  
+then  
+\\( t = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2} \\) ,  
+i.e.  
+\\( a_{an} = \sqrt{1+1/v^2} \\)  
+  
+  
     
 
 ### Class "originalPrint"
