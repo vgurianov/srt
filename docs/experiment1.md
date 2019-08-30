@@ -96,21 +96,19 @@ Parameters: None
   
 Algorithm:  
 Analytical incline ka can deduce from formula of invariant interval  
-\( s^2 = c^2t^2 - x^2\).  
-From  
-\(x = vs -> s = x/v \)  
-then
-\(t' = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2}\) ,  
-i.e.   
-\( a_{an} = \sqrt{1+1/v^2}\)  
-  
     
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\  
-v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
-\end{align*} 
+s^2 = c^2t^2 - x^2  \\.  
+From  
+x = vs -> s = x/v \\  
+then  
+t = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2} \\ ,  
+i.e.   
+a_{an} = \sqrt{1+1/v^2}  
+ \end{align*}  
 $$  
+    
 
 ### Class "originalPrint"
 Description: rewrite procedure xtPrintPrettyTable
