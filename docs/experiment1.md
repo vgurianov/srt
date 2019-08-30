@@ -96,9 +96,13 @@ Parameters: None
   
 Algorithm:  
 Analytical incline ka can deduce from formula of invariant interval  
-\( s^2 = x^2 + t^2\).  From \(x=vs -> s=x/v \) then
-\(t' = \sqrt(s^2 + x^2) = \sqrt((x/v)^2 + x^2) = x \sqrt(1+1/v^2)\), i.e.  
-\( a_{an} = \sqrt(1+1/v^2)\)  
+\( s^2 = c^2t^2 - x^2\).  
+From  
+\(x = vs -> s = x/v \)  
+then
+\(t' = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2}\) ,  
+i.e.   
+\( a_{an} = \sqrt{1+1/v^2}\)  
   
     
 $$
