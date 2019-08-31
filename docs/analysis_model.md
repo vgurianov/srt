@@ -1,21 +1,26 @@
 # Analysis model
 
+## 1. Ontology of Special Reletivity Theory  
 Semantic net definition.  
-Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.2). 
+Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
   
-![Fig2](Fig_23.png)
-Figure 2. Class diagram  
-All epistemology entities has standard types (int, bool, and itc.).
+![Fig2](Fig1-2-1.png)
+Figure 1. Ontology of Special Reletivity Theory   
+  
+Also, see  
+[Full diagram](Fig1-2-1a.png)  
+[Pseudo code C++](http://example.net/)  
 
-SPACETIME MODEL  
+
+## 2. Spacetime model  
 Предположение 1. Синхронизация выполняется методом «ожидания»
 We propose a following model of Minkowski spacetime.  
 "Composite" class is a model of a physical spacetime We will view one-dimension space. Physical space is linked list, where "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space. 
 Attribute "temp" is one-direction linked list and it is a model of physical time.
 Class "ListItem" is model of a physical space cell. The cell has a local time; it is "temp" attribute. The time of "Composite" class and the time "ListItem" class must be synchronization.
 Procedure “Synchronization”  
-We purpose that both classes Compsite and ListItem is pattern Brdge. Class ListItem is Abstraction (Manipulator) and class Composite is an Implementor (Body). If is true then ListItem has subclasses.  
-Figure 3. 	Time synchronisation in cells of space
+
+Figure 3. Time synchronisation in cells of space
 
 The synchronization mechanism is a following process. Operation "Run" of class Composite has cycle by linked list "temp". For each t node of linked list (system tick) sended message runItem(t) to all cells of space (Fig.2). 
 Figure 2. 	Communication process of synchronization
@@ -60,3 +65,12 @@ Time of special relativity has following rule. We take more details grid, let is
 	
 i.e. used formula is  .  
 The operation appTemp(tm) create new node of type Temp in cell and mark it as tm.
+  
+## 3. Mechanical motion  
+
+## 4. Ineraction  
+
+## 5. Measurements
+
+All epistemology entities has standard types (int, bool, and itc.).
+
