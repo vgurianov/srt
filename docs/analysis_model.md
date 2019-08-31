@@ -1,11 +1,12 @@
 # Analysis model
-
-## 1. Ontology of Special Reletivity Theory  
+In UML2 SP, simulation model described as ontology. Classes is considered as frames (the Minsky frame). Classes, attributes, and operations has tagged values "Concept". Details of laguage view on site [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
+  
+## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
 Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
   
 ![Fig2](Fig1-2-1.png)
-Figure 1. Ontology of Special Reletivity Theory   
+Figure 1. Ontology of Special Relativity Theory   
   
 Also, see  
 [Full diagram](Fig1-2-1a.png)  
