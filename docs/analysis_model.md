@@ -5,13 +5,15 @@ In UML2 SP, simulation model described as ontology. Classes is considered as fra
 Semantic net definition.  
 Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
   
-![Fig2](Fig1-2-1.png)
+![Fig1](Fig1-2-1.png)
 Figure 1. Ontology of Special Relativity Theory   
   
 Also, see  
 [Full diagram](Fig1-2-1a.png)  
 [Pseudo code C++](http://example.net/)  
 
+## 2. Use-Case realization  
+  
 
 ## 2. Spacetime model  
 Предположение 1. Синхронизация выполняется методом «ожидания»
@@ -20,11 +22,12 @@ We propose a following model of Minkowski spacetime.
 Attribute "temp" is one-direction linked list and it is a model of physical time.
 Class "ListItem" is model of a physical space cell. The cell has a local time; it is "temp" attribute. The time of "Composite" class and the time "ListItem" class must be synchronization.
 Procedure “Synchronization”  
-
+![Fig2](Fig1-2-2.png)
 Figure 3. Time synchronisation in cells of space
 
 The synchronization mechanism is a following process. Operation "Run" of class Composite has cycle by linked list "temp". For each t node of linked list (system tick) sended message runItem(t) to all cells of space (Fig.2). 
-Figure 2. 	Communication process of synchronization
+![Fig3](Fig1-2-3.png)
+Figure 3. 	Communication process of synchronization
 
 
 In operation runItem(t), t compared with attribute "marked" of current node of "temp" (lt on Fig2). If t equals "marked" then linked list "temp" of ListItem shift to next node (operation nextTemp() on Fig2). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make tick (operation Run() on Fig2).
@@ -64,12 +67,21 @@ Time of special relativity has following rule. We take more details grid, let is
 	tt = tt->next;
 	};
 	
-i.e. used formula is  .  
+i.e. used formula is  \\( s^2 = c^2t^2 - x^2  \\).  
 The operation appTemp(tm) create new node of type Temp in cell and mark it as tm.
-  
-## 3. Mechanical motion  
+![Fig4](Fig1-2-4.png)  
+Figure 4. 	Example of linked list tmp for cells 20 and 80  
 
-## 4. Ineraction  
+
+
+## 3. Mechanical motion  and ineraction
+Both mechanical motion and interaction models in SRT as in classical methanic.  
+Mechanical motion  
+![Fig5](Fig1-2-5.png)
+Figure 5. 	Example of linked list tmp for cells 20 and 80  
+  
+Interaction  
+ 
 
 ## 5. Measurements
 
