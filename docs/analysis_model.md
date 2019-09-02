@@ -90,8 +90,9 @@ All epistemology entities has standard types (int, bool, and itc.).
 Experimental tool include follow actions.  
 - Space cells marked numbers from 0 to Nmax. It is variable x class ItemList.  
 - Time interval marked number from 0 to Nmax. It is variable t class Temp.  
-- Counter of bearing (abutting) node (lb = true) is variable "tick".  
-Main measurement is account. Absolute error then is 0.5.  
+- Counter of bearing (abutting) node (lb = true) is variable "tick". 
+  
+Main measurement is account. Absolute error of measurement then is 0.5.  
 Operation of measurement is depicted in Fig.7  
 ![Fig7](Fig1-2-7.png)  
 Figure 7. 	The measurement  
