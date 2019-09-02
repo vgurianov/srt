@@ -1,5 +1,5 @@
 # Analysis model
-In UML2 SP, simulation model described as ontology. Classes is considered as frames (the Minsky frame). Classes, attributes, and operations has tagged values "Concept". Details of laguage view on site [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
+In UML2 SP, simulation model described as ontology. Classes is considered as the Minsky frame. Classes, attributes, and operations has tagged values "Concept". Details of the laguage view on site [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
   
 ## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
@@ -13,6 +13,7 @@ Also, see
 [Pseudo code C++](http://example.net/)  
 
 ## 2. Realization of use case "Run"
+Use case "Run" realization is depicted in Fig.2.  
 ![Fig2](Fig1-2-2.png)  
 Figure 2. Communication diagram of operation "Run"  
 
@@ -75,9 +76,9 @@ Figure 5. 	Example of linked list tmp for cells 20 and 80
 
 
 
-## 4. Mechanical motion  and ineraction
+## 4. Mechanical motion  and interaction
 Both mechanical motion and interaction models in SRT as in classical methanic.  
-Mechanical motion  
+Mechanical motion is depicted in fig.6.   
 ![Fig6](Fig1-2-6.png)  
 Figure 6. 	Mechanical motion  
   
@@ -85,8 +86,14 @@ Interaction
  
 
 ## 5. Measurements
-
-All epistemology entities has standard types (int, bool, and itc.).
+All epistemology entities has standard types (int, bool, and itc.).  
+Experimental tool include follow actions.  
+- Space cells marked numbers from 0 to Nmax. It is variable x class ItemList.  
+- Time interval marked number from 0 to Nmax. It is variable t class Temp.  
+- Counter of bearing (abutting) node (lb = true) is variable "tick".  
+Main measurement is account. Absolute error then is 0.5.  
+Operation of measurement is depicted in Fig.7  
 ![Fig7](Fig1-2-7.png)  
-Figure 7. 	Measurement  
-
+Figure 7. 	The measurement  
+  
+Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
