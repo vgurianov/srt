@@ -87,10 +87,11 @@ Interaction
 
 ## 5. Measurements
 All epistemology entities has standard types (int, bool, and itc.).  
-Experimental tool include follow actions.  
+We define the unprimed system foolow.  
 - Space cells marked numbers from 0 to Nmax. It is variable x class ItemList.  
 - Time interval marked number from 0 to Nmax. It is variable t class Temp.  
 - Counter of bearing (abutting) node (lb = true) is variable "tick". 
+We define time of particle (the primed system) as variable "tick" class Component.  
   
 Main measurement is account. Absolute error of measurement then is 0.5.  
 Operation of measurement is depicted in Fig.7  
