@@ -91,6 +91,8 @@ We define the unprimed system foolow.
 - Space cells marked numbers from 0 to Nmax. It is variable x class ItemList.  
 - Time interval marked number from 0 to Nmax. It is variable t class Temp.  
 - Counter of bearing (abutting) node (lb = true) is variable "tick". 
+- In all cells put detector of location and interaction. It is variable "observer" of class Table.  
+  
 We define time of particle (the primed system) as variable "tick" class Component.  
   
 Main measurement is account. Absolute error of measurement then is 0.5.  
