@@ -12,22 +12,23 @@ Also, see
 [Full diagram](Fig1-2-1a.png)  
 [Pseudo code C++](http://example.net/)  
 
-## 2. Use-Case realization  
-  
+## 2. Realization of use case "Run"
+![Fig2](Fig1-2-2.png)  
+Figure 2. Communication diagram of operation "Run"  
 
-## 2. Spacetime model  
+## 3. Spacetime model  
 Предположение 1. Синхронизация выполняется методом «ожидания»
 We propose a following model of Minkowski spacetime.  
 "Composite" class is a model of a physical spacetime We will view one-dimension space. Physical space is linked list, where "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space. 
 Attribute "temp" is one-direction linked list and it is a model of physical time.
 Class "ListItem" is model of a physical space cell. The cell has a local time; it is "temp" attribute. The time of "Composite" class and the time "ListItem" class must be synchronization.
 Procedure “Synchronization”  
-![Fig2](Fig1-2-2.png)
+![Fig3](Fig1-2-3.png)
 Figure 3. Time synchronisation in cells of space
 
 The synchronization mechanism is a following process. Operation "Run" of class Composite has cycle by linked list "temp". For each t node of linked list (system tick) sended message runItem(t) to all cells of space (Fig.2). 
-![Fig3](Fig1-2-3.png)
-Figure 3. 	Communication process of synchronization
+![Fig4](Fig1-2-4.png)
+Figure 4. 	Communication process of synchronization
 
 
 In operation runItem(t), t compared with attribute "marked" of current node of "temp" (lt on Fig2). If t equals "marked" then linked list "temp" of ListItem shift to next node (operation nextTemp() on Fig2). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make tick (operation Run() on Fig2).
@@ -69,16 +70,16 @@ Time of special relativity has following rule. We take more details grid, let is
 	
 i.e. used formula is  \\( s^2 = c^2t^2 - x^2  \\).  
 The operation appTemp(tm) create new node of type Temp in cell and mark it as tm.
-![Fig4](Fig1-2-4.png)  
-Figure 4. 	Example of linked list tmp for cells 20 and 80  
+![Fig5](Fig1-2-5.png)  
+Figure 5. 	Example of linked list tmp for cells 20 and 80  
 
 
 
-## 3. Mechanical motion  and ineraction
+## 4. Mechanical motion  and ineraction
 Both mechanical motion and interaction models in SRT as in classical methanic.  
 Mechanical motion  
-![Fig5](Fig1-2-5.png)
-Figure 5. 	Example of linked list tmp for cells 20 and 80  
+![Fig6](Fig1-2-6.png)  
+Figure 6. 	Mechanical motion  
   
 Interaction  
  
@@ -86,4 +87,6 @@ Interaction
 ## 5. Measurements
 
 All epistemology entities has standard types (int, bool, and itc.).
+![Fig7](Fig1-2-7.png)  
+Figure 7. 	Measurement  
 
