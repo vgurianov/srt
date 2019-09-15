@@ -6,8 +6,20 @@ Disign model make to Python. The class diagram depicted in Fig.1
 ![Fig1](Fig1-3-1.png)
   
 Figure 1. Class diagram  
+
+## 2. Components
+Classes are placed in four modules. Component diagram is depicted in Fig.2  
   
-## 2. Runtime errors  
+![Fig2](Fig1-3-3.png)  
+Figure 1. Class diagram   
+  
+Module mms include Jump, Carrier, Leaf, Temp, and Composite classes.
+Module resacher_instruments  include Table and DataProcessing classes.  
+Module print_result  include TablePrint  class.  
+Module graphs  include Visualization  class.  
+  
+  
+## 3. Sync errors  
 Error in moment Tg = 5  
   
 ```
@@ -48,6 +60,6 @@ Measurement result:
 +----+----+----+-------+------+-------------+------+```
 ```  
 The cause of the error is shown in fig. 2
-![Fig1](Fig1-3-2.png)
-Figure 2. Error  
+![Fig3](Fig1-3-2.png)
+Figure 3. Sync error tick = 5 
   
