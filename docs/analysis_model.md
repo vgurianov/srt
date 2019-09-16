@@ -38,7 +38,8 @@ void ItemRun(Temp *tt, int tGlob, Carrier *c) {
   if (tmp != NULL) {
     if (tt == tmp->marked) {
       if (contents != NULL) {// here particle
-	contents->Run();   
+	contents->Run();  
+	// Data write to table
 	observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
 	contents->doImpact(c); // interaction
 	observer.detect(tGlob,c); // observe act of interaction
