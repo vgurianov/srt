@@ -3,7 +3,7 @@ In UML2 SP, simulation model described as ontology. Classes are considered as th
   
 ## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
-Classical mechanics concepts can view on [page](https://vgurianov.github.io/uml-sp/case_studies/newton/newton).  
+Classical mechanics concepts can view [here](https://vgurianov.github.io/uml-sp/case_studies/newton/newton).  
 In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is synchronization rule of  time of mechanical system and local time of cells.  
 Main concepts are Mechanical system, Cell of space, Moment of time, Local Time, and Synchronization (fig.1). 
   
@@ -33,21 +33,21 @@ Figure 4. 	Communication process of synchronization
 
 
 In procedure runItem(tt), tt compared with attribute "marked" of current node of "tmp" (lt on Fig.4). If tt equals "marked" then linked list "tmp"  shift to next node (operation nextTemp() on Fig.4). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make shift (operation Run() on Fig.4).
-
-	void ItemRun(Temp *tt, int tGlob, Carrier *c) {
-		if (tmp != NULL) {
-		  if (tt == tmp->marked) {
-		    if (contents != NULL) {// here particle
-			contents->Run();   
-			observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
-			contents->doImpact(c); // interaction
-			observer.detect(tGlob,c); // observe act of interaction
-			};
-		  tmp = tmp->next;  // time run in cell
-		  };
-		};
-    }
-    
+```  
+void ItemRun(Temp *tt, int tGlob, Carrier *c) {
+  if (tmp != NULL) {
+    if (tt == tmp->marked) {
+      if (contents != NULL) {// here particle
+	contents->Run();   
+	observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
+	contents->doImpact(c); // interaction
+	observer.detect(tGlob,c); // observe act of interaction
+      };
+    tmp = tmp->next;  // time run in cell
+    };
+  };
+}
+```      
 Both Newton's time and time of special relativity has same synchronization mechanism but different rule of define "marked" label. In Newton's mechanics, the time of "Composite" class and the time "ListItem" class have same lengths of linked list "temp" and label "marked" has same number with number of node "temp". For example, for node number one of "temp", all cells of space has label "one" in attribute "marked" and all cells do one tick at the same time.
 Time of special relativity has following rule. We take more details grid, let is be 100 x 100 grid (rs=100) of time-space. Each ten node is marked as lb = true; it is "bearing" node. Further, cells mark as
 
