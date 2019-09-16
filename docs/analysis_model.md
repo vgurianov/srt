@@ -3,6 +3,7 @@ In UML2 SP, simulation model described as ontology. Classes are considered as th
   
 ## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
+Classical mechanics view on [page](https://vgurianov.github.io/uml-sp/case_studies/newton/newton).  
 In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is synchronization rule of  time of mechanical system and local time of cells.  
 Main concepts are Mechanical system, Cell of space, Moment of time, Local Time, and Synchronization (fig.1). 
   
