@@ -1,16 +1,17 @@
 # Analysis model
-In UML2 SP, simulation model described as ontology. Classes is considered as the Minsky frame. Classes, attributes, and operations has tagged values "Concept". Details of the laguage view on site [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
+In UML2 SP, simulation model described as ontology. Classes are considered as the Minsky frames. The language details  view on site  [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
   
 ## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
-Concepts are System, Cell of space, Time of System, Local Time, and Synchronization (fig.1). 
+In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is synchronization rule of  time of mechanical system and local time of cells.  
+Main concepts are Mechanical system, Cell of space, Moment of time, Local Time, and Synchronization (fig.1). 
   
 ![Fig1](Fig1-2-1.png)
 Figure 1. Ontology of Special Relativity Theory   
   
 Also, see  
 [Full diagram](Fig1-2-1a.png)  
-[Pseudo code C++](http://example.net/)  
+[Pseudo code C++](cpp.md)  
 
 ## 2. Realization of use case "Run"
 Use case "Run" realization is depicted in Fig.2.  
@@ -18,14 +19,12 @@ Use case "Run" realization is depicted in Fig.2.
 Figure 2. Communication diagram of operation "Run"  
 
 ## 3. Spacetime model  
-Предположение 1. Синхронизация выполняется методом «ожидания»
-We propose a following model of Minkowski spacetime.  
-"Composite" class is a model of a physical spacetime We will view one-dimension space. Physical space is linked list, where "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space. 
-Attribute "temp" is one-direction linked list and it is a model of physical time.
-Class "ListItem" is model of a physical space cell. The cell has a local time; it is "temp" attribute. The time of "Composite" class and the time "ListItem" class must be synchronization.
-Procedure “Synchronization”  
+We propose a following model of Minkowski spacetime (Fig.3).  
+"Composite" class is a model of a physical spacetime. We will view one-dimension space. Physical space is linked list, where lst attribute is base of space (In general case, "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space). Attribute "tmp" is one-direction linked list and it is a model of physical time. Attribute "tmp" is instance of class Temp.  
+Class "ListItem" is model of a physical space cell. The cell has a local time; it is "tmp" attribute.  
+The time of "Composite" class and the time "ListItem" class must be synchronization.   
 ![Fig3](Fig1-2-3.png)
-Figure 3. Time synchronisation in cells of space
+Figure 3. Minkowski spacetime model
 
 The synchronization mechanism is a following process. Operation "Run" of class Composite has cycle by linked list "temp". For each t node of linked list (system tick) sended message runItem(t) to all cells of space (Fig.2). 
 ![Fig4](Fig1-2-4.png)
