@@ -27,7 +27,7 @@ The time of "Composite" class and the time "ListItem" class must be synchronizat
 ![Fig3](Fig1-2-3.png)
 Figure 3. Minkowski spacetime model
 
-The synchronization mechanism is a following process. Operation "Run" of class Composite has cycle by linked list "temp". For each t node of linked list (system tick) sended message runItem(t) to all cells of space (Fig.2). 
+The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node t of linked list "tmp" sended message runItem(t) to all cells of space (Fig.4). 
 ![Fig4](Fig1-2-4.png)
 Figure 4. 	Communication process of synchronization
 
