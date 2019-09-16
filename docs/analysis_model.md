@@ -27,23 +27,24 @@ The time of "Composite" class and the time "ListItem" class must be synchronizat
 ![Fig3](Fig1-2-3.png)
 Figure 3. Minkowski spacetime model
 
-The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node t of linked list "tmp" sended message runItem(t) to all cells of space (Fig.4). 
+The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node tt of linked list "tmp" sended message runItem(tt) to all cells of space (Fig.4). 
 ![Fig4](Fig1-2-4.png)
 Figure 4. 	Communication process of synchronization
 
 
-In operation runItem(t), t compared with attribute "marked" of current node of "temp" (lt on Fig2). If t equals "marked" then linked list "temp" of ListItem shift to next node (operation nextTemp() on Fig2). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make tick (operation Run() on Fig2).
+In procedure runItem(tt), tt compared with attribute "marked" of current node of "tmp" (lt on Fig.4). If tt equals "marked" then linked list "tmp"  shift to next node (operation nextTemp() on Fig.4). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make shift (operation Run() on Fig.4).
 
 	void ItemRun(Temp *tt, int tGlob, Carrier *c) {
 		if (tmp != NULL) {
-			if (tt == tmp->marked) {
-				if (contents != NULL) {
-					contents->Run();   // exist of particle
-					observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);  						contents->doImpact(c); // interaction
-					observer.detect(tGlob,c); // observe act of interaction
-				};
-			tmp = tmp->next;  // time run in cell
+		  if (tt == tmp->marked) {
+		    if (contents != NULL) {// here particle
+			contents->Run();   
+			observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
+			contents->doImpact(c); // interaction
+			observer.detect(tGlob,c); // observe act of interaction
 			};
+		  tmp = tmp->next;  // time run in cell
+		  };
 		};
     }
     
