@@ -72,7 +72,7 @@ while (tt != NULL) {
 tt = tt->next;
 };
 ```  	
-i.e. used formula is  \\( t' = \sqrt{t^2 + x^2}  \\).  
+i.e. used formula is  \\( ct = \sqrt{s^2 + x^2}  \\).  
 The operation appTemp(st) create new node of type Temp in cell and mark it as *st* (see Fig.5).
 ![Fig5](Fig1-2-5.png)  
 Figure 5. 	Example of linked list tmp for cells 20 and 80  
