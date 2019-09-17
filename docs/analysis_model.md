@@ -53,17 +53,17 @@ Both Newton's time and time of special relativity has same synchronization mecha
 Time of special relativity has following rule. We take more details grid. Let *size* be resolution of one time tact then  *k x size* is length list *tmp*. Each *size* node *tmp* is marked as lb = true; it is "bearing" node.   
 Further, cells mark as
 ```  
-Temp *tt; ListItem *ll; int s,t1; Temp *st;
+Temp *tt; ListItem *ll; int s,t,x; Temp *st;
 tt = tmp;
 while (tt != NULL) {
   if (tt->lb) { // It is "bearing" moment of time
     ll = lst;
     while (ll != NULL) {
-      s = tt->t;
-      t1 = sqrt(s*s +ll->x*ll->x); //use ceil,floor
-      if (t1<size) {
+      s = tt->t; x = ll->x;
+      t = sqrt(s*s + x*x); //use ceil,floor
+      if (t<size) {
         st = tmp;
-	for (int i = 0; i < t1; i++) st = st->next;
+	for (int i = 0; i < t; i++) st = st->next;
 	ll->appTemp(st);
       };
       ll = ll->right;
