@@ -104,14 +104,13 @@ Figure 7. 	The measurement
   
 Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
   
-Main measurement is account. Absolute error of measurement then is 0.5.  
+Main measurement is count. Absolute error of measurement then is 0.5.  
 Result of measurement is called "natural" units, SI and SGS is called "standard" units.  
-Let \\(\tau\\) be the time in natural units.  
+Let \\(\tau,\rho, \mu \\) be the time, distance, and mass in natural units.  
 Let \\(\rho\\) be the distance in natural units.   
 Let \\(\mu\\) be the mass in natural units.   
-We will use International System of Units (SI) ([m], [s], [kg]).   
-Time we will measurement in unit 1[m]/c[m/s] (metr of light time, i.e. lm, 3.335640 10-9 s, 3.3 nanos), where c is the speed of light.  
-Then time \\(t\\) and coordinate \\(x\\) in standard units calculate as  
+We will use International System of Units (SI) ([m], [s], [kg]). Time we will measurement in unit 1[m]/c[m/s] (metr of light time, i.e. lm, 3.335640 10-9 s, 3.3 nanos), where c is the speed of light.  
+Then time \\(t\\) and distance \\(x\\) in standard units calculate as  
    
 $$
 \begin{align*}
