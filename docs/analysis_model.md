@@ -98,9 +98,31 @@ We define the unprimed system foolow.
   
 We define time of particle (the primed system) as variable "tick" class Component.  
   
-Main measurement is account. Absolute error of measurement then is 0.5.  
 Operation of measurement is depicted in Fig.7  
 ![Fig7](Fig1-2-7.png)  
 Figure 7. 	The measurement  
   
 Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
+  
+Main measurement is account. Absolute error of measurement then is 0.5.  
+Result of measurement is called "natural" units, SI and SGS is called "standard" units.
+Let \\(\tau\\) be the time in natural units.  
+Let \\(\rho\\) be the distance in natural units.   
+Let \\(\mu\\) be the mass in natural units.   
+We will use International System of Units (SI) ([m], [s], [kg]).   
+Time we will measurement in unit 1[m]/c[m/s] (metr of light time, i.e. lm, 3.335640 10-9 s, 3.3 nanos), where c is the speed of light. 
+Then time \\(t\\) and coordinate \\(x\\) calculate as  
+  
+$$
+\begin{align*}
+t = \frac{\tau}{\nu_{t}} \\
+x = \frac{\rho}{\nu_{x}} \\
+m = \frac{\mu}{\nu_{m}} \\
+\end{align*}
+$$  
+  
+where \\(\nu_{t}\\) is the coefficient of conversion time,  
+\\(\nu_{x}\\) is the coefficient of conversion distance, 
+\\(\nu_{m}\\) is the coefficient of conversion mass. 
+Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).    
+ 
