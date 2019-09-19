@@ -114,7 +114,6 @@ Then time \\(t\\) and distance \\(d\\) in standard units calculate as
 $$
 \begin{align*}
 t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\  
-\beta = \frac{v}{c} = \frac{\rho}{\tau_{R}} \\  
 \end{align*}
 $$  
    
@@ -127,6 +126,7 @@ $$
 \beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} \\  
 \end{align*}
 $$   
+  
 where k is count tackts.  
 Dynamic.  
 Let \\(\iota_{i} \\) be count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
