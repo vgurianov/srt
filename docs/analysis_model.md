@@ -119,8 +119,15 @@ t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\
 $$  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
-Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).   
+Further, we will assume that \\(\nu_{t} = \tau_{R} \\) and \\(\nu_{x} = \nu_{t}\\).   
+Velocity measure in tackts:
   
+$$
+\begin{align*}
+\beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} \\  
+\end{align*}
+$$   
+where k is count tackts.  
 Dynamic.  
 Let \\(\iota_{i} \\) be count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
 Force *f* is  
