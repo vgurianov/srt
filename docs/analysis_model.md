@@ -122,20 +122,20 @@ where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,di
 Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).   
   
 Dynamic.  
-Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
-From  
+Let \\(\iota_{i} \\) be count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
+Force *f* is  
   
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \frac{1}{\tau_{R}} \iota_{i} \\
 \end{align*} 
 $$  
   
-, i.e.  
+, elementary work *A* is   
   
 $$
 \begin{align*} 
-p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
+\Delta A = f\Delta t \\  
 \end{align*} 
 $$  
   
