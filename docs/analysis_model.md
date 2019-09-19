@@ -107,17 +107,36 @@ Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() writ
 Main measurement is count. Absolute error of measurement then is 0.5.  
 Result of measurement is called "natural" units, SI and SGS is called "standard" units.  
 Let \\(\tau,\rho, \mu \\) be the time, distance, and mass in natural units.  
+Let \\(\tau_{R} \\) be the resolution tackt of time.  
 We will use International System of Units (SI) ([m], [s], [kg]). Time we will measurement in unit 1[m]/c[m/s] (metr of light time, i.e. lm, 3.335640 10-9 s, 3.3 nanos), where c is the speed of light.  
-Then time \\(t\\) and distance \\(x\\) in standard units calculate as  
+Then time \\(t\\) and distance \\(d\\) in standard units calculate as  
    
 $$
 \begin{align*}
-t = \frac{\tau}{\nu_{t}} \\
-x = \frac{\rho}{\nu_{x}} \\
-m = \frac{\mu}{\nu_{m}} \\
+t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\  
+\beta = \frac{v}{c} = \frac{\rho}{\tau_{R}} \\  
 \end{align*}
 $$  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
-Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).    
+Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).   
+  
+Dynamic.  
+Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
+From  
+  
+$$
+\begin{align*}  
+p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+\end{align*} 
+$$  
+  
+, i.e.  
+  
+$$
+\begin{align*} 
+p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
+\end{align*} 
+$$  
+  
  
