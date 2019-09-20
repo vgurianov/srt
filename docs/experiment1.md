@@ -3,11 +3,12 @@ Modul mms.experiment1 is simulate kinematic relitivistic effects.
   
 ## 1. Experiment description  
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
- Time we measure in metr of light time, i.e. \\(3.335640 \times 10^{-9}\\) seconds or 33 nanoseconds.  
- \\(lifetime =  \\(2.6 \times 10^{-8} seconds or  7.8  metres of light time  \\)  
+ Time we measure in metre of light time, i.e. \\(3.335640 \times 10^{-9}\\) seconds.  
+ Lifetime is \\( \tau_{0} =  2.6 \times 10^{-8} \\) seconds or  7.8  metres of light time.     
  \\(\beta = v/c = 0.5  \\)  
- \\(time dilation =  \frac{lifetime}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
-  \\(distance =  c \times \beta \times time dilation  = 4.5 metres  \\)  
+ Time dilation \\( \tau =  \frac{\tau_{0}}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
+ Distance \\( d =  c \times \beta \times \tau_{0}  = 4.5 metres  \\),  
+ i.e. we consider grid 10 x 10.
   
 Parameters of experiment:  
 countTick= 7, sizeTick= 10  
