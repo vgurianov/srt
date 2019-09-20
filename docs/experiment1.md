@@ -7,8 +7,8 @@ Estimated calculation for \\(\pi ^+\\) meson (pion):
  Lifetime is \\( \tau_{0} =  2.6 \times 10^{-8} \\) seconds or  7.8  metres of light time.     
  \\(\beta = v/c = 0.5  \\)  
  Time dilation \\( \tau =  \frac{\tau_{0}}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
- Distance \\( d =  c \times \beta \times \tau_{0}  = 4.5 metres  \\),  
- i.e. we consider grid 10 x 10.
+ Distance \\( d =  c \times \beta \times \tau_{0}  = 4.5 \\) metres,  
+ i.e. we must consider grid 10 x 10.
   
 Parameters of experiment:  
 countTick= 7, sizeTick= 10  
