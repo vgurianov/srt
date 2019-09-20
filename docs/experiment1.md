@@ -5,8 +5,8 @@ Modul mms.experiment1 is simulate kinematic relitivistic effects.
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
  Time we measure in metre of light time, i.e. \\(3.335640 \times 10^{-9}\\) seconds.  
  Lifetime is \\( \tau_{0} =  2.6 \times 10^{-8} \\) seconds or  7.8  metres of light time.     
- \\(\beta = v/c = 0.5  \\)  
- Time dilation \\( \tau =  \frac{\tau_{0}}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
+ \\(\beta = v/c = 0.5  \\).  
+ Moving pion has a longer decay time \\( \tau =  \frac{\tau_{0}}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time.  
  Distance \\( d =  c \times \beta \times \tau_{0}  = 4.5 \\) metres,  
  i.e. we must consider grid 10 x 10.
   
