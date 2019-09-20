@@ -2,11 +2,16 @@
 Modul mms.experiment1 is simulate kinematic relitivistic effects.
   
 ## 1. Experiment description  
-Table 1. Measure result for v = 0.4  
-countTick= 7 sizeTick= 10  
-Particle_velosety= 5 ,i.e= 0.5 [m]/[m]  
+Estimated calculation for \\(\pi ^+\\) meson (pion):  
+ lifetime =  2.6e-08 seconds or  7.8  metres of light time  
+ \\(\beta \\)  = v/c =  0.5  
+ time dilation =  3.0e-08  seconds or  9.0  metres of light time  
+ distance =  4.5 metres  
+  
+Parameters of experiment:  
+countTick= 7 sizeTick= 10
+Particle_velosety= 5 ,i.e \\(\beta \\) = v/c = 0.5  
 Time count = 70  
-Particle velosety = 5  
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
 mass = 1 , lightVel = 1.0  
   
@@ -34,9 +39,9 @@ This result is depictid on fig.1
 
 
 ![Fig1](Fig3-1-1.png)  
-Figure 1. A Minkowski spacetime diagram 
+Figure 1. A Minkowski spacetime diagram for \\(\beta \\)  = v/c =  0.5   
 
-We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.
+We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.  
   
 We processing of data and calculate of incline k (green line)  
   
@@ -52,8 +57,10 @@ k_ar = 2.23 +/- 0.017
 Experimental error of measurement t is  0.05
 ```  
 
-In case of small velocity, graph depicted in Fig.6
-
+In case of small velocity, plot depicted in Fig.2
+![Fig2](Fig3-1-2.png)  
+Figure 1. A Minkowski spacetime diagram for \\(\beta \\)  = v/c =  0.2   
+  
 ## 3. Description of experiment3 modul
   
 ### Class "freeMotion"  
