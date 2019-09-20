@@ -3,9 +3,9 @@ Modul mms.experiment1 is simulate kinematic relitivistic effects.
   
 ## 1. Experiment description  
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
- lifetime =  \\(2.6E ^-08\\) seconds or  7.8  metres of light time  
+ lifetime =  \\(2.6 \times 10^{-8}\\) seconds or  7.8  metres of light time  
  \\(\beta = v/c = 0.5  \\)
- time dilation =  \\(3.0E ^-08\\)  seconds or  9.0  metres of light time  
+ time dilation =  \\(3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
  distance =  4.5 metres  
   
 Parameters of experiment:  
@@ -34,12 +34,12 @@ Trajectory of particle and time particle
 +----+-----+-----+------+------+----+
 ```
   
-Column Tw is number of tact of model time. Column ta is analytic calculation to formula \\(ta = \sqrt(s^2+x^2)\\) . Column x - coordinate of particle in moment t. Column tp is time of particle.  
+Column Tw is number of tact of model time. Column ta is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . Column x - coordinate of particle in moment t. Column tp is time of particle.  
 This result is depictid on Fig.1
 
 
 ![Fig1](Fig3-1-1.png)  
-Figure 1. A Minkowski spacetime diagram for \\(\beta \\)  =  0.5   
+Figure 1. A Minkowski spacetime diagram for \\(\beta  =  0.5\\)    
 
 We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.  
   
@@ -59,7 +59,7 @@ Experimental error of measurement t is  0.05
 
 In case of small velocity, plot depicted in Fig.2
 ![Fig2](Fig3-1-2.png)  
-Figure 1. A Minkowski spacetime diagram for \\(\beta \\)  =  0.2   
+Figure 1. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
   
 ## 3. Description of experiment3 modul
   
