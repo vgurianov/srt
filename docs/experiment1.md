@@ -4,8 +4,8 @@ Modul mms.experiment1 is simulate kinematic relitivistic effects.
 ## 1. Experiment description  
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
  lifetime =  \\(2.6 \times 10^{-8}\\) seconds or  7.8  metres of light time  
- \\(\beta = v/c = 0.5  \\)
- time dilation =  \\(3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
+ \\(\beta = v/c = 0.5  \\)  
+ time dilation =  \\(\frac{lifetime}{\sqrt{1 -\beta ^2 }}  = 3.0 \times 10 ^{-8}\\)  seconds or  9.0  metres of light time  
  distance =  4.5 metres  
   
 Parameters of experiment:  
@@ -59,7 +59,7 @@ Experimental error of measurement t is  0.05
 
 In case of small velocity, plot depicted in Fig.2
 ![Fig2](Fig3-1-2.png)  
-Figure 1. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
+Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
   
 ## 3. Description of experiment3 modul
   
