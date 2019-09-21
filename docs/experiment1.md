@@ -44,7 +44,7 @@ $$
 \begin{align*} 
 \epsilon =  \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 %
 \end{align*}  
-$$ 
+$$  
 It is column *err%*.  
   
 This result is depicted in Fig.1. Blue "+" is result of measurement. The green line is analytical value.   
