@@ -134,6 +134,8 @@ The standard deviation is
 \\( sk_{ar} = \sqrt{\operatorname {Var}(k_{ar}) / (n-1)} , where \operatorname {Var}(k_{ar})  is  variance. \\)
 The confidence interval is  
 \\( dk_{ar} = sk_{ar}/\sqrt{n} \\)  
+  
+Then  
 \\( k_{ar} = k_{ar} \pm dk_{ar} \\)  
 
 ### Class "originalPrint"
