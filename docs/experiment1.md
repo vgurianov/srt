@@ -26,8 +26,8 @@ Trajectory of particle and time particle
 +----+-----+-----+------+------+----+
 | Tw |  x  |  t  |  ta  | err% | tp |
 +----+-----+-----+------+------+----+
-| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0  |
-| 1  | 0.5 | 1.2 | 1.12 | 7.33 | 1  |
+| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0  |
+| 1  | 0.5 | 1.2 | 1.12 | 7.33 | 1.0  |
 | 2  | 1.0 | 2.3 | 2.24 | 2.86 | 2  |
 | 3  | 1.5 | 3.4 | 3.35 | 1.37 | 3  |
 | 4  | 2.0 | 4.5 | 4.47 | 0.62 | 4  |
@@ -36,15 +36,23 @@ Trajectory of particle and time particle
 +----+-----+-----+------+------+----+
 ```
   
-Column Tw is number of tact of model time. Column ta is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . Column x - coordinate of particle in moment t. Column tp is time of particle.  
+Column *Tw* is number of tact of model time.  Column x - coordinate of particle in moment *Tw*. Column *tp* is time of particle.  We observe time dilation. In particle, elapse *tp* units of time but in rest frame of reference register *t* units of time.  
+Column *ta* is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . 
+Value \\(t_{a}\\) compare with t  
+  
+$$
+\begin{align*} 
+\epsilon =  \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 %
+\end{align*}  
+$$ 
+It is column *err%*.  
+  
 This result is depictid on Fig.1
 
 
 ![Fig1](Fig3-1-1.png)  
 Figure 1. A Minkowski spacetime diagram for \\(\beta  =  0.5\\)    
 
-We observe time dilation. In particle, elapse tp units of time but in motionless frame of reference register tobs units of time.  
-  
 We processing of data and calculate of incline k (green line)  
   
 ```
