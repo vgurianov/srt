@@ -74,7 +74,8 @@ In case of small velocity, plot depicted in Fig.2.
 ![Fig2](Fig3-1-2.png)  
 Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
   
-## 3. Description of experiment3 modul
+  
+## 3. Description of experiment1 modul
   
 ### Class "freeMotion"  
 
@@ -125,15 +126,14 @@ i.e.
 \\( a_{an} = \sqrt{1+1/v^2} \\)  
   
 The experiment data processing is  
-\\( \Delta t = t_{i} - t_{i-4}  \\)  
-\\( \Delta x = x_{i} - x_{i-4}  \\)  
-\\( k_{i} = \Delta t/\Delta x  \\)  
-\\( k_{ar} = \frac{1}{n}\sum_{i=0}^{n} k_i \\)  
+\\( \Delta t_{i} = t_{i} - t_{i-4}  \\)  
+\\( \Delta x_{i} = x_{i} - x_{i-4}  \\)  
+\\( k_{ar} = \frac{1}{n}\sum_{i=4}^{n} \Delta t_{i} / \Delta x_{i} \\)  
   
 The standard deviation is  
 \\( sk_{ar} = \sqrt{D/(n-1)} \\)  
 The confidence interval is  
-\\( dk_{ar} = sk_{ar}/\sqrt(n) \\)  
+\\( dk_{ar} = sk_{ar}/\sqrt{n} \\)  
 \\( k_{ar} = k_{ar} \pm dk_{ar} \\)  
 
 ### Class "originalPrint"
