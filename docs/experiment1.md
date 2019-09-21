@@ -38,13 +38,14 @@ Trajectory of particle and time particle
   
 Column *Tw* is number of tact of model time.  Column x - coordinate of particle in moment *Tw*. Column *tp* is time of particle.  We observe time dilation. In particle, elapse *tp* units of time but in rest frame of reference register *t* units of time.  
 Column *ta* is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . 
-Value \\(t_{a}\\) compare with t  
+Value *ta* compare with *t*  
   
 $$
 \begin{align*} 
-\epsilon =  \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 %
+\epsilon =  \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 % \\
 \end{align*}  
 $$  
+  
 It is column *err%*.  
   
 This result is depicted in Fig.1. Blue "+" is result of measurement. The green line is analytical value.   
@@ -56,15 +57,17 @@ Figure 1. A Minkowski spacetime diagram for \\(\beta  =  0.5\\)
 We processing of data and calculate of incline k (green line)  
   
 ```
-Analytical incline k_an= 2.24 ,1/v= 2.0
+Experimental error of measurement t is  0.05
 pair points method (d=4)
 0 20 45 2.25
 1 20 44 2.2
 2 20 45 2.25
 Point count = 3
-Measurement incline k_ar= 2.23 ,k_err%= 0.12
+Measurement incline k_ar= 2.23 
 k_ar = 2.23 +/- 0.017
-Experimental error of measurement t is  0.05
+
+Analytical incline k_an= 2.24, k_err%= 0.12  
+
 ```  
 
 In case of small velocity, plot depicted in Fig.2.
