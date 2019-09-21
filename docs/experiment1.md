@@ -47,7 +47,7 @@ $$
 $$ 
 It is column *err%*.  
   
-This result is depictid on Fig.1
+This result is depicted in Fig.1. Blue "+" is result of measurement. The green line is analytical value.   
 
 
 ![Fig1](Fig3-1-1.png)  
@@ -67,7 +67,7 @@ k_ar = 2.23 +/- 0.017
 Experimental error of measurement t is  0.05
 ```  
 
-In case of small velocity, plot depicted in Fig.2
+In case of small velocity, plot depicted in Fig.2.
 ![Fig2](Fig3-1-2.png)  
 Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
   
