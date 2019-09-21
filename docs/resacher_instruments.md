@@ -21,19 +21,20 @@ particleT | int | array of particle time
   
 ### Operations:  
 **def fixIt(self, tG, tt, xx, locT, prtT)**  
-Description: Operation of write data about time and location  
+Description: Operation of write data about time and location   
 Parameters:  
-
+  
 Name | Type | Description  
----- | ---- | ----------- 
-tG | int | moment of time in the rest frame
-tt | int | moment of local time of cell, refined time obtG
-xx | int | particle location
-locT | int | moment of local time of cell
-prtT | int | moment of particle time
-pulseT | int | count of interaction acts
-Return: None
-
+---- | ---- | -----------  
+tG | int | moment of time in the rest frame  
+tt | int | moment of local time of cell, refined time obtG  
+xx | int | particle location  
+locT | int | moment of local time of cell  
+prtT | int | moment of particle time  
+pulseT | int | count of interaction acts  
+  
+Returns: None  
+  
 **detect(self, tG, c)**  
 Description: Operation write data about intaraction  
 Parameters:
