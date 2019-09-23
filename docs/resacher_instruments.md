@@ -204,7 +204,7 @@ From
   
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}}  \sum_{i=0}^{tG} \iota_{i}
+p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2}  \sum_{i=0}^{tG} \iota_{i}
 \end{align*} 
 $$  
   
@@ -212,7 +212,7 @@ $$
   
 $$
 \begin{align*} 
-p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \iota_{i} \\  
+p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \iota_{i} \\  
 \end{align*} 
 $$  
   
@@ -269,7 +269,8 @@ From
   
 $$
 \begin{align*}  
-E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t = m_{0} c^2 + \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2}  \sum_{i=1}^{tG} \iota_{i} (\rho_{i} - \rho_{i-1})  \\
+E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t \\  
+
 \end{align*} 
 $$  
   
@@ -277,7 +278,7 @@ $$
   
 $$
 \begin{align*} 
-E_{i+1} = E_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}^2}{\nu_{x}^2} \iota_{i} (\rho_{i} - \rho_{i-1}) \\  
+E_{i+1} = E_{i} + f_{i} (\x_{i} - \x_{i-1}) \\  
 \end{align*} 
 $$  
   
