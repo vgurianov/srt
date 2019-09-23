@@ -144,7 +144,7 @@ We have
 $$
 \begin{align*}
 \iota / \mu &= j_{i} - j_{i-1} \\  
-&= \Delta \ro_{i} - \Delta \ro_{i-1} \\  
+&= \Delta \rho_{i} - \Delta \rho_{i-1} \\  
 &= (\beta_{i} -\beta_{i-1}) \times \nu_{R} \\  
 \end{align*}  
 $$  
