@@ -139,15 +139,16 @@ f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
 $$  
   
 Formula output  
-We have 
+We have  
+  
 $$
 \begin{align*}
-\iota / \mu = &= j_{i} - j_{i-1} \\  
+\iota / \mu &= j_{i} - j_{i-1} \\  
 &= \Delta \ro_{i} - \Delta \ro_{i-1} \\  
 &= (\beta_{i} -\beta_{i-1}) \times \nu_{R} \\  
-\end{align*}
+\end{align*}  
 $$  
- 
+   
 Finally, we obtain 
   
   
