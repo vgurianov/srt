@@ -7,6 +7,7 @@ We consider motion of charge *q* in constant electric field *E*. Motion equation
 \begin{equation}
     \frac{dp}{dt} = qE  
 \end{equation}
+  
 where *p* - particle momentum, *qE* - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
 If t > z = mc/qE then appear relativistic effects.  
@@ -18,16 +19,22 @@ We find dependence
 - particle energy E from momentum p.  
 
 Estimated calculation for electron:  
-m=  9.1e-31  kg, q=  1.602e-19 C  
+m=  \\(9.1 \times 10^-31\\)  kg, q=  \\(1.602 \times 10^-19\\) C  
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
 nu_m =  1.0989010989e+30 nu_t =  2997925000.0  
-f= 2.72811175e-23  N, E= 0.000170294116729  V/m, z =  10.0 s,  
+f= 2.728e-23  N, E= 0.0001703  V/m, z =  10.0 s,  
 wher z = mc/qE is time of relativistic effects  
-d =  4.14213562373  m  
- must grid  10.0 x 4.14213562373  s x m  
+d =  4.14  m  
+ must grid  10.0 x 4.14  s x m  
   
-In c = 1, m = 1 units system,  f = 0.1, \\(\nu_{t} = 10, \nu_{x} = 10\\)  
+In c = 1, m = 1 units system, 
+  
+\begin{equation}
+    \frac{dp}{dt} = \frac{qE}{mc}  
+\end{equation}
+  
+and f = 0.1, \\(\nu_{t} = 10, \nu_{x} = 10\\)  
   
 Parameters of computing is m = 1 (rest mass particle), qE = 0.1  
 Variable values:  
