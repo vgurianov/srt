@@ -134,16 +134,26 @@ Force *f* is
   
 $$
 \begin{align*}  
-f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{x}} \frac{1}{\tau_{R}} \iota_{i} \\
+f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
 \end{align*} 
 $$  
   
-, elementary work *A* is   
+Formula output  
+We have 
+$$
+\begin{align*}
+\iota / \mu = &= j_{i} - j_{i-1} \\  
+&= \Delta \ro_{i} - \Delta \ro_{i-1} \\  
+&= (\beta_{i} -\beta_{i-1}) \times \nu_{R} \\  
+\end{align*}
+$$  
+ 
+Finally, we obtain 
+  
   
 $$
-\begin{align*} 
-\Delta A = f\Delta t \\  
+\begin{align*}  
+\frac{f}{m} \times \frac{\nu_{R}}{\nu_{t}} \times \nu_{R}  = \iota / \mu \\
 \end{align*} 
 $$  
   
- 
