@@ -154,7 +154,7 @@ Therefore, we have
   
 $$
 \begin{align*}
-\Delta t = frac{\tau_{R}}{\nu_{t}} \\  
+\Delta t = \frac{\tau_{R}}{\nu_{t}} \\  
 \end{align*},  
 $$  
   
