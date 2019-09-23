@@ -145,11 +145,11 @@ $$
 \iota / \mu &= j_{i} - j_{i-1} \\  
 &= \Delta \rho_{i} - \Delta \rho_{i-1} \\  
 &= (\beta_{i} -\beta_{i-1}) \times \tau_{R} \\  
+&= \frac{f}{m} \Delta t \times \tau_{R} \\  
 \end{align*},  
 $$  
   
-where \\(\mu \\) is list length *Skip*,  
-*j* is list length *Jump*.  
+where \\(\mu \\) is list length *Skip*, *j* is list length *Jump*.  
 Therefore, we have  
   
 $$
