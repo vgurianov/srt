@@ -127,22 +127,22 @@ $$
   
 where k is count tackts.  
 Dynamic.  
-Let \\(\iota \\) be count of interaction acts on tackt *i* (interaction intensity).  
+Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction intensity).  
 Force *f* is  
   
 $$
 \begin{align*}  
-f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\nu_{R}} \iota_{i} \\
+f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
 \end{align*} 
 $$  
   
-Formula output  
+Formula output.  
 Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
   
 $$
 \begin{align*}
-\iota / \mu &= j_{i} - j_{i-1} \\  
+\iota_{i} / \mu &= j_{i} - j_{i-1} \\  
 &= \Delta \rho_{i} - \Delta \rho_{i-1} \\  
 &= (\beta_{i} -\beta_{i-1}) \times \tau_{R} \\  
 &= \frac{f}{m} \Delta t \times \tau_{R} \\  
