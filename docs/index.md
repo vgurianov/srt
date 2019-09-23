@@ -12,8 +12,7 @@ Use case model is function requirements to software.
 1.2. Analysis Model  
 Analysis model is simulation model. It is ontology of mechanical motion. This semantic net define follow concept:  
 		1.1. Synchronization (Minkowsky metric)  
-		1.2. Motion  
-		1.3. Interaction  
+		1.2. Motion and Interaction  
 		1.4. Measurements  
 We present class and communication diagrams, and model in pseudo-code C++  
 
@@ -40,6 +39,5 @@ It is output data in plot forms
 3.1. Getting Started  
 Install and execute.  
 3.2. The time dilation (experiment1 module)  
-3.3. The Lorentz Contraction  
-3.4. Velosety versus momentum (experiment2 module) and Energy versus momentum (experiment2 module)  
+3.3. Velosety versus momentum (experiment2 module) and Energy versus momentum (experiment2 module)  
 
