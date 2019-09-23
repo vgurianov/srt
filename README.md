@@ -9,4 +9,4 @@ However, in scientific research, preference is given to numerical modeling. This
 If we will use simulation in nanotechnology or molecular biology then we must be able to simulate both relativity and quantum effects.  
 Here, we discuss modeling of effects of the special relativity theory.
 We introduce MMS, a python package providing discret spacetime model for special reletivety theory.  
-This all numerical results is result of measurement on object structurs.  
+It is non-numeric model. All numerical results is result of measurement on object structurs.  
