@@ -23,17 +23,17 @@ In Table 1 is depicted result of simulation.
   
 ```
 Trajectory of particle and time particle
-+----+-----+-----+------+------+----+
-| Tw |  x  |  t  |  ta  | err% | tp |
-+----+-----+-----+------+------+----+
-| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0  |
-| 1  | 0.5 | 1.2 | 1.12 | 7.33 | 1.0  |
-| 2  | 1.0 | 2.3 | 2.24 | 2.86 | 2  |
-| 3  | 1.5 | 3.4 | 3.35 | 1.37 | 3  |
-| 4  | 2.0 | 4.5 | 4.47 | 0.62 | 4  |
-| 5  | 2.5 | 5.6 | 5.59 | 0.18 | 5  |
-| 6  | 3.0 | 6.8 | 6.71 | 1.37 | 6  |
-+----+-----+-----+------+------+----+
++----+-----+-----+------+------+-----+
+| Tw |  x  |  t  |  ta  | err% |  tp |
++----+-----+-----+------+------+-----+
+| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0 |
+| 1  | 0.2 | 1.1 | 1.02 | 7.86 | 1.0 |
+| 2  | 0.4 | 2.1 | 2.04 | 2.96 | 2.0 |
+| 3  | 0.6 | 3.1 | 3.06 | 1.33 | 3.0 |
+| 4  | 0.8 | 4.1 | 4.08 | 0.51 | 4.0 |
+| 5  | 1.0 | 5.1 | 5.1  | 0.02 | 5.0 |
+| 6  | 1.2 | 6.2 | 6.12 | 1.33 | 6.0 |
++----+-----+-----+------+------+-----+  
 ```
   
 Column *Tw* is number of tact of model time.  Column x - coordinate of particle in moment *Tw*. Column *tp* is time of particle.  We observe time dilation. In particle, elapse *tp* units of time but in rest frame of reference register *t* units of time.  
@@ -128,8 +128,9 @@ i.e.
 The experiment data processing is  
 \\( \Delta t_{i} = t_{i} - t_{i-4}  \\)  
 \\( \Delta x_{i} = x_{i} - x_{i-4}  \\)  
-\\( k_{ar} = \frac{1}{n}\sum_{i=4}^{n} \Delta t_{i} / \Delta x_{i} \\)  
-  
+\\( k_{ar} = \frac{1}{N}\sum_{i=4}^{n} \Delta t_{i} / \Delta x_{i} \\),  
+wher N is count of pairs.  
+
 The standard deviation is  
 \\( sk_{ar} = \sqrt{\operatorname {Var}(k_{ar}) / (N-1)} \\), where \\(\operatorname {Var}(k_{ar}) \\)  is  variance and *N* is count of pair. 
 The confidence interval is  
