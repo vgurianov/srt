@@ -134,7 +134,7 @@ Force *f* is
   
 $$
 \begin{align*}  
-f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
+f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\nu_{R}} \iota_{i} \\
 \end{align*} 
 $$  
   
