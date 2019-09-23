@@ -108,7 +108,6 @@ Main measurement is count. Absolute error of measurement then is 0.5.
 Result of measurement is called "natural" units, SI and SGS is called "standard" units.  
 Let \\(\tau,\rho, \mu \\) be the time, distance, and mass in natural units.  
 Let \\(\tau_{R} \\) be the resolution tackt of time.  
-We will use International System of Units (SI) ([m], [s], [kg]). Time we will measurement in unit 1/c (metr of light time, i.e. \\(3.335640 \times 10^{-9}\\)seconds or 33 nanoseconds), where *c* is the speed of light.  
 Then time \\(t\\) and distance \\(d\\) in standard units calculate as  
    
 $$
@@ -118,7 +117,6 @@ t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\
 $$  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
-Further, we will assume that \\(\nu_{t} = \tau_{R} \\) and \\(\nu_{x} = \nu_{t}\\).   
 Velocity measure in tackts:
   
 $$
@@ -129,7 +127,7 @@ $$
   
 where k is count tackts.  
 Dynamic.  
-Let \\(\iota_{i} \\) be count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
+Let \\(\iota \\) be count of interaction acts on tackt *i* (interaction intensity).  
 Force *f* is  
   
 $$
@@ -139,22 +137,25 @@ f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\nu_{R}} \frac{1}{\nu_{R}} \iota_{i} \\
 $$  
   
 Formula output  
+Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
   
 $$
 \begin{align*}
 \iota / \mu &= j_{i} - j_{i-1} \\  
 &= \Delta \rho_{i} - \Delta \rho_{i-1} \\  
-&= (\beta_{i} -\beta_{i-1}) \times \nu_{R} \\  
-\end{align*}  
+&= (\beta_{i} -\beta_{i-1}) \times \tau_{R} \\  
+\end{align*},  
 $$  
-   
-Finally, we obtain 
   
+where \\(\mu \\) is list length *Skip*,  
+j is list length *Jump*.  
+  
+Finally, we obtain 
   
 $$
 \begin{align*}  
-\frac{f}{m} \times \frac{\nu_{R}}{\nu_{t}} \times \nu_{R}  = \iota / \mu \\
+\frac{f}{m} \times \frac{\tau_{R}}{\nu_{t}} \times \tau_{R}  = \iota / \mu \\
 \end{align*} 
 $$  
   
