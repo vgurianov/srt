@@ -9,7 +9,7 @@ We consider motion of charge *q* in constant electric field *E*. Motion equation
 \end{equation}
 where *p* - particle momentum, *qE* - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
-Reference: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
+References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 We find dependence  
 - particle coordinate x from time t
@@ -17,18 +17,18 @@ We find dependence
 - particle energy E from momentum p.  
 
 Estimated calculation for electron:  
-m=  9.1e-31  kg, e=  1.602e-19 C  
+m=  9.1e-31  kg, q=  1.602e-19 C  
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
 nu_m =  1.0989010989e+30 nu_t =  2997925000.0  
-f= 2.72811175e-23  N, E= 0.000170294116729  V/m, z =  10.0 s,
-wher z = mc/eE is time of relativistic effects  
+f= 2.72811175e-23  N, E= 0.000170294116729  V/m, z =  10.0 s,  
+wher z = mc/qE is time of relativistic effects  
 d =  4.14213562373  m  
  must grid  10.0 x 4.14213562373  s x m  
   
 In c = 1, m = 1 units system,  \\(f = 0.1,\nu_{t} = 10, \nu_{x} = 10\\)  
   
-Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1  
+Parameters of computing is m = 1 (rest mass particle), qE = 0.1  
 Variable values:  
 countTick= 8, sizeTick= 10  
 Particle velosety = 0  (initial velocity)  
@@ -44,19 +44,19 @@ With this resolution, you can perform 8 clock cycles of the system (then an erro
 The results experiment are shown in Table 1. It is trajectory of particle. 
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
-+----+-----+-----+------+------+------+------+-----+------+
-| Tw |  t  |  x  |  xa  |  xe  |  p   |  pa  |  v  |  va  |
-+----+-----+-----+------+------+------+------+-----+------+
-| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0  | 0.0  | 0.0 | 0.0  |
-| 1  | 1.1 | 0.1 | 0.06 | 0.0  | 0.09 | 0.11 | 0.0 | 0.11 |
-| 2  | 2.1 | 0.3 | 0.22 | 0.11 | 0.19 | 0.21 | 0.0 | 0.21 |
-| 3  | 3.1 | 0.6 | 0.47 | 0.31 | 0.29 | 0.31 | 0.0 | 0.3  |
-| 4  | 4.2 | 1.0 | 0.85 | 0.64 | 0.38 | 0.42 | 0.0 | 0.39 |
-| 5  | 5.3 | 1.5 | 1.32 | 1.07 | 0.47 | 0.53 | 0.0 | 0.47 |
-| 6  | 6.4 | 2.1 | 1.87 | 1.58 | 0.56 | 0.64 | 1.0 | 0.54 |
-| 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.65 | 0.76 | 1.0 | 0.61 |
-| 8  | 8.8 | 3.6 | 3.32 | 2.95 | 0.73 | 0.88 | 1.0 | 0.66 |
-+----+-----+-----+------+------+------+------+-----+------+
++----+-----+-----+------+------+-----+------+-----+------+
+| Tw |  t  |  x  |  xa  |  xe  |  p  |  pa  |  v  |  va  |
++----+-----+-----+------+------+-----+------+-----+------+
+| 0  | 0.0 | 0.0 | 0.0  | 0.0  | 0.0 | 0.0  | 0.0 | 0.0  |
+| 1  | 1.1 | 0.1 | 0.06 | 0.0  | 0.1 | 0.11 | 0.0 | 0.11 |
+| 2  | 2.1 | 0.3 | 0.22 | 0.11 | 0.2 | 0.21 | 0.0 | 0.21 |
+| 3  | 3.1 | 0.6 | 0.47 | 0.31 | 0.3 | 0.31 | 0.0 | 0.3  |
+| 4  | 4.2 | 1.0 | 0.85 | 0.64 | 0.4 | 0.42 | 0.0 | 0.39 |
+| 5  | 5.3 | 1.5 | 1.32 | 1.07 | 0.5 | 0.53 | 0.0 | 0.47 |
+| 6  | 6.4 | 2.1 | 1.87 | 1.58 | 0.6 | 0.64 | 1.0 | 0.54 |
+| 7  | 7.6 | 2.8 | 2.56 | 2.23 | 0.7 | 0.76 | 1.0 | 0.61 |
+| 8  | 8.8 | 3.6 | 3.32 | 2.95 | 0.8 | 0.88 | 1.0 | 0.66 |
++----+-----+-----+------+------+-----+------+-----+------+
 ```  
 Values t,x,p, and v are measurement data, values xa, pa, va are analitical solution (see class "originalToolkit"), xe - numerical solution.  
 Following is plot of trajectory (Fig.1).
@@ -66,19 +66,19 @@ Figure 1. Motion plot
 The data are presented so that speed and energy can be considered as functions of the momentum.  
 ```  
 Velocity end energy of particle as function from momentum  
-+----+------+------+------+--------+------+------+--------+
-| Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
-+----+------+------+------+--------+------+------+--------+
-| 0  | 0.0  | 0.0  | 0.0  |  0.0   | 1.0  | 1.0  |  0.0   |
-| 1  | 0.09 | 0.09 | 0.09 |  0.41  | 1.01 | 1.0  |  0.41  |
-| 2  | 0.19 | 0.2  | 0.19 |  6.65  | 1.03 | 1.02 |  1.0   |
-| 3  | 0.29 | 0.3  | 0.28 |  7.4   | 1.06 | 1.04 |  1.61  |
-| 4  | 0.38 | 0.36 | 0.36 |  1.94  | 1.09 | 1.07 |  1.95  |
-| 5  | 0.47 | 0.45 | 0.43 |  6.36  | 1.13 | 1.11 |  2.4   |
-| 6  | 0.56 | 0.55 | 0.49 | 11.09  | 1.18 | 1.15 |  2.99  |
-| 7  | 0.65 | 0.58 | 0.54 |  7.39  | 1.23 | 1.19 |  3.34  |
-| 8  | 0.73 | 0.67 | 0.59 | 13.04  | 1.29 | 1.24 |  3.89  |
-+----+------+------+------+--------+------+------+--------+
++----+-----+------+------+--------+------+------+--------+
+| Tw |  p  |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
++----+-----+------+------+--------+------+------+--------+
+| 0  | 0.0 | 0.0  | 0.0  |  0.0   | 1.0  | 1.0  |  0.0   |
+| 1  | 0.1 | 0.09 | 0.1  |  8.64  | 1.01 | 1.0  |  0.41  |
+| 2  | 0.2 | 0.2  | 0.2  |  1.98  | 1.03 | 1.02 |  0.91  |
+| 3  | 0.3 | 0.3  | 0.29 |  4.4   | 1.06 | 1.04 |  1.44  |
+| 4  | 0.4 | 0.36 | 0.37 |  2.09  | 1.1  | 1.08 |  1.71  |
+| 5  | 0.5 | 0.45 | 0.45 |  1.64  | 1.14 | 1.12 |  2.05  |
+| 6  | 0.6 | 0.55 | 0.51 |  6.02  | 1.2  | 1.17 |  2.51  |
+| 7  | 0.7 | 0.58 | 0.57 |  1.72  | 1.25 | 1.22 |  2.71  |
+| 8  | 0.8 | 0.67 | 0.62 |  6.72  | 1.32 | 1.28 |  3.11  |
++----+-----+------+------+--------+------+------+--------+
 ```  
 The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in %.  
 Plot of the dependence of speed on momentum are shown in Fig. 2.  
@@ -156,7 +156,7 @@ v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\
 \end{align*} 
 $$  
   
-Reference: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
+References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 **def numSolution(self)**  
 Description: numerical solution of motion differential equation  (Euler method)   
