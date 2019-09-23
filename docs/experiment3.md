@@ -9,14 +9,26 @@ We consider motion of charge *q* in constant electric field *E*. Motion equation
 \end{equation}
 where *p* - particle momentum, *qE* - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
+Reference: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
+  
 We find dependence  
 - particle coordinate x from time t
 - particle velocity v from momentum p
 - particle energy E from momentum p.  
 
-The data of the experiments are given in SI (International System of Units). The unit of time is light meter, i.e 1 [lm] = 1 [m] / c [m/c], where c is speed of light, then *c* = 1. 
+Estimated calculation for electron:  
+m=  9.1e-31  kg, e=  1.602e-19 C  
+We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
+then  
+nu_m =  1.0989010989e+30 nu_t =  2997925000.0  
+f= 2.72811175e-23  N, E= 0.000170294116729  V/m, z =  10.0 s,
+wher z = mc/eE is time of relativistic effects  
+d =  4.14213562373  m  
+ must grid  10.0 x 4.14213562373  s x m  
   
-Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1 (i.e.\\(0.1c^2\\) [N])  
+In c = 1, m = 1 units system,  \\(f = 0.1,\nu_{t} = 10, \nu_{x} = 10\\)  
+  
+Parameters of computing is m = 1 kg (rest mass particle), qE = 0.1  
 Variable values:  
 countTick= 8, sizeTick= 10  
 Particle velosety = 0  (initial velocity)  
@@ -143,7 +155,9 @@ x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\
 v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
 \end{align*} 
 $$  
-
+  
+Reference: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
+  
 **def numSolution(self)**  
 Description: numerical solution of motion differential equation  (Euler method)   
 Parameters: None  
@@ -163,4 +177,5 @@ where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = mc^2\\).
   
 Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*.  
     
+
     
