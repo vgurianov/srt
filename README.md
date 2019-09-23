@@ -1,4 +1,4 @@
-# srt
+# MMS: The Minkowski Metric Simulation
 Ontology of Special Relativity Theory
 
 in progress ...  
