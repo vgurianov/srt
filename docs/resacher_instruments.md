@@ -278,7 +278,7 @@ $$
   
 $$
 \begin{align*} 
-E_{i+1} = E_{i} + f_{i} (\x_{i} - \x_{i-1}) \\  
+E_{i+1} = E_{i} + f_{i} (x_{i} - x_{i-1}) \\  
 \end{align*} 
 $$  
   
