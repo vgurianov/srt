@@ -5,10 +5,11 @@ Modul experiment3.py simulate dynamic relativistic effects.
 We consider motion of charge *q* in constant electric field *E*. Motion equation is  
 
 \begin{equation}
-    \frac{dp}{dt} = qE           (1)
+    \frac{dp}{dt} = qE  
 \end{equation}
 where *p* - particle momentum, *qE* - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
+If t > z = mc/qE then appear relativistic effects.  
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 We find dependence  
@@ -26,7 +27,7 @@ wher z = mc/qE is time of relativistic effects
 d =  4.14213562373  m  
  must grid  10.0 x 4.14213562373  s x m  
   
-In c = 1, m = 1 units system,  \\(f = 0.1,\nu_{t} = 10, \nu_{x} = 10\\)  
+In c = 1, m = 1 units system,  f = 0.1, \\(\nu_{t} = 10, \nu_{x} = 10\\)  
   
 Parameters of computing is m = 1 (rest mass particle), qE = 0.1  
 Variable values:  
@@ -35,8 +36,7 @@ Particle velosety = 0  (initial velocity)
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
 mass = 1 , lightVel = 1.0  
   
-With an increase in resolution, the measurement accuracy increases markedly, therefore, we consider an experiment with a minimum resolution, which is more indicative. Let the resolution of the time step be 10 elements of the unidirectional Temp list. The absolute error in the measurement of coordinates and time will then be 0.5. 
-With this resolution, you can perform 8 clock cycles of the system (then an error typical of relativistic models arises, which can be called “synchronization failure”, you need to increase the resolution).  
+With this resolution, you can perform 8 clock cycles of the system (if Tw = 9 then an error typical of relativistic models arises, which can be called “synchronization failure”).  
 
 
 ## 2. Results of experiment
