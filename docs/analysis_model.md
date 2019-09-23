@@ -149,7 +149,14 @@ $$
 $$  
   
 where \\(\mu \\) is list length *Skip*,  
-j is list length *Jump*.  
+*j* is list length *Jump*.  
+Therefore, we have  
+  
+$$
+\begin{align*}
+\Delta t = frac{\tau_{R}}{\nu_{t}} \\  
+\end{align*},  
+$$  
   
 Finally, we obtain 
   
