@@ -4,7 +4,7 @@ It uses UML2 SP language to non-numeric modeling.
 
 
 ## 1. Simulation model  
-We use Unified Process and it is reflect in structure of site. Unified Process include 4th  workflow: Requirements, Analysis, Design and Realisation.  
+We use Unified Process and it is reflect in structure of site. Unified Process include 4th  workflows: Requirements, Analysis, Design and Realisation.  
 
 1.1.Use-Case Model  
 Use case model is function requirements to software.
@@ -39,5 +39,5 @@ It is output data in plot forms
 3.1. Getting Started  
 Install and execute.  
 3.2. The time dilation (experiment1 module)  
-3.3. Velosety versus momentum (experiment2 module) and Energy versus momentum (experiment2 module)  
+3.3. Velocity as function momentum and energy as function momentum (experiment3 module)  
 
