@@ -299,7 +299,7 @@ Full measure erorr is
   
 $$
 \begin{align*}  
-\Delta Es_{i} =  \sum_{i=0}^{i} \sqrt{\Delta E_{i}^2} \\  
+\Delta Es_{i} =  \sqrt{\sum_{i=0}^{i} \Delta E_{i}^2} \\  
 \end{align*}  
 $$  
   
