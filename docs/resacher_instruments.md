@@ -83,6 +83,7 @@ momentum_t | int | momentum of particle
 eng_t_acc | int | accurate energy
 eng_t | int | measurement energy
 eng_t_err | int | energy measurement error
+eng_t_err_sum | int | energy measurement error in sum 
 
 
 ### Operations: 
@@ -288,11 +289,19 @@ Measure erorr is
   
 $$
 \begin{align*} 
-\Delta E &= \sqrt{ (\frac{\partial E}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial E}{\partial x_{i-1}} \Delta x_{i-1})^2} \\  
+\Delta E_{i} &= \sqrt{ (\frac{\partial E}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial E}{\partial x_{i-1}} \Delta x_{i-1})^2} \\  
 \end{align*} 
 $$  
   
 Value \\(E_{i}\\) write to array *eng_t_err*.    
-
   
-
+Full measure erorr is  
+  
+$$
+\begin{align*}  
+\Delta Es_{i} =  \sum_{i=0}^{i} \sqrt{\Delta E_{i}^2} \\  
+\end{align*}  
+$$  
+  
+Value \\(Es_{i}\\) write to array *eng_t_err_sum*.    
+  
