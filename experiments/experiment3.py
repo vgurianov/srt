@@ -60,7 +60,7 @@ class originalToolkit(ri.DataProcessing):
             self.vN.append(p2/math.sqrt(m**2 + (p2/c)**2))
             e = e + qE*(self.x[i]-self.x[i-1])
             self.eN.append(e)            
-            v = p1/math.sqrt(m**2 + (p1/c)**2)
+            v = p2/math.sqrt(m**2 + (p2/c)**2)
             x2 = x1 + v*dt        
             self.xNtrack.append(x2)
             p1 = p2
