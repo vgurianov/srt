@@ -204,7 +204,7 @@ class Visualization:
         ax.plot(self.dt.momentum_t, self.dt.eng_t_acc, linestyle="-", color="red", label="analitycal curve")
         ax.plot(self.dt.momentum_t, self.dt.eN, linestyle="--",marker="x", color="blue", label="Euler method")
         # error
-        ax.errorbar(self.dt.momentum_t, self.dt.eng_t,fmt='k ',yerr=self.dt.eng_t_err)
+        ax.errorbar(self.dt.momentum_t, self.dt.eng_t,fmt='k ',yerr=self.dt.eng_t_err_sum)
 
         xm = -1.0
         for i in range(len(self.dt.momentum_t)):

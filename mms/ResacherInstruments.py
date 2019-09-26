@@ -83,6 +83,7 @@ class DataProcessing:
     eng_t_acc = []
     eng_t = []
     eng_t_err = []
+    eng_t_err_sum = []
     
     def __init__(self, ob, v, st, ct):
         self.obs = ob
@@ -185,7 +186,14 @@ class DataProcessing:
             energy = math.sqrt((m**2)*(c**4) + (p*c)**2)
             self.eng_t_acc.append(energy)
         print "accurate energy calculated"
-        
+
+    # summ error
+    def eng_sum_err(self, i):
+        se =0.0
+        for i in range(0,i):
+            se = se + self.eng_t_err[i]*self.eng_t_err[i]
+        se = math.sqrt(se)
+        return se
 
     def energeCalculate(self):
         m = float(self.mass)/self.nu_m  # mass
@@ -194,6 +202,7 @@ class DataProcessing:
         err_x = (1.0/2.0)/self.nu_x # absolute error of measurement x
         err = 0.0
         self.eng_t_err.append(err)
+        self.eng_t_err_sum.append(0.0)
         energy = m*c**2  
         self.eng_t.append(energy)
         for i in range(1,len(self.obs.obtG)):
@@ -206,8 +215,9 @@ class DataProcessing:
             dA = f*dx  # i.e. force multiple by displacement
             energy = energy + dA
             self.eng_t.append(energy)
-            err = err+(0.5)*err_x*math.sqrt(2.0*f) # , where 0.5 to errbar
+            err = err_x*math.sqrt(2.0*f) 
             self.eng_t_err.append(err)
+            self.eng_t_err_sum.append(0.5*self.eng_sum_err(i)) # , where 0.5 to errbar
         print "energy calculated"
 
     # obligatory caculation --------------------------------------------
