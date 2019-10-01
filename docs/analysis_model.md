@@ -105,14 +105,14 @@ Figure 7. 	The measurement
 Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
   
 Main measurement is count. Absolute error of measurement then is 0.5.  
-Result of measurement is called "natural" units, SI and SGS is called "standard" units.  
+Result of measurement is called "natural" units, SI and CGS is called "standard" units.  
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
 By \\(\tau_{R} \\) denote the resolution tackt of time.  
 Then time \\(t\\) and distance \\(d\\) in standard units calculate as  
    
 $$
 \begin{align*}
-t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\  
+t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} ,\\  
 \end{align*}
 $$  
    
@@ -122,7 +122,7 @@ Velocity measure in tackts:
   
 $$
 \begin{align*}
-\beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} \\,  
+\beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} ,\\  
 \end{align*}
 $$   
   
@@ -146,8 +146,8 @@ $$
 \iota_{i} / \mu &= j_{i} - j_{i-1} \\  
 &= \Delta \rho_{i} - \Delta \rho_{i-1} \\  
 &= (\beta_{i} -\beta_{i-1}) \times \tau_{R} \\  
-&= \frac{f}{m} \Delta t \times \tau_{R} \\  
-\end{align*},  
+&= \frac{f}{m} \Delta t \times \tau_{R} \\,  
+\end{align*}  
 $$  
   
 where \\(\mu \\) is list length *Skip*, *j* is list length *Jump*.  
