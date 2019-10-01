@@ -106,8 +106,8 @@ Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() writ
   
 Main measurement is count. Absolute error of measurement then is 0.5.  
 Result of measurement is called "natural" units, SI and SGS is called "standard" units.  
-Let \\(\tau,\rho, \mu \\) be the time, distance, and mass in natural units.  
-Let \\(\tau_{R} \\) be the resolution tackt of time.  
+Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
+By \\(\tau_{R} \\) denote the resolution tackt of time.  
 Then time \\(t\\) and distance \\(d\\) in standard units calculate as  
    
 $$
@@ -117,16 +117,17 @@ t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} \\
 $$  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
+Cinematics.  
 Velocity measure in tackts:
   
 $$
 \begin{align*}
-\beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} \\  
+\beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} \\,  
 \end{align*}
 $$   
   
-where k is count tackts.  
-Dynamic.  
+where k is count tackts, \\(\rho\\) is distance traveled.  
+Dynamics.  
 Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction intensity).  
 Force *f* is  
   
