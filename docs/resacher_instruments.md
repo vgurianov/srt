@@ -261,9 +261,11 @@ i.e.
   
 $$
 \begin{align*} 
-E_{i+1} = E_{i} + f_{i} (x_{i} - x_{i-1}) \\  
+E_{i+1} = E_{i} + f_{i} (x_{i} - x_{i-1}) ,\\  
 \end{align*} 
 $$  
+  
+where \\(\Delta E_{0} = m_{0} c^2\\).  
   
 Value \\(E_{i}\\) write to array *eng_t*.  
   
@@ -275,7 +277,7 @@ $$
 \end{align*} 
 $$  
   
-Value \\(E_{i}\\) write to array *eng_t_err*.    
+Value \\(\Delta E_{i}\\) write to array *eng_t_err*.    
   
 Full measure erorr is  
   
