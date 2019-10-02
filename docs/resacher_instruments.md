@@ -187,8 +187,7 @@ $$
 where   
 $$
 \begin{align*} 
-\frac{\partial v}{\partial x} = \frac{1}{dt} \\  
-\frac{\partial v}{\partial t} = \frac{1}{dt} \frac{dx}{dt} \\  
+\frac{\partial v}{\partial x} = \frac{1}{dt} , \frac{\partial v}{\partial t} = \frac{1}{dt} \frac{dx}{dt} .\\  
 \end{align*} 
 $$  
   
@@ -224,10 +223,9 @@ Description: velocity as function from momentum
 Parameters: p is the calculated momentum of particle  
   
 Algorithm:  
-Using \\(p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\),  
-we get \\(v = \frac{p}{\sqrt{m_{0}^2+\frac{p^2}{c^2} } }  \\).  
+Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2\c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2\c^2 }}  \\).  
   
-Value v write to array *velAnl*.  
+Value *v* write to array *velAnl*.  
   
 **def energeAccurate(self)**  
 Description: energy as function from momentum   
