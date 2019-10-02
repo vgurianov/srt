@@ -203,7 +203,7 @@ We have
   
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2}  \sum_{i=0}^{tG} \iota_{i} , \\
+p = \int_0^t f \mathrm{d}t \approx \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2}  \sum_{i=0}^{tG} \iota_{i} , \\
 \end{align*} 
 $$  
   
@@ -223,7 +223,7 @@ Description: velocity as function from momentum
 Parameters: p is the calculated momentum of particle  
   
 Algorithm:  
-Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2\c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2\c^2 }}  \\).  
+Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2 \ c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2 \ c^2 }}  \\).  
   
 Value *v* write to array *velAnl*.  
   
@@ -253,7 +253,7 @@ We have
   
 $$
 \begin{align*}  
-E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t ,\\  
+E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \approx m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t ,\\  
 \end{align*} 
 $$  
   
