@@ -225,7 +225,7 @@ Parameters: p is the calculated momentum of particle
 Algorithm:  
 Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2 / c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2 / c^2 }}  \\).  
   
-Value *v* write to array *velAnl*.  
+Value \\(v\\) write to array *velAnl*.  
   
 **def energeAccurate(self)**  
 Description: energy as function from momentum   
@@ -265,7 +265,7 @@ E_{i+1} = E_{i} + f_{i} (x_{i} - x_{i-1}) ,\\
 \end{align*} 
 $$  
   
-where \\(\Delta E_{0} = m_{0} c^2\\).  
+where \\(E_{0} = m_{0} c^2\\).  
   
 Value \\(E_{i}\\) write to array *eng_t*.  
   
