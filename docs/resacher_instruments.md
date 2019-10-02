@@ -223,7 +223,7 @@ Description: velocity as function from momentum
 Parameters: p is the calculated momentum of particle  
   
 Algorithm:  
-Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2 \ c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2 \ c^2 }}  \\).  
+Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2 / c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2 / c^2 }}  \\).  
   
 Value *v* write to array *velAnl*.  
   
