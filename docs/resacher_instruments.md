@@ -104,8 +104,7 @@ Then time \\(t\\) and coordinate \\(x\\) calculate as
   
 $$
 \begin{align*}
-t = \frac{\tau}{\nu_{t}} \\
-x = \frac{\rho}{\nu_{x}} \\
+t = \frac{\tau}{\nu_{t}} ,  x = \frac{\rho}{\nu_{x}} , \\
 \end{align*}
 $$  
   
@@ -182,7 +181,7 @@ Then
 $$
 \begin{align*} 
 \Delta v &= \sqrt{ (\frac{\partial v}{\partial x_{i}} \Delta x_{i})^2 + (\frac{\partial v}{\partial x_{i-1}} \Delta x_{i-1})^2 + (\frac{\partial v}{\partial t_{i}} \Delta t_{i})^2 + (\frac{\partial v}{\partial t_{i-1}} \Delta t_{i-1})^2 } \\
-&= \sqrt{2} \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial t} \Delta t)^2 }
+&= \sqrt{2} \sqrt{ (\frac{\partial v}{\partial x} \Delta x)^2 + (\frac{\partial v}{\partial t} \Delta t)^2 ,}
 \end{align*} 
 $$  
 where   
@@ -201,15 +200,15 @@ Parameters: None
   
 Algorithm:  
 Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
-From  
+We have  
   
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2}  \sum_{i=0}^{tG} \iota_{i}
+p = \int_0^t f \mathrm{d}t \equiv \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2}  \sum_{i=0}^{tG} \iota_{i} , \\
 \end{align*} 
 $$  
   
-, i.e.  
+i.e.  
   
 $$
 \begin{align*} 
@@ -225,22 +224,8 @@ Description: velocity as function from momentum
 Parameters: p is the calculated momentum of particle  
   
 Algorithm:  
-Let \\(v_{a} \\) be the analitic velocite of particle.     
-From  
-  
-$$
-\begin{align*} 
-p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\ 
-\end{align*} 
-$$  
-  
-follows   
-   
-$$
-\begin{align*} 
-v = \frac{p}{\sqrt{m_{0}^2+\frac{p^2}{c^2} } }  \\ 
-\end{align*} 
-$$   
+Using \\(p = \frac{m_{0} v}{\sqrt{1 - \frac{v^2}{c^2} } }  \\),  
+we get \\(v = \frac{p}{\sqrt{m_{0}^2+\frac{p^2}{c^2} } }  \\).  
   
 Value v write to array *velAnl*.  
   
@@ -249,8 +234,8 @@ Description: energy as function from momentum
 Parameters: None
   
 Algorithm:  
-Let \\(E_{acc} \\) be the analitic energy of particle.     
-Then  
+Let \\(E_{acc} \\) be the analytic energy of particle.     
+We clearly have  
   
 $$
 \begin{align*} 
@@ -258,7 +243,7 @@ E_{acc} =  \sqrt{m_{0}^2 c^4 + p^2 c^2}  \\
 \end{align*} 
 $$  
   
-Value \\(E_acc\\) write to array *eng_t_acc*.  
+Value \\(E_{acc}\\) write to array *eng_t_acc*.  
     
 **def energeCalculate(self)**  
 Description: measured energy calculate   
@@ -266,16 +251,15 @@ Parameters: None
   
 Algorithm:  
 Let \\(E \\) be the energy of particle.     
-From  
+We have  
   
 $$
 \begin{align*}  
-E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t \\  
-
+E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \equiv m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t ,\\  
 \end{align*} 
 $$  
   
-, i.e.  
+i.e.  
   
 $$
 \begin{align*} 
