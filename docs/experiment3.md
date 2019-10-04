@@ -19,11 +19,11 @@ We find dependence
 - particle energy E from momentum p.  
 
 Estimated calculation for electron:  
-m=  \\(9.1 \times 10^-31\\)  kg, q=  \\(1.602 \times 10^-19\\) C  
+\\(m = 9.1 \times 10^{-31}\\)  kg, \\(q = 1.602 \times 10^{-19}\\) C  
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
-nu_m =  1.1e+30, nu_t =  3e+9 
-f= 2.7e-23  N, \\( \mathcal{E} \\) = 1.7e-4  V/m,  
+nu_m =  1.1e+30, nu_t =  3.0e+09  
+f = 2.7e-23  N, \\( \mathcal{E} \\) = 1.7e-04  V/m,  
 z =  10.0 s,  
 d =  4.14  m  
  
