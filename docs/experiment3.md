@@ -5,10 +5,10 @@ Modul experiment3.py simulate dynamic relativistic effects.
 We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
 
 \begin{equation}
-    \frac{dp}{dt} = qE  
+    \frac{dp}{dt} = q \mathcal{E}  \\
 \end{equation}
   
-where *p* - particle momentum, *qE* - force.  
+where *p* - particle momentum, \\( q \mathcal{E} \\) - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
 If t > z = mc/qE then appear relativistic effects.  
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
@@ -23,10 +23,10 @@ m=  \\(9.1 \times 10^-31\\)  kg, q=  \\(1.602 \times 10^-19\\) C
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
 nu_m =  1.0989010989e+30 nu_t =  2997925000.0  
-f= 2.728e-23  N, E= 0.0001703  V/m, z =  10.0 s,  
-wher z = mc/qE is time of relativistic effects  
+f= 2.728e-23  N, \\( \mathcal{E} \\) = 0.0001703  V/m, z =  10.0 s,  
+wher \\(z = mc/q \mathcal{E} \\) is time of relativistic effects  
 d =  4.14  m  
- must grid  10.0 x 4.14  s x m  
+ 
   
 In c = 1, m = 1 units system, 
   
