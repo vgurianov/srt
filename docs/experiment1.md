@@ -48,7 +48,7 @@ $$
   
 It is column *err%*.  
   
-This result is depicted in Fig.1. Blue "+" is result of measurement. The green line is analytical value.   
+This result is depicted in Fig.1. Black "o" is result of measurement. The red line is analytical value.   
 
 
 ![Fig1](Fig3-1-1.png)  
@@ -72,7 +72,7 @@ Analytical incline k_an= 2.24, k_err%= 0.12
 
 In case of small velocity, plot depicted in Fig.2.
 ![Fig2](Fig3-1-2.png)  
-Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.2 \\)    
+Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.3 \\)    
   
   
 ## 3. Description of experiment1 modul
