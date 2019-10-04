@@ -2,7 +2,7 @@
 Modul experiment3.py simulate dynamic relativistic effects.  
   
 ## 1. Experiment description
-We consider motion of charge *q* in constant electric field *E*. Motion equation is  
+We consider motion of charge *q* in constant electric field \[ \mathcal{E} \]. Motion equation is  
 
 \begin{equation}
     \frac{dp}{dt} = qE  
