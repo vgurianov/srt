@@ -10,7 +10,7 @@ We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\).
   
 where *p* - particle momentum, \\( q \mathcal{E} \\) - force.  
 Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
-If t > z = mc/qE then appear relativistic effects.  
+If t > \\(z = mc/q \mathcal{E} \\) then appear relativistic effects.  
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 We find dependence  
@@ -22,9 +22,9 @@ Estimated calculation for electron:
 m=  \\(9.1 \times 10^-31\\)  kg, q=  \\(1.602 \times 10^-19\\) C  
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
-nu_m =  1.0989010989e+30 nu_t =  2997925000.0  
-f= 2.728e-23  N, \\( \mathcal{E} \\) = 0.0001703  V/m, z =  10.0 s,  
-wher \\(z = mc/q \mathcal{E} \\) is time of relativistic effects  
+nu_m =  1.1e+30, nu_t =  3e+9 
+f= 2.7e-23  N, \\( \mathcal{E} \\) = 1.7e-4  V/m,  
+z =  10.0 s,  
 d =  4.14  m  
  
   
@@ -36,7 +36,7 @@ In c = 1, m = 1 units system,
   
 and f = 0.1, \\(\nu_{t} = 10, \nu_{x} = 10\\)  
   
-Parameters of computing is m = 1 (rest mass particle), qE = 0.1  
+Parameters of computing is m = 1 (rest mass particle), \\( q \mathcal{E} \\) = 0.1  
 Variable values:  
 countTick= 8, sizeTick= 10  
 Particle velosety = 0  (initial velocity)  
