@@ -5,7 +5,7 @@ Modul experiment3.py simulate dynamic relativistic effects.
 We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
 
 \begin{equation}
-    \frac{dp}{dt} = q \mathcal{E}  \\
+    \frac{dp}{dt} = q \mathcal{E}  ,\\ 
 \end{equation}
   
 where *p* - particle momentum, \\( q \mathcal{E} \\) - force.  
@@ -28,15 +28,14 @@ z =  10.0 s,
 d =  4.14  m  
  
   
-In c = 1, m = 1 units system, 
+We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. If we replace \\(t\\) by \\(t/c\\) and \\(p\\) by \\(m_{0} p\\), we obtain  
   
 \begin{equation}
     \frac{dp}{dt} = \frac{qE}{mc}  
 \end{equation}
   
-and f = 0.1, \\(\nu_{t} = 10, \nu_{x} = 10\\)  
+and \\(f = 0.1, \nu_{t} = 10, \nu_{x} = 10\\)  
   
-Parameters of computing is m = 1 (rest mass particle), \\( q \mathcal{E} \\) = 0.1  
 Variable values:  
 countTick= 8, sizeTick= 10  
 Particle velosety = 0  (initial velocity)  
