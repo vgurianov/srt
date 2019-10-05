@@ -104,6 +104,7 @@ E = \sqrt{m^2c^2 + p^2c^2 }   \\
 $$   
   
   
+  
 ## 3. Description of experiment3 modul
 
 ### Class "simpleIteraction"
@@ -156,8 +157,8 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{mc^2}{qE} \Big( \sqrt{ 1 + (\frac{qEt}{mc})^2 } -1 \Big)  \\  
-v = c \sqrt{\frac{(qEt/mc)^2}{1+(qEt/mc)^2} }   \\  
+x = \frac{m_{0}c^2}{q \mathcal{E}} \Big( \sqrt{ 1 + (\frac{q \mathcal{E} t}{m_{0}c})^2 } -1 \Big)  \\  
+v = c \sqrt{\frac{(q \mathcal{E} t/m_{0}c)^2}{1+(q \mathcal{E} t/m_{0}c)^2} }   \\  
 \end{align*} 
 $$  
   
@@ -171,14 +172,14 @@ Algorithm:
   
 $$
 \begin{equation}  
-p_{i} = p_{i-1} + qE \Delta t \\  
-v_{i} = \frac{p_{i}} {\sqrt{m^2 + \frac{p_{i}^2}{c^2} } }\\  
+p_{i} = p_{i-1} + q \mathcal{E} \Delta t \\  
+v_{i} = \frac{p_{i}} {\sqrt{m_{0}^2 + \frac{p_{i}^2}{c^2} } }\\  
 x_{i} = x_{i-1} + v_{i} \Delta t  \\  
-e_{i} = e_{i-1} + qE \Delta x \\  
+e_{i} = e_{i-1} + q \mathcal{E} \Delta x \\  
 \end{equation}  
 $$  
   
-where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = mc^2\\).  
+where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = m_{0}c^2\\).  
   
 Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*.  
     
