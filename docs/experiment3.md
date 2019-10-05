@@ -8,9 +8,9 @@ We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\).
     \frac{dp}{dt} = q \mathcal{E}  ,\\ 
 \end{equation}
   
-where *p* - particle momentum, \\( q \mathcal{E} \\) - force.  
-Initial condition is *x* = 0, *p* = 0 in moment *t* = 0.  
-If t > \\(z = mc/q \mathcal{E} \\) then appear relativistic effects.  
+where \\(p\\) - particle momentum, \\( q \mathcal{E} \\) - force.  
+Initial condition is \\(x = 0, p = 0\\) in moment \\(t = 0\\).  
+If \\(t > z = mc/q \mathcal{E} \\) then appear relativistic effects.  
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 We find dependence  
@@ -19,13 +19,12 @@ We find dependence
 - particle energy E from momentum p.  
 
 Estimated calculation for electron:  
-\\(m = 9.1 \times 10^{-31}\\)  kg, \\(q = 1.602 \times 10^{-19}\\) C  
+\\(m_{0} = 9.1 \times 10^{-31}\\)  kg, \\(q = 1.602 \times 10^{-19}\\) C  
 We consider simple case when \\(\mu = 1\\)  (*Skip* list is NULL) and \\(\iota = 1\\) (one act of interaction in tick),    
 then  
 nu_m =  1.1e+30, nu_t =  3.0e+09  
 f = 2.7e-23  N, \\( \mathcal{E} \\) = 1.7e-04  V/m,  
-z =  10.0 s,  
-d =  4.14  m  
+z =  10.0 s, d =  4.14  m  
  
   
 We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. We introduce new  variables \\(t' = ct\\) and \\(p' = p/m_{0}\\). If we replace \\(t\\) by \\(t/c\\) and \\(p\\) by \\(m_{0} p\\) in motion equation, we obtain  
