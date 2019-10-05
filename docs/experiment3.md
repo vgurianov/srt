@@ -99,7 +99,7 @@ Points are measurement data. Dash line is numerical solution (Euler method). The
   
 $$
 \begin{align*}  
-E = \sqrt{m^2c^2 + p^2c^2 }   \\  
+E = \sqrt{m_{0}^2c^4 + p^2c^2 }   \\  
 \end{align*}  
 $$   
   
