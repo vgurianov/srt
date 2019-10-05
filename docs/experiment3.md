@@ -30,7 +30,7 @@ z =  10.0 s, d =  4.14  m
 We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. We introduce new  variables \\(t' = ct\\) and \\(p' = p/m_{0}\\). If we replace \\(t\\) by \\(t/c\\) and \\(p\\) by \\(m_{0} p\\) in motion equation, we obtain  
   
 \begin{equation}
-    \frac{dp}{dt} = \frac{qE}{m_{0}c}  
+    \frac{dp}{dt} = \frac{q \mathcal{E}}{m_{0}c}  
 \end{equation}
   
 and \\(f = 0.1, \nu_{t} = 10, \nu_{x} = 10\\)  
