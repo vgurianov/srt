@@ -8,7 +8,7 @@ We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\).
     \frac{dp}{dt} = q \mathcal{E}  ,\\ 
 \end{equation}
   
-where \\(p\\) - particle momentum, \\( q \mathcal{E} \\) - force.  
+where \\(p\\) is particle momentum, \\( q \mathcal{E} \\) is force.  
 Initial condition is \\(x = 0, p = 0\\) in moment \\(t = 0\\).  
 If \\(t > z = mc/q \mathcal{E} \\) then appear relativistic effects.  
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
