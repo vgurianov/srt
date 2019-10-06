@@ -116,14 +116,14 @@ Description: incline k calculate and error
 Parameters: None  
   
 Algorithm:  
-Analytical incline \\(k_{an}\\) can deduce from formula of invariant interval  
+Analytical value of incline \\(k_{an}\\) can deduce from formula of invariant interval  
 \\( s^2 = c^2t^2 - x^2  \\)  
-From  
-\\( x = vs -> s = x/v \\)  
-then  
-\\( t = \sqrt{s^2 + x^2} = \sqrt{(x/v)^2 + x^2} = x \sqrt{1+1/v^2} \\) ,  
-i.e.  
-\\( a_{an} = \sqrt{1+1/v^2} \\)  
+Let \\(t'\\) be fix moment of time then distance be \\(x = vt \\).  
+We have \\(s = ct' \\) if \\(x = 0 \\).  
+We obtain    
+\\( ct = \sqrt{s^2 + x^2} = \sqrt{(cx/v)^2 + x^2} = x \sqrt{1 + c^2/v^2} \\) .  
+The result is  
+\\( a_{an} = \sqrt{1 + c^2/v^2} \\)  
   
 The experiment data processing is  
 \\( \Delta t_{i} = t_{i} - t_{i-4}  \\)  
