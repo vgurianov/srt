@@ -85,6 +85,7 @@ Velocity end energy of particle as function from momentum
 | 8  | 0.88 | 0.67 | 0.66 |  0.91  | 1.36 | 1.33 |  2.1   |
 +----+------+------+------+--------+------+------+--------+
 ```  
+   
 The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in %.  
 Plot of the dependence of speed on momentum are shown in Fig. 2.  
 ![Fig2](Fig3-3-2.png)  
