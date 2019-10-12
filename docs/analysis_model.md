@@ -159,14 +159,24 @@ $$
 (\frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
 (\iota/\mu)\\
+&= c\times\frac{\mu}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2} (\iota/\mu)\\
 =f\end{align*}  
 $$  
   
-where \\(\mu \\) is list length *Skip*, *j* is list length *Jump* and    
+where \\(\mu \\) is list length *Skip*, *j* is list length *Jump*.  
+We used substitution
   
 $$
 \begin{align*}
-\Delta t = \frac{\tau_{R}}{\nu_{t}}, \beta = \Delta \rho / \tau_{R}\\  
+\Delta t = \frac{\tau_{R}}{\nu_{t}}, \beta = \frac{\Delta \rho}{\tau_{R}}\\  
+\end{align*}  
+$$  
+  
+and  
+  
+$$
+\begin{align*}
+\iota/\mu = \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}}\\  
 \end{align*}  
 $$  
   
@@ -174,7 +184,7 @@ Finally, we obtain
   
 $$
 \begin{align*}  
-\frac{\nu_{t}}{\tau_{R}^2}  \times \iota / \mu = \frac{f}{m_{0}c}   \\
+\frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = \frac{f}{c}   \\
 \end{align*} 
 $$  
   
