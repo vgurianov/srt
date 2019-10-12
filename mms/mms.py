@@ -25,7 +25,8 @@ class Leaf:
                 self.currentOfJump.next = Jump()
                 self.currentOfJump = self.currentOfJump.next
             
-        self.currentOfJump = self.headOfJump
+        # self.currentOfJump = self.headOfJump  # active
+        self.currentOfJump = None   # non active
         
     def isActivity(self):
         if self.currentOfJump is None:
@@ -101,11 +102,20 @@ class ListItem:
             
         self.tmp.marked = tm
 
+    def oneJump(self):
+        if self.contents.isActivity():
+            self.contents.jumpp()
+            self.right.contents = self.contents
+            self.contents = None
+
     def ItemRun(self, tt, tGlob, c):
         if not (self.tmp is None):
             if tt == self.tmp.marked:
                 #print "All ListItem is act:","for tt=", tt.t, "ListItem=", self.x, "tloc=", self.tmp.t
                 if not (self.contents is None):
+                    if self.contents.isActivity():
+                        self.oneJump()
+                    else:
                         if not self.key:
                             self.contents.run()
                             self.observer.fixIt(tGlob, tt.t, self.x, tt.t, self.contents.tick)
@@ -172,11 +182,10 @@ class Composite:
                     ll = ll.right
             tt = tt.next
             
-        #print "ќбъем собственного времени €чеек"
         ll = self.lst
         while not (ll is None):
             #print ll.x, ll.countTmp, ll.temp.t,ll.temp.marked.t
-            ll.resetTmp()  # ставим на начало
+            ll.resetTmp()  # do begin
             ll = ll.right
         #print " "
 
@@ -184,7 +193,7 @@ class Composite:
         #self.lst.contents = Leaf(particle_velosety)
         #print "Particle velosety =",particle_velosety 
 
-    def move(self):
+    def move(self):   # don't use
         ll = self.lst
         while not (ll is None):
             if not (ll.contents is None):
@@ -192,7 +201,7 @@ class Composite:
                 
             ll = ll.right
 
-        # motion of particle
+        # motion of particle 
         ll = self.lst
         while not (ll is None):
             if not (ll.contents is None):
@@ -203,6 +212,14 @@ class Composite:
                     ll.right.contents = ll.contents
                     ll.contents = None
             ll = ll.right
+
+    def moveReset(self):
+        ll = self.lst
+        while not (ll is None):
+            if not (ll.contents is None):
+                ll.contents.reset()
+            ll = ll.right
+            
         
     def interaction(self, carIn):
         carOut = None
@@ -223,7 +240,8 @@ class Composite:
             if tt.lb:
                 self.tick = self.tick + 1
                 print "World time =", self.tick
-                self.move()
+                #self.move()
+                self.moveReset()
                 #car = Carrier()
                 car = self.interaction(self.carr);
             #else:

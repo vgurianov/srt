@@ -19,13 +19,13 @@ class Visualization:
         for i in range(self.dt.countTick):
             ltrackt.append(self.dt.lightVel*self.dt.t[i])
 
+        # plots 
         fig, ax = plt.subplots()
-        # функция y1(x), синий, надпись y(x)
-        #ax.plot(trackx, trackt, marker="+",linestyle="-", color="red", label="treck")
+        # x-t data
         ax.plot(self.dt.x, self.dt.t, marker="o", linestyle=" ", color="black", label="result of measurements")
-        # it is analytical solution:
-        ax.plot(self.dt.xAtrack, self.dt.t,  linestyle="-", color="red", label="analitical curve")
-        ax.plot(self.dt.xNtrack, self.dt.t, marker="x", linestyle="--", color="blue", label="Euler method")
+        # analytical solution:
+        ax.plot(self.dt.xAtrack, self.dt.t,  linestyle="-", color="red", label="continuum")
+        ax.plot(self.dt.xNtrack, self.dt.t, marker="x", linestyle="--", color="blue", label="Euler's method")
         #ax.plot(self.self.dt.x, an, linestyle=":", color="green", label="accurate")
         ax.plot(ltrackt, self.dt.t, linestyle="-", color="yellow", label="s=0 (light)")
 
@@ -75,7 +75,7 @@ class Visualization:
     def trajectory1(self):
         trackt = []  # particle trajectory, 
         trackx = []  # particle trajectory
-        an = [] # analitic s**2 + x**2 = t**2
+        an = [] # analitical s**2 + x**2 = t**2
         s1 = []  # s = 10; s = 0, light
         s2 = []  # s = 20;
         s3 = []  # s = 40;
@@ -87,18 +87,24 @@ class Visualization:
             s2.append(math.sqrt(2.0**2+self.dt.x[i]**2))
             s3.append(math.sqrt(4.0**2+self.dt.x[i]**2))
 
-        fig, ax = plt.subplots()
-        # 
-        ax.plot(trackx, trackt, marker="+",linewidth = 1, linestyle="-", color="red", label="treck")
-        ax.plot(self.dt.x, self.dt.t, marker="+", linewidth = 1, linestyle=" ", color="blue", label="result of measurement")
-        ax.plot(self.dt.x, an, linestyle=":", linewidth = 1, color="green", label="accurate")
-        ax.plot(trackx, trackx, linestyle="-",linewidth = 1, color="yellow", label="s=0 (light)")
+        # plots
+        fig, ax = plt.subplots() # figsize=(7,5)
+        # trajectory
+        ax.plot(trackx, trackt, marker="+",linewidth = 1, linestyle="-", color="green", label="treck")
+        # measurement t
+        # ax.plot(self.dt.x, self.dt.t, marker="+", linestyle=" ", color="blue", label="result of measurement")
+        ax.plot(self.dt.x, self.dt.t, marker="o", linestyle=" ", color="black", label="result of measurement")
+        # analitical t
+        ax.plot(self.dt.x, an, linestyle="-", color="red", label="continuum")
+        # light trajectory
+        ax.plot(trackx, trackx, linestyle="-", color="yellow", label="s=0 (light)")
+        # s(x) curves
         ax.plot(trackx, s1, linestyle=":", linewidth = 1, color="k", label="s=1.0")
         ax.plot(trackx, s2, linestyle=":", linewidth = 1, color="k", label="s=2.0")
         ax.plot(trackx, s3, linestyle=":", linewidth = 1, color="k", label="s=4.0")
 
-        # error
-        #ax.errorbar(self.dt.x, self.dt.t,fmt='k ',yerr=self.dt.t_err)
+        # error of measurement t
+        ax.errorbar(self.dt.x, self.dt.t,fmt='k ',yerr=self.dt.t_err)
 
         # signature on the horizontal x-axis
         ax.set_xlabel("x in metres")
@@ -152,9 +158,9 @@ class Visualization:
         ax.plot(self.dt.momentum_t, self.dt.vel_t,  linestyle=" ", 
                 color="k",marker="o",   label="result of measurements")
         ax.plot(self.dt.momentum_t, self.dt.velAnl, linestyle="-", color="red",
-                linewidth = 1, label="accurate value")
+                linewidth = 1, label="continuum")
         ax.plot(self.dt.momentum_t, self.dt.vN, linestyle="--", color="blue",
-                marker="x", linewidth = 1, label="Euler method")
+                marker="x", linewidth = 1, label="Euler's method")
 
         # error
         ax.errorbar(self.dt.momentum_t, self.dt.vel_t,fmt='k ',yerr=self.dt.vel_t_err)
@@ -177,7 +183,7 @@ class Visualization:
         # line draw 
         line = matplotlib.lines.Line2D ([0.0, 9.0], [1.0, 1.0], color="b")
         ax.add_line (line)
-        plt.text(0.6, 1.01, u"light speed", horizontalalignment="center")
+        plt.text(0.7, 1.01, u"light speed", horizontalalignment="center")
         ax.set_ylim ([0, 1.1])
 
         # подпись у вертикальной оси y
@@ -201,8 +207,8 @@ class Visualization:
         fig, ax = plt.subplots()
         # функция y1(x), синий, надпись y(x)
         ax.plot(self.dt.momentum_t, self.dt.eng_t, marker="o", linestyle=" ", color="black", label="result of measurements")
-        ax.plot(self.dt.momentum_t, self.dt.eng_t_acc, linestyle="-", color="red", label="analitycal curve")
-        ax.plot(self.dt.momentum_t, self.dt.eN, linestyle="--",marker="x", color="blue", label="Euler method")
+        ax.plot(self.dt.momentum_t, self.dt.eng_t_acc, linestyle="-", color="red", label="continuum")
+        ax.plot(self.dt.momentum_t, self.dt.eN, linestyle="--",marker="x", color="blue", label="Euler's method")
         # error
         ax.errorbar(self.dt.momentum_t, self.dt.eng_t,fmt='k ',yerr=self.dt.eng_t_err_sum)
 
