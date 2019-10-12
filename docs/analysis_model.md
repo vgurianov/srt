@@ -147,20 +147,16 @@ $$
 (\frac{m_{0}v_{i}}{\sqrt{1-\beta_{i}^2}}-
 \frac{m_{0}v_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\  
 &= \frac{m_{0}c}{\Delta t} 
-(\frac{\beta_{i}}{\sqrt{1-\beta_{i}^2}}-
-\frac{\beta_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+(\frac{\beta_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{\beta_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= \frac{m_{0}c}{\Delta t} 
 (\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= \frac{m_{0}c}{\tau_{R}/\nu_{t}} 
-(\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
+&= \frac{m_{0}c}{\tau_{R}/\nu_{t}} (\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
-(\frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
+&= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} (\frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
-(\frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-
-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+(\frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
 (\iota/\mu)\\
 =f\end{align*}  
@@ -170,7 +166,7 @@ where \\(\mu \\) is list length *Skip*, *j* is list length *Jump* and
   
 $$
 \begin{align*}
-\Delta t = \frac{\tau_{R}}{\nu_{t}} \\  
+\Delta t = \frac{\tau_{R}}{\nu_{t}}, \beta = \Delta \rho / \tau_{R}\\  
 \end{align*}  
 $$  
   
@@ -178,7 +174,7 @@ Finally, we obtain
   
 $$
 \begin{align*}  
-\frac{f}{m} \times \frac{\tau_{R}}{\nu_{t}} \times \tau_{R}  = \iota / \mu \\
+\frac{\nu_{t}}{\tau_{R}^2}  \times \iota / \mu = \frac{f}{m_{0}c}   \\
 \end{align*} 
 $$  
   
