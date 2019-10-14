@@ -37,14 +37,9 @@ In procedure runItem(tt), tt compared with attribute "marked" of current node of
 void ItemRun(Temp *tt, int tGlob, Carrier *c) {
   if (tmp != NULL) {
     if (tt == tmp->marked) {
-      if (contents != NULL) {// here particle
-	contents->Run();  
-	// Data write to table
-	observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
-	contents->doImpact(c); // interaction
-	observer.detect(tGlob,c); // observe act of interaction
+      // ---- some activity  ----
       };
-    tmp = tmp->next;  // time run in cell
+    tmp = tmp->next;  // time shift in cell
     };
   };
 }
@@ -85,6 +80,30 @@ If local time has shift and cell has particle then possible motion particle and 
 Mechanical motion and interaction are depicted in fig.6.   
 ![Fig6](Fig1-2-6.png)  
 Figure 6. 	Mechanical motion and interaction 
+   
+In Pseudo code, we have  
+  
+ ```  
+void ItemRun(Temp *tt, int tGlob, Carrier *c) {
+  if (tmp != NULL) {
+    if (tt == tmp->marked) {
+      if (contents != NULL) {// here particle
+        if (contents->isActive) {
+	  contents->jumpp();  // shift list Jump
+	  oneJump(); // we move particle to the next cell
+	} else {
+	  contents->Run();  // time shift in particle
+	  // Data write to table
+	  observer->fixIt(tGlob, tt->t, x, tt->t, contents->tick);
+	  contents->doImpact(c); // interaction
+	  observer.detect(tGlob,c); // observe act of interaction
+	};
+      };
+    tmp = tmp->next;  // time shift in cell
+    };
+  };
+}
+```  
   
 If the particle is active then the particle remove from cell 1 and place in cell 2. 
 If the particle isn't active then particle time has shift and the particle has interaction.  
