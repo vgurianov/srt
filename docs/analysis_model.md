@@ -27,8 +27,8 @@ The time of "Composite" class and the time "ListItem" class must be synchronizat
 ![Fig3](Fig1-2-3.png)
 Figure 3. Minkowski spacetime model
 
-The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node tt of linked list "tmp" sended message runItem(tt) to all cells of space (Fig.4). 
-![Fig4](Fig1-2-4.png)
+The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node tt of linked list "tmp" sended message runItem(tt) to all cells of space (Fig.4).  
+![Fig4](Fig1-2-4.png)  
 Figure 4. 	Communication process of synchronization
 
 
@@ -79,13 +79,18 @@ Figure 5. 	Example of linked list tmp for cells 20 and 80
 
 
 
-## 4. Mechanical motion  and interaction
-Both mechanical motion and interaction models in SRT as in classical methanic.  
-Mechanical motion is depicted in fig.6.   
+## 4. Mechanical motion  and interaction  
+
+If local time has shift and cell has particle then possible motion particle and interaction.   
+Mechanical motion and interaction are depicted in fig.6.   
 ![Fig6](Fig1-2-6.png)  
-Figure 6. 	Mechanical motion  
+Figure 6. 	Mechanical motion and interaction 
   
-If particle is active then the particle remove from cell 1 and place in cell 2 
+If the particle is active then the particle remove from cell 1 and place in cell 2. 
+If the particle isn't active then particle time has shift and the particle has interaction. 
+Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
+The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
+If  \\( j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
  
 
 ## 5. Measurements
