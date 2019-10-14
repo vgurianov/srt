@@ -108,7 +108,7 @@ void ItemRun(Temp *tt, int tGlob, Carrier *c) {
 If the particle is active then the particle remove from cell 1 and place in cell 2. 
 If the particle isn't active then particle time has shift and the particle has interaction.  
 Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
-The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
+The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
 If  \\( j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
  
 
