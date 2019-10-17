@@ -44,5 +44,5 @@ The cause of the error is shown in fig. 3
 ![Fig3](Fig1-3-2.png)  
 Figure 3. Sync error  
   
-This error has if  \\( Tg+1 < \sqrt{Tg^2+x_{i}^} \\). In moment Tg+1 has operation resetMove() and particle has move again. We used variable *key* to spy the error.  
+This error has if  \\( Tg+1 < \sqrt{Tg^2+x_{i}^2} \\). In moment Tg+1 has operation resetMove() and particle has move again. We used variable *key* to spy the error.  
 This problem has solution.  
