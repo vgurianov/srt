@@ -20,7 +20,7 @@ Module graphs  include Visualization  class.
   
   
 ## 3. Sync errors  
-Error in moment Tg = 8 
+Error in moment Tw = 8 
   
 ```
 Parameters:
@@ -44,5 +44,6 @@ The cause of the error is shown in fig. 3
 ![Fig3](Fig1-3-2.png)  
 Figure 3. Sync error  
   
-This error has if  \\( T_{w}+1 < \sqrt{T_{w}^2+x_{i}^2} \\). In moment \\(Tw+1\\) has operation resetMove() and particle has move again. We used variable *key* to spy the error.  
+If particle move is end then time of particle is sync.  
+This error has if  \\(\sqrt{T_{w}^2+x_{i}^2} > T_{w}+1\\). In moment \\(T_{w}+1\\) has operation *resetMove()* and particle has move again. We used variable *key* to spy the error.  
 This problem has solution.  
