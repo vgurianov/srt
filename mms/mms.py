@@ -44,6 +44,8 @@ class Leaf:
     
     def reset(self):
         #self.tick = -1
+        if not (self.currentOfJump is None):
+            print "Particle isn't stop"
         self.currentOfJump = self.headOfJump
 
     """
@@ -57,7 +59,7 @@ class Leaf:
                 jj = Jump()
                 jj.next = self.headOfJump
                 self.headOfJump = jj
-            self.currentOfJump = self.headOfJump
+            #self.currentOfJump = self.headOfJump
 
     def interaction(self,car):
         if not (car is None):
@@ -217,6 +219,8 @@ class Composite:
         ll = self.lst
         while not (ll is None):
             if not (ll.contents is None):
+                if not ll.key:
+                    print "Sync error: Particle reset but cell=", ll.x, " not sync"
                 ll.contents.reset()
             ll = ll.right
             
