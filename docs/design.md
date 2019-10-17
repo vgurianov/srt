@@ -11,7 +11,7 @@ Figure 1. Class diagram
 Classes are placed in four modules. Component diagram is depicted in Fig.2  
   
 ![Fig2](Fig1-3-3.png)  
-Figure 1. Class diagram   
+Figure 2. Component diagram   
   
 Module mms include Jump, Carrier, Leaf, Temp, and Composite classes.
 Module resacher_instruments  include Table and DataProcessing classes.  
@@ -20,7 +20,7 @@ Module graphs  include Visualization  class.
   
   
 ## 3. Sync errors  
-Error in moment Tw = 8 
+Error in moment Tw = 8 (World time) is  
   
 ```
 Parameters:
