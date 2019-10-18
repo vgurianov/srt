@@ -27,27 +27,27 @@ If node t is "bearing" moment then there executed operation *moveReset()* and *i
 void Run() {
 //t=0 is singular point
 tick = 0;
-Temp *tt; tt = tmp;
-ListItem *ll; ll = lst;
+Temp *t; t = tmp;
+ListItem *item; item = lst;
 Carrier *car; carr = interaction(carr);
-ll->ItemRun(tt, tick, car);
+ll->ItemRun(t, tick, car);
 
-tt = tt->next;
-  while (tt != NULL) {
+t = t->next;
+  while (t != NULL) {
 
-    if (tt->lb) {
+    if (t->lb) {
       tick = tick + 1;
       moveReset();
       car = interaction(carr);
     };
                 
-    ll = lst;
-    while (ll != NULL) {
-      ll->ItemRun(tt,tick, car);
-      ll = ll->right;
+    item = lst;
+    while (item != NULL) {
+      item->ItemRun(t,tick, car);
+      item = item->right;
     };
 
-  tt = tt->next;
+  t = t->next;
   };
 } 
 ```
