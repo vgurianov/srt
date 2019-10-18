@@ -203,7 +203,7 @@ We have
   
 $$
 \begin{align*}  
-p = \int_0^t f \mathrm{d}t \approx \sum_{i=0}^{tG} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \frac{\tau_{R}}{\nu_{t}} \sum_{i=0}^{tG} \iota_{i} , \\
+p = \int_0^t f \mathrm{d}t \approx \sum_{i=0}^{Tw} f_{i} \Delta t = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \frac{\tau_{R}}{\nu_{t}} \sum_{i=0}^{Tw} \iota_{i} , \\
 \end{align*} 
 $$  
   
@@ -253,7 +253,7 @@ We have
   
 $$
 \begin{align*}  
-E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \approx m_{0} c^2 + \sum_{i=1}^{tG} f_{i} v_{i}\Delta t ,\\  
+E = m_{0} c^2 + \int_0^t fv \mathrm{d}t \approx m_{0} c^2 + \sum_{i=1}^{Tw} f_{i} v_{i}\Delta t ,\\  
 \end{align*} 
 $$  
   
