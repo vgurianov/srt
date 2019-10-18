@@ -211,7 +211,7 @@ i.e.
   
 $$
 \begin{align*} 
-p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \iota_{i} \\  
+p_{i+1} = p_{i} + \frac{1}{\nu_{m}} \frac{1}{\tau_{R}} \iota_{i} \\  
 \end{align*} 
 $$  
   
