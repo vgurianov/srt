@@ -18,6 +18,10 @@ Also, see
 Use case "Run" realization is depicted in Fig.2.  
 ![Fig2](Fig1-2-2.png)  
 Figure 2. Communication diagram of operation "Run"  
+  
+The operation Run() has base cycle on a linked list *tmp*. For each node t, there executed cycle on linked list *lst* and each node *item* get message *itemRun()*.  
+If node t has t.lb = true then it is called "bearing" moment of time. Nodes number beatween "bearing" moments is called resolution of tackt of time (\\(\tau_{R} \\)). Variable *tick* is count of "bearing" moments (Tw).  
+If node t is "bearing" moment then there executed operation *moveReset()* and *interaction()*.  
 
 ## 3. Spacetime model  
 We propose a following model of Minkowski spacetime (Fig.3).  
