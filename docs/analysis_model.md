@@ -197,6 +197,7 @@ $$
 Formula output.  
 Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
+  
 $$
 \begin{align*}
 \Delta p / \Delta t = f \\
@@ -232,7 +233,7 @@ We used substitution
   
 $$
 \begin{align*}
-\Delta t = \frac{\tau_{R}}{\nu_{t}}, \beta = \frac{\Delta \rho}{\tau_{R}}\\  
+\Delta t = \frac{\tau_{R}}{\nu_{t}}, \beta = \frac{\Delta \rho}{\tau_{R}},\\  
 \end{align*}  
 $$  
   
@@ -240,7 +241,7 @@ and
   
 $$
 \begin{align*}
-\iota/\mu = \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}}\\  
+\iota/\mu = \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}}.\\  
 \end{align*}  
 $$  
   
