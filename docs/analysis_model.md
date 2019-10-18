@@ -30,7 +30,7 @@ tick = 0;
 Temp *t; t = tmp;
 ListItem *item; item = lst;
 Carrier *car; carr = interaction(carr);
-ll->ItemRun(t, tick, car);
+item->ItemRun(t, tick, car);
 
 t = t->next;
   while (t != NULL) {
@@ -142,7 +142,7 @@ If the particle is active then the particle remove from cell 1 and place in cell
 If the particle isn't active then particle time has shift and the particle has interaction.  
 Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
 The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
-If  \\( j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
+If *j* = 0 then time and interaction as in classical mechanics. If  \\( 0 < j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
  
 
 ## 5. Measurements
@@ -165,7 +165,7 @@ Main measurement is count. Absolute error of measurement then is 0.5.
 Result of measurement is called "natural" units, SI and CGS is called "standard" units.  
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
-Then time \\(t\\) and distance \\(d\\) in standard units calculate as  
+Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
    
 $$
 \begin{align*}
@@ -190,13 +190,20 @@ Force *f* is
   
 $$
 \begin{align*}  
-f = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
+f_{i}/c = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
 \end{align*} 
 $$  
   
 Formula output.  
 Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
+$$
+\begin{align*}
+\Delta p / \Delta t = f \\
+\end{align*}  
+$$  
+  
+We get  
   
 $$
 \begin{align*}
@@ -210,14 +217,14 @@ $$
 \frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= \frac{m_{0}c}{\tau_{R}/\nu_{t}} (\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} (\frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
+&= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} (\frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
+&= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
 (\frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= m_{0}c\times\frac{\nu_{t}}{\tau_{R}^2} 
+&= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
 (\iota/\mu)\\
 &= c\times\frac{\mu}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2} (\iota/\mu)\\
-=f\end{align*}  
+\end{align*}  
 $$  
   
 where \\(\mu \\) is list length *Skip*, *j* is list length *Jump*.  
