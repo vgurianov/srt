@@ -21,8 +21,37 @@ Figure 2. Communication diagram of operation "Run"
   
 The operation Run() has base cycle on a linked list *tmp*. For each node t, there executed cycle on linked list *lst* and each node *item* get message *itemRun()*.  
 If node t has t.lb = true then it is called "bearing" moment of time. Nodes number beatween "bearing" moments is called resolution of tackt of time (\\(\tau_{R} \\)). Variable *tick* is count of "bearing" moments (Tw).  
-If node t is "bearing" moment then there executed operation *moveReset()* and *interaction()*.  
+If node t is "bearing" moment then there executed operation *moveReset()* and *interaction()*. 
+  
+```
+void Run() {
+//t=0 is singular point
+tick = 0;
+Temp *tt; tt = tmp;
+ListItem *ll; ll = lst;
+Carrier *car; carr = interaction(carr);
+ll->ItemRun(tt, tick, car);
 
+tt = tt->next;
+  while (tt != NULL) {
+
+    if (tt->lb) {
+      tick = tick + 1;
+      moveReset();
+      car = interaction(carr);
+    };
+                
+    ll = lst;
+    while (ll != NULL) {
+      ll->ItemRun(tt,tick, car);
+      ll = ll->right;
+    };
+
+  tt = tt->next;
+  };
+} 
+```
+  
 ## 3. Spacetime model  
 We propose a following model of Minkowski spacetime (Fig.3).  
 "Composite" class is a model of a physical spacetime. We will view one-dimension space. Physical space is linked list, where lst attribute is base of space (In general case, "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space). Attribute "tmp" is one-direction linked list and it is a model of physical time. Attribute "tmp" is instance of class Temp.  
