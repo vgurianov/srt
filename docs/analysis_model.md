@@ -29,7 +29,7 @@ void Run() {
 tick = 0;
 Temp *t; t = tmp;
 ListItem *item; item = lst;
-Carrier *car; carr = interaction(carr);
+Carrier *car; car = interaction(car);
 item->ItemRun(t, tick, car);
 
 t = t->next;
@@ -38,7 +38,7 @@ t = t->next;
     if (t->lb) {
       tick = tick + 1;
       moveReset();
-      car = interaction(carr);
+      car = interaction(car);
     };
                 
     item = lst;
