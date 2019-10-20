@@ -6,7 +6,7 @@ Modul use packedgs:
   
   
 ## class Carrier  (<<Ontological Atom>>)  
-Description: User type
+Description: User type  
 Concept: class is the interaction carrier  
 Bases: object    
 ### Attributes:  
@@ -17,7 +17,7 @@ direction | enumeration | direction in space
 
 
 ## class Jump:
-Description: Linked list node
+Description: Linked list node  
 Concept: class is the motion count  
 Bases: object    
 ### Attributes:  
@@ -28,8 +28,8 @@ direction | enumeration | direction in space
 next | Inctance of class Jump | next node
   
 ## class Leaf  (<<Ontological Atom>>)  
-Description: Leaf of pattern *Composite*
-Concept: a particle model 
+Description: Leaf of pattern *Composite*  
+Concept: a particle model  
 Bases: object    
 `def __init__(self, v)`
   
@@ -65,7 +65,7 @@ car | Inctance of class Carrier | interaction carrier
   
 
 ## class Temp  
-Description: Linked list *tmp* node
+Description: Linked list *tmp* node  
 Concept: the moments of time   
 Bases: object    
    
@@ -84,8 +84,8 @@ t | int | time counter
 marked  | Inctance of class Time | time marked  
 lb | bool | time counter  
 
-## class ListItem (<<Ontological Space>>)
-Description: Linked list *lst* node 
+## class ListItem (<<Ontological Space>>)  
+Description: Linked list *lst* node  
 Concept: a cell of physical space  
 Bases: object    
 
@@ -118,7 +118,7 @@ Name | Type | Description
 tm | Inctance of class Temp | current time moment  
   
 **def ItemRun(self, tt, tGlob, c)**  
-Description: activity in physical cell
+Description: activity in physical cell  
 Parameters:  
   
 Name | Type | Description  
@@ -132,8 +132,8 @@ Description: set list *tmp* in start
     
     
 ## class Composite  (<<Ontological Category>>)
-Description: Composite of pattern *Composite*
-Concept: a physical space model 
+Description: Composite of pattern *Composite*  
+Concept: a physical space model  
 Bases: object    
 
 ` def __init__(self, sizeTick, countTick, observer)`  
@@ -157,9 +157,9 @@ tick | int | counter time
 **def moveReset(self)**  
 Description: all particles set list *Jump* in start   
 **def interaction(self, carIn)**  
-Description: interaction with  infinite mass 
-**def run(self)**  (<<Exist>>)
-Description: activity run
+Description: interaction with  infinite mass  
+**def run(self)**  (<<Exist>>)  
+Description: activity run  
 Concept: activity in physical space  
 
 
