@@ -5,8 +5,9 @@ Modul use packedgs:
 - import math
   
   
-## class Carrier  
-Description: class is the interaction carrier  
+## class Carrier  (<<Ontological Atom>>)  
+Description: User type
+Concept: class is the interaction carrier  
 Bases: object    
 ### Attributes:  
   
@@ -16,7 +17,8 @@ direction | enumeration | direction in space
 
 
 ## class Jump:
-Description: class is the motion count  
+Description: Linked list node
+Concept: class is the motion count  
 Bases: object    
 ### Attributes:  
   
@@ -25,8 +27,9 @@ Name | Type | Description
 direction | enumeration | direction in space
 next | Inctance of class Jump | next node
   
-## class Leaf  
-Description: class is the particle  
+## class Leaf  (<<Ontological Atom>>)  
+Description: Leaf of pattern *Composite*
+Concept: a particle model 
 Bases: object    
 `def __init__(self, v)`
   
@@ -45,26 +48,25 @@ tick | int | time counter
 ### Operations:  
 
 **def isActivity(self)**  
-Description: operation is the  
+Description: list *Jump* isn't *None* check  
 **def jumpp(self)**  
-Description: operation is the  
+Description: shift list *Jump*  
 **def run(self)**  
-Description: operation is the  
+Description: shift list *tmp*  
 **def reset(self)**  
-Description: operation is the  
+Description: set list *Jump* in start   
 **def doImpact(self, car)**  
-Description: operation is the  
+Description: create node *Jump* and append in list   
 Parameters:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
 car | Inctance of class Carrier | interaction carrier   
   
-**def interaction(self,car)**  
-Description: operation is the  
 
 ## class Temp  
-Description: class is the moments of time   
+Description: Linked list *tmp* node
+Concept: the moments of time   
 Bases: object    
    
 `def __init__(self, t)` 
@@ -82,8 +84,9 @@ t | int | time counter
 marked  | Inctance of class Time | time marked  
 lb | bool | time counter  
 
-## class ListItem:
-Description: class is the cell of space  
+## class ListItem (<<Ontological Space>>)
+Description: Linked list *lst* node 
+Concept: a cell of physical space  
 Bases: object    
 
 `def __init__(self, x, o)`  
@@ -107,7 +110,7 @@ observer | Inctance of class Table | detector
   
 ### Operations:    
 **def appTemp(self, tm)**  
-Description: operation is the  
+Description: append new node to linked list *tmp*  
 Parameters:  
   
 Name | Type | Description  
@@ -115,7 +118,7 @@ Name | Type | Description
 tm | Inctance of class Temp | current time moment  
   
 **def ItemRun(self, tt, tGlob, c)**  
-Description: operation is the 
+Description: activity in physical cell
 Parameters:  
   
 Name | Type | Description  
@@ -125,11 +128,12 @@ tGlob | int | current tick
 c | Inctance of class Carrier | interaction carrier   
   
 **def resetTmp(self)**  
-Description: operation is the  
+Description: set list *tmp* in start   
     
     
-## class Composite
-Description: class is the cell of space  
+## class Composite  (<<Ontological Category>>)
+Description: Composite of pattern *Composite*
+Concept: a physical space model 
 Bases: object    
 
 ` def __init__(self, sizeTick, countTick, observer)`  
@@ -150,11 +154,12 @@ carr | Inctance of class Carrier | interaction carrier
 tick | int | counter time  
 
 ### Operations:    
-**def move(self)**  
-Description: operation is the  
+**def moveReset(self)**  
+Description: all particles set list *Jump* in start   
 **def interaction(self, carIn)**  
-Description: operation is the  
-**def run(self)**  
-Description: operation is the  
+Description: interaction with  infinite mass 
+**def run(self)**  (<<Exist>>)
+Description: activity run
+Concept: activity in physical space  
 
 
