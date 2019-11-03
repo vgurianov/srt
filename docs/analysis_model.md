@@ -162,17 +162,17 @@ Figure 7. 	The measurement
 Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
   
 Main measurement is count. Absolute error of measurement then is 0.5.  
- A unit is "thing" or "piece". A dimensional unit is dimensionless quantity.  
-Result of measurement is called "natural" units, SI and CGS is called "standard" units.  
+A unit of measurement is "thing" or "piece". A dimensional unit is dimensionless quantity.  
+This system of measurement we call "natural" units, SI and CGS is called "standard" units.    
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
 Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
    
 $$
-\begin{align*}
+\begin{align left}
 t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} ,\\  
 dim \nu_{t} = T^{-1} , dim \nu_{x} = L^{-1} , dim \nu_{m} = M^{-1} , \\
-\end{align*}
+\end{align left}
 $$  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
