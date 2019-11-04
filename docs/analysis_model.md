@@ -168,9 +168,9 @@ Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural 
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
 Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
    
-\begin{align}
+\begin{align}  
 &t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} ,\\  
-&dim~ \nu_{t} = T^{-1} , dim~\nu_{x} = L^{-1} , dim~ \nu_{m} = M^{-1} , \\
+&dim~ \nu_{t} = T^{-1} , dim~\nu_{x} = L^{-1} , dim~ \nu_{m} = M^{-1} , \\  
 \end{align}  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
