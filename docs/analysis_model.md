@@ -168,19 +168,19 @@ Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural 
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
 Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
    
-$$
+\begin{equation}
 t = \frac{\tau}{\nu_{t}} , d = \frac{\rho}{\nu_{x}} , m = \frac{\mu}{\nu_{m}} ,\\  
 dim~ \nu_{t} = T^{-1} , dim~\nu_{x} = L^{-1} , dim~ \nu_{m} = M^{-1} , \\
-$$  
+\end{equation}  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
 Cinematics.  
 Velocity measure in tackts:
   
 $$
-\begin{align*}
+\begin{align}
 \beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} ,\\  
-\end{align*}
+\end{align}
 $$   
   
 where k is count tackts, \\(\rho\\) is distance traveled.  
@@ -189,9 +189,9 @@ Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction inte
 Force *f* is  
   
 $$
-\begin{align*}  
-f_{i}/c = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}} \frac{1}{\tau_{R}} \iota_{i} \\
-\end{align*} 
+\begin{align}  
+f_{i}/c = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \iota_{i} \\
+\end{align} 
 $$  
   
 Formula output.  
