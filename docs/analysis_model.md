@@ -224,7 +224,7 @@ $$
 &= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} \biggl( \frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
 \frac{\Delta\rho_{i-1}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
 &= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
-\biggl( \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+\biggl( \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
 &= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
 (\iota/\mu)\\
 &= c\times\frac{\mu}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2} (\iota/\mu)\\
