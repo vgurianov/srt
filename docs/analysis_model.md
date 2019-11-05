@@ -251,8 +251,16 @@ $$
 Finally, we obtain 
   
 $$
-\begin{align*}  
+\begin{equation}  
 \frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = \frac{f}{c}   \\
-\end{align*} 
+\end{equation}. 
+$$  
+  
+Dimention is  
+  
+$$
+\begin{equation}  
+Dim ~ \frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = Dim ~ \frac{f}{c} = MT^{-1}  \\
+\end{equation}. 
 $$  
   
