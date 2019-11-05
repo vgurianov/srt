@@ -170,9 +170,9 @@ Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as
   
 $$    
 \begin{align}    
-    &t = \frac{\tau}{\nu_{t}} , dim~ \nu_{t} = T^{-1} , \\   
-    &d = \frac{\rho}{\nu_{x}} , dim~\nu_{x} = L^{-1} , \\   
-    &m = \frac{\mu}{\nu_{m}} ,dim~ \nu_{m} = M^{-1} ,  \\    
+    &t = \frac{\tau}{\nu_{t}} , ~~ dim~ \nu_{t} = T^{-1} , \\   
+    &d = \frac{\rho}{\nu_{x}} , ~~ dim~\nu_{x} = L^{-1} , \\   
+    &m = \frac{\mu}{\nu_{m}} ,~~ dim~ \nu_{m} = M^{-1} ,  \\    
 \end{align}  
 $$  
   
@@ -181,9 +181,9 @@ Cinematics.
 Velocity measure in tackts:
   
 $$
-\begin{align}
+\begin{equation}
 \beta = \frac{v}{c} = \frac{\rho}{k\tau_{R}} ,\\  
-\end{align}
+\end{equation}
 $$   
   
 where k is count tackts, \\(\rho\\) is distance traveled.  
@@ -192,9 +192,9 @@ Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction inte
 Force *f* is  
   
 $$
-\begin{align}  
+\begin{equation}  \label{A}  
 f_{i}/c = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \iota_{i} \\
-\end{align} 
+\end{equation} 
 $$  
   
 Formula output.  
@@ -202,9 +202,9 @@ Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocit
 We have  
   
 $$
-\begin{align*}
+\begin{equation}
 \Delta p / \Delta t = f \\
-\end{align*}  
+\end{equation}  
 $$  
   
 We get  
