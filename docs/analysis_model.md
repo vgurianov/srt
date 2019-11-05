@@ -169,9 +169,9 @@ By \\(\tau_{R} \\) denote the resolution of tackt of time.
 Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
    
 \begin{align}  
-t = \frac{\tau}{\nu_{t}} , dim~ \nu_{t} = T^{-1} , \\
-d = \frac{\rho}{\nu_{x}} ,  dim~\nu_{x} = L^{-1} , \\
-m = \frac{\mu}{\nu_{m}} ,dim~ \nu_{m} = M^{-1} ,  \\  
+t = \frac{\tau}{\nu_{t}} , dim~ \nu_{t} = T^{-1} , \\  
+d = \frac{\rho}{\nu_{x}} ,  dim~\nu_{x} = L^{-1} , \\  
+m = \frac{\mu}{\nu_{m}} ,dim~ \nu_{m} = M^{-1} ,  \\   
 \end{align}  
    
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
