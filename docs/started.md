@@ -4,6 +4,13 @@ Use pip to install mms via pypi:
 
 ```$ pip install mms```
 
+or from source:
+
+$ git clone https://github.com/vgurianov/srt/mms
+$ cd mms
+$ pip install .
+
+
 Currently, only Python 2.7 is supported.  
   
 Dependencies  
