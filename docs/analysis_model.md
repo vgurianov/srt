@@ -186,7 +186,7 @@ $$
 \end{equation}
 $$   
   
-where k is count tackts, \\(\rho\\) is distance traveled.  
+where k is count tackts, \\(\rho\\) is traveled distance.  
 Dynamics.  
 Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction intensity).  
 Force *f* is  
@@ -212,19 +212,19 @@ We get
 $$
 \begin{align*}
 \Delta p / \Delta t &= \frac{1}{\Delta t} 
-(\frac{m_{0}v_{i}}{\sqrt{1-\beta_{i}^2}}-
-\frac{m_{0}v_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\  
+\biggl( \frac{m_{0}v_{i}}{\sqrt{1-\beta_{i}^2}}-
+\frac{m_{0}v_{i-1}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\  
 &= \frac{m_{0}c}{\Delta t} 
-(\frac{\beta_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{\beta_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+\biggl( \frac{\beta_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{\beta_{i-1}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
 &= \frac{m_{0}c}{\Delta t} 
-(\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
-\frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= \frac{m_{0}c}{\tau_{R}/\nu_{t}} (\frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
-\frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}})\\
-&= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} (\frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
-\frac{\Delta\rho_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+\biggl( \frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
+\frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
+&= \frac{m_{0}c}{\tau_{R}/\nu_{t}} \biggl( \frac{\Delta\rho_{i}/\tau_{R}}{\sqrt{1-\beta_{i}^2}}-
+\frac{\Delta\rho_{i-1}/\tau_{R}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
+&= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} \biggl( \frac{\Delta\rho_{i}}{\sqrt{1-\beta_{i}^2}}-
+\frac{\Delta\rho_{i-1}}{\sqrt{1-\beta_{i-1}^2}} \biggr) \\
 &= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
-(\frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
+\biggl( \frac{j_{i}}{\sqrt{1-\beta_{i}^2}}-\frac{j_{i-1}}{\sqrt{1-\beta_{i-1}^2}})\\
 &= c\times m_{0}\frac{\nu_{t}}{\tau_{R}^2} 
 (\iota/\mu)\\
 &= c\times\frac{\mu}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2} (\iota/\mu)\\
@@ -260,7 +260,7 @@ Dimention is
   
 $$
 \begin{equation}  
-Dim ~ \frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = Dim ~ \frac{f}{c} = MT^{-1}  \\
+dim ~ \frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = dim ~ \frac{f}{c} = MT^{-1} . \\
 \end{equation}. 
 $$  
   
