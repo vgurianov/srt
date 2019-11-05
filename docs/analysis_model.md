@@ -167,13 +167,15 @@ This system of measurement we call "natural" units, SI and CGS is called "standa
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
 Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
-   
-\begin{align}   
+  
+$$    
+\begin{equation}\label{1}   
     &t = \frac{\tau}{\nu_{t}} , dim~ \nu_{t} = T^{-1} , \\   
-    &d = \frac{\rho}{\nu_{x}} ,  dim~\nu_{x} = L^{-1} , \\   
+    &d = \frac{\rho}{\nu_{x}} , dim~\nu_{x} = L^{-1} , \\   
     &m = \frac{\mu}{\nu_{m}} ,dim~ \nu_{m} = M^{-1} ,  \\    
-\end{align}  
-   
+\end{equation}  
+$$  
+  
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
 Cinematics.  
 Velocity measure in tackts:
