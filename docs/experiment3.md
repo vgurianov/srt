@@ -158,8 +158,8 @@ Algorithm:
   
 $$
 \begin{align*} 
-x = \frac{m_{0}c^2}{q \mathcal{E}} \Big( \sqrt{ 1 + (\frac{q \mathcal{E} t}{m_{0}c})^2 } -1 \Big)  \\  
-v = c \sqrt{\frac{(q \mathcal{E} t/m_{0}c)^2}{1+(q \mathcal{E} t/m_{0}c)^2} }   \\  
+&x = \frac{m_{0}c^2}{q \mathcal{E}} \Big( \sqrt{ 1 + (\frac{q \mathcal{E} t}{m_{0}c})^2 } -1 \Big)  \\  
+&v = c \sqrt{\frac{(q \mathcal{E} t/m_{0}c)^2}{1+(q \mathcal{E} t/m_{0}c)^2} }   \\  
 \end{align*} 
 $$  
   
@@ -172,12 +172,12 @@ Parameters: None
 Algorithm: 
   
 $$
-\begin{equation}  
-p_{i} = p_{i-1} + q \mathcal{E} \Delta t \\  
-v_{i} = \frac{p_{i}} {\sqrt{m_{0}^2 + \frac{p_{i}^2}{c^2} } }\\  
-x_{i} = x_{i-1} + v_{i} \Delta t  \\  
-e_{i} = e_{i-1} + q \mathcal{E} \Delta x \\  
-\end{equation}  
+\begin{align*}  
+&p_{i} = p_{i-1} + q \mathcal{E} \Delta t \\  
+&v_{i} = \frac{p_{i}} {\sqrt{m_{0}^2 + \frac{p_{i}^2}{c^2} } }\\  
+&x_{i} = x_{i-1} + v_{i} \Delta t  \\  
+&e_{i} = e_{i-1} + q \mathcal{E} \Delta x \\  
+\end{align*}  
 $$  
   
 where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = m_{0}c^2\\).  
