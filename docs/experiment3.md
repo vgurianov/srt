@@ -99,11 +99,38 @@ Figure 3. Energy as function from momentum
 Points are measurement data. Dash line is numerical solution (Euler method). The continuous line is an analytical curved and compute on formule (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
   
 $$
-\begin{align*}  
+\begin{equation}  
 E = \sqrt{m_{0}^2c^4 + p^2c^2 }   \\  
-\end{align*}  
+\end{equation}  
 $$   
   
+   
+Formula \\(E = m_{0}c^2\\) can output from follow.
+Let particle be rest and force act to the particle.
+Then the particle has start of motion with delay \\(\tau_{d} \\)  
+  
+$$
+\begin{equation}  
+\tau_{d} =   \frac{1}{\tau_{R}} \frac{\mu}{\iota} \\  
+\end{equation}  
+$$   
+  
+or
+  
+$$
+\begin{equation}  
+c^2 \frac{\mu}{\nu_{m}} = c^2 \frac{1}{\nu_{m}} x \tau_{d} \tau_{R} \iota  \\  
+\end{equation}  
+$$   
+ 
+We get
+  
+$$
+\begin{align*} 
+c^2 \frac{\mu}{\nu_{m}} &=
+&=   \tau_{d} \tau_{R} f \\  
+\end{align*} 
+$$  
   
   
 ## 3. Description of experiment3 modul
