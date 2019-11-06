@@ -174,7 +174,7 @@ Algorithm:
 $$
 \begin{align*}  
 &p_{i} = p_{i-1} + q \mathcal{E} \Delta t \\  
-&v_{i} = \frac{p_{i}} {\sqrt{m_{0}^2 + \frac{p_{i}^2}{c^2} } }\\  
+&v_{i} = \frac{p_{i}} {\sqrt{m_{0}^2 + p_{i}^2 / c^2 } }\\  
 &x_{i} = x_{i-1} + v_{i} \Delta t  \\  
 &e_{i} = e_{i-1} + q \mathcal{E} \Delta x \\  
 \end{align*}  
