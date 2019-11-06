@@ -119,7 +119,7 @@ or
   
 $$
 \begin{equation}  
-c^2 \frac{\mu}{\nu_{m}} = c^2 \frac{1}{\nu_{m}} \times \tau_{d} \tau_{R} \iota  \\  
+c^2 \frac{\mu}{\nu_{m}} = c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} \iota}{\tau_{R} }  \\  
 \end{equation}  
 $$   
  
