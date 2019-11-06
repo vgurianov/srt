@@ -264,11 +264,5 @@ dim ~ \frac{1}{\nu_{m}}\frac{\nu_{t}}{\tau_{R}^2}  \times \iota = dim ~ \frac{f}
 \end{equation}. 
 $$  
   
-**Mass and energy**  
-Formula E=m0c2 can output from follow.
-Let particle be rest and force act to the particle.
-Then the particle has start of motion with delay td
-td = \mu / \ieta.
-We get
-\mu / \nu
+
 
