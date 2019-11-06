@@ -111,7 +111,7 @@ Then the particle has start of motion with delay \\(\tau_{d} \\)
   
 $$
 \begin{equation}  
-\tau_{d} =   \frac{1}{\tau_{R}} \frac{\mu}{\iota} \\  
+\tau_{d} =   \tau_{R} \frac{\mu}{\iota} \\  
 \end{equation}  
 $$   
   
@@ -119,7 +119,7 @@ or
   
 $$
 \begin{equation}  
-c^2 \frac{\mu}{\nu_{m}} = c^2 \frac{1}{\nu_{m}} x \tau_{d} \tau_{R} \iota  \\  
+c^2 \frac{\mu}{\nu_{m}} = c^2 \frac{1}{\nu_{m}} \times \tau_{d} \tau_{R} \iota  \\  
 \end{equation}  
 $$   
  
@@ -127,8 +127,8 @@ We get
   
 $$
 \begin{align*} 
-c^2 \frac{\mu}{\nu_{m}} &=
-&=   \tau_{d} \tau_{R} f \\  
+c^2 \frac{\mu}{\nu_{m}} &= \\  
+&=   \frac{\tau_{d} \tau_{R}}{\nu_{x}} f \\  
 \end{align*} 
 $$  
   
