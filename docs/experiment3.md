@@ -129,10 +129,12 @@ $$
 \begin{align*} 
 c^2 \frac{\mu}{\nu_{m}} &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\  
 &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \nu_{m} \frac{\tau_{R}^2}{\nu_{t}} \frac {f}{c} \\  
-&=   c \tau_{d}  \frac{\tau_{R}}{nu_{t}} f \\  
+&=   c \tau_{d}  \frac{\tau_{R}}{\nu_{t}} f \\  
 &=   c \tau_{d}  \Delta T f \\  
 \end{align*} 
 $$  
+  
+Combination of right side has dimension of work and we may by \\(E_{0}\\) denote string \\(\tau_{d}  c \Delta T f \\).  
   
   
 ## 3. Description of experiment3 modul
