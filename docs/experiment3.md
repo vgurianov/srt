@@ -105,8 +105,8 @@ E = \sqrt{m_{0}^2c^4 + p^2c^2 }   \\
 $$   
   
    
-Formula \\(E = m_{0}c^2\\) can output from follow.
-Let particle be rest and force act to the particle.
+Formula \\(E_{0} = m_{0}c^2\\) can output from follow.
+Let particle be rest and force act to its.
 Then the particle has start of motion with delay \\(\tau_{d} \\)  
   
 $$
@@ -115,7 +115,7 @@ $$
 \end{equation}  
 $$   
   
-or
+multiplying both sides by \\( c^2/\nu_{m} \\)
   
 $$
 \begin{equation}  
@@ -127,7 +127,8 @@ We get
   
 $$
 \begin{align*} 
-c^2 \frac{\mu}{\nu_{m}} &= \\  
+c^2 \frac{\mu}{\nu_{m}} &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \iota \\  
+&= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \nu_{m} \frac{\tau^2}{nu_{t} \frac {f}{c} \\  
 &=   \frac{\tau_{d} \tau_{R}}{\nu_{x}} f \\  
 \end{align*} 
 $$  
