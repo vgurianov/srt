@@ -128,6 +128,7 @@ We get
 $$
 \begin{align*} 
 c^2 \frac{\mu}{\nu_{m}} &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\  
+&= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \nu_{m} \frac{\tau^2}{nu_{t}} \frac {f}{c} \\  
 &=   c \tau_{d}  \Delta T f \\  
 \end{align*} 
 $$  
