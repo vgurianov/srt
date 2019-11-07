@@ -115,7 +115,7 @@ $$
 \end{equation}  
 $$   
   
-multiplying both sides by \\( c^2/\nu_{m} \\)
+We get \\(\mu\\) and multiplying both sides by \\( c^2/\nu_{m} \\)
   
 $$
 \begin{equation}  
@@ -127,9 +127,10 @@ We get
   
 $$
 \begin{align*} 
-c^2 \frac{\mu}{\nu_{m}} &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \iota \\  
+c^2 \frac{\mu}{\nu_{m}} &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\  
 &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \nu_{m} \frac{\tau^2}{nu_{t} \frac {f}{c} \\  
-&=   \frac{\tau_{d} \tau_{R}}{\nu_{x}} f \\  
+&=   c \tau_{d} \frac{ \tau_{R}}{\nu_{t}} f \\  
+&=   c \tau_{d}  \Delta T f \\  
 \end{align*} 
 $$  
   
