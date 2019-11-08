@@ -130,11 +130,11 @@ $$
 c^2 m &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\  
 &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d} }{\tau_{R} } \times \nu_{m} \frac{\tau_{R}^2}{\nu_{t}} \frac {f}{c} \\  
 &=   c \tau_{d}  \frac{\tau_{R}}{\nu_{t}} f \\  
-&=   \tau_{d} \times c \Delta T f \\  
+&=   \tau_{d} \times c \Delta t f \\  
 \end{align*} 
 $$  
   
-Combination of right side has dimension of work and we may by \\(E_{0}\\) denote string \\(\tau_{d}  c \Delta T f \\).  
+Combination of right side has dimension of work and we may by \\(E_{0}\\) denote string \\(\tau_{d}  c \Delta t f \\).  
   
   
 ## 3. Description of experiment3 modul
@@ -189,7 +189,7 @@ Algorithm:
   
 $$
 \begin{align*} 
-&x = \frac{m_{0}c^2}{q \mathcal{E}} \Big( \sqrt{ 1 + (\frac{q \mathcal{E} t}{m_{0}c})^2 } -1 \Big)  \\  
+&x = \frac{m_{0}c^2}{q \mathcal{E}} \Big( \sqrt{ 1 + (q \mathcal{E} t / m_{0}c)^2 } -1 \Big)  \\  
 &v = c \sqrt{\frac{(q \mathcal{E} t/m_{0}c)^2}{1+(q \mathcal{E} t/m_{0}c)^2} }   \\  
 \end{align*} 
 $$  
