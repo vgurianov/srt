@@ -42,7 +42,7 @@ Value *ta* compare with *t*
   
 $$
 \begin{align*} 
-\epsilon =  \begin{vmatrix} \frac{t_{a} - t}{t_{a}} \end{vmatrix} \times 100 % \\
+\epsilon =  \bigl| \frac{t_{a} - t}{t_{a}} \bigr| \times 100 % \\
 \end{align*}  
 $$  
   
