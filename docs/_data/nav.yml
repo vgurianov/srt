@@ -13,9 +13,9 @@ toc:
         url: /srt/overview.html
       - page: mms.mms module
         url: /srt/mms.html
-      - page: mms.resacher_instruments module
+      - page: mms.ResacherInstruments module
         url: /srt/resacher_instruments.html
-      - page: mms.print_result and mms.graths modules
+      - page: mms.printResult and mms.graths modules
         url: /srt/print_result.html
   - title: 3. Experiments
     subfolderitems:
