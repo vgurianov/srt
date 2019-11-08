@@ -1,6 +1,6 @@
 # MMS: The Minkowski Metric Simulation
 MMS is a software package that can be used to simulate of the Minkowski metric.  
-It uses UML2 SP language to non-numeric modeling.  
+We uses UML2 SP language to non-numeric modeling.  
 
 
 ## 1. Simulation model  
@@ -17,7 +17,7 @@ Analysis model is simulation model. It is ontology of mechanical motion. This se
 We present class and communication diagrams, and model in pseudo-code C++  
 
 1.3. Design Model  
-Design model in Python
+Design model as Python
 
 ## 2. Package API  
 2.1. Overview is component diagram.
