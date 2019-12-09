@@ -11,15 +11,15 @@ Estimated calculation for \\(\pi ^+\\) meson (pion):
  i.e. we must consider grid 10 x 10.
   
 Parameters of experiment:  
-countTick= 7, sizeTick= 10  
+countTick= 8, sizeTick= 10  
 Particle_velosety= 5 ,i.e v/c = 0.5  
-Time count = 70  
+Time count = 80  
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
 mass = 1 , lightVel = 1.0  
   
   
 ## 2. Results of experiment
-In Table 1 is depicted result of simulation.  
+In table is depicted result of simulation.  
   
 ```
 Trajectory of particle and time particle
@@ -33,6 +33,7 @@ Trajectory of particle and time particle
 | 4  | 2.0 | 4.5 | 4.47 | 0.62 | 4.0 |
 | 5  | 2.5 | 5.6 | 5.59 | 0.18 | 5.0 |
 | 6  | 3.0 | 6.8 | 6.71 | 1.37 | 6.0 |
+| 7  | 3.5 | 7.9 | 7.83 | 0.94 | 7.0 |
 +----+-----+-----+------+------+-----+
 ```
   
