@@ -79,7 +79,7 @@ class Temp:
         self.t = t # time stamp for measurement
 
 class ListItem:
-    x = None
+    x = 0
     left = None
     right = None
     contents = None
@@ -119,14 +119,14 @@ class ListItem:
                     if self.contents.isActivity():
                         self.oneJump()
                     else:
-                        if not self.key:
-                            print "ListItem is act:","for tt=marked=", tt.t, "ListItem=", self.x, "tloc=", self.tmp.t
-                            self.contents.run()
-                            self.observer.fixIt(tGlob, tt.t, self.x, tt.t, self.contents.tick)
-                            self.key = True
-                        else:
-                            self.observer.rewriteIt(tGlob, tt.t, self.x, tt.t, self.contents.tick)
-                            print ",and ListItem is act:","for tt=marked=", tt.t, "ListItem=", self.x, "tloc=", self.tmp.t
+                        #if not self.key:
+                        print "ListItem is act:","for tt=marked=", tt.t, "ListItem=", self.x, "tloc=", self.tmp.t
+                        self.contents.run()
+                        self.observer.fixIt(tGlob, tt.t, self.x, tt.t, self.contents.tick)
+                        self.key = True
+                        #else:
+                            #self.observer.rewriteIt(tGlob, tt.t, self.x, tt.t, self.contents.tick)
+                            #print ",and ListItem is act:","for tt=marked=", tt.t, "ListItem=", self.x, "tloc=", self.tmp.t
 
                         self.contents.doImpact(c)
                         self.observer.detect(tGlob, c)
@@ -146,10 +146,33 @@ class Composite:
 
     tick = 0     # counter time
 
-
-    def __init__(self, sizeTick, countTick, observer):
+    sTick = None # size tact
+    sVel = None  # frame velocity
+    frame_velocity = 0;
+    
+    def __init__(self, sizeTick, countTick, observer, frame_vel):
 
         #self.carr = Carrier()
+
+        # Resolution tact of time i.e. tick
+        self.sTick = Temp(0)
+        csv = self.sTick
+        for i in range(1,sizeTick):
+            csv.next = Temp(i)
+            csv = csv.next
+        
+        #Frame velocity
+        self.frame_velocity = frame_vel
+        if self.frame_velocity<=0:
+            self.sVel = None
+        else:
+            if sizeTick - self.frame_velocity < 0:
+                print "Warning: frame_velocity > sizeTick" 
+            self.sVel = Jump()
+            sV = self.sVel
+            for i in range(1,sizeTick - self.frame_velocity):
+                sV.next = Jump()
+                sV = sV.next
 
         # Space & time
         self.lst = ListItem(0, observer)
@@ -162,7 +185,9 @@ class Composite:
             for i in range(0,sizeTick,1):
                 ll.right = ListItem(ii,observer)
                 tt.next = Temp(ii)
+                leftll = ll
                 ll = ll.right
+                ll.left = leftll
                 tt = tt.next
                 ii = ii+1
 
@@ -170,20 +195,24 @@ class Composite:
         print "Time count =", size            
         #print " "
 
+
+        sh = 0
         tt = self.tmp
         while not (tt is None):
             if tt.lb:
                 s = tt.t
                 ll = self.lst
                 while not (ll is None):
-                    t = math.trunc(math.ceil(math.sqrt(s**2+ll.x**2)))
+                    t = math.trunc(math.ceil(math.sqrt(s**2+(sh-ll.x)**2)))
                     if t < size:
                         st = self.tmp
                         for i in range(0,t,1):
                             st=st.next
                         ll.appTemp(st)
-                        # print "s=",s,"ListItem=",ll.x, "mark=", st.t  #marking debug
+                        #print "s=",s,", t=",t, "ListItem=",ll.x, "mark=", st.t  #marking debug
                     ll = ll.right
+                sh = sh + self.frame_velocity
+                
             tt = tt.next
             
         ll = self.lst
@@ -194,10 +223,12 @@ class Composite:
         #print " "
 
         # particle
-        #self.lst.contents = Leaf(particle_velosety)
-        #print "Particle velosety =",particle_velosety 
+        #self.lst.contents = Leaf(particle_velocity)
+        #print "Particle velocity =",particle_velocity
+        
+         
 
-    def move(self):   # don't use, it is classics
+    def move(self):   # don't use
         ll = self.lst
         while not (ll is None):
             if not (ll.contents is None):
@@ -222,9 +253,9 @@ class Composite:
         while not (ll is None):
             if not (ll.contents is None):
                 if not ll.key:
-                    print "Sync error: Particle reset but in cell=", ll.x, " particle time not sync"
+                    print "Sync error: Particle reset but cell=", ll.x, " not sync"
                 ll.contents.reset()
-            ll = ll.right
+            ll = ll.left
             
         
     def interaction(self, carIn):
@@ -239,6 +270,7 @@ class Composite:
         car = self.interaction(self.carr);
         ll.ItemRun(tt,self.tick,car)
         tt = tt.next
+        sV = None
         
         # run of local time    
         while not (tt is None):
@@ -250,14 +282,31 @@ class Composite:
                 self.moveReset()
                 #car = Carrier()
                 car = self.interaction(self.carr);
+                sV = self.sVel
+                while not (sV is None):
+                    self.lst = self.lst.right
+                    sV = sV.next
+                    
+                
             #else:
                 
+            # space move  
+            #if not (sV is None):
+            #    self.lst = self.lst.right
+            #    sV = sV.next
+            #else:
+            ll = self.lst
+            ll.x = 0
+            while not (ll is None):
+                ll = ll.left
+                if not (ll is None):
+                    ll.x = ll.right.x + 1
+
             ll = self.lst
             while not (ll is None):
                 ll.ItemRun(tt,self.tick, car)
-                ll = ll.right
+                ll = ll.left
                 
-             
                     
             tt = tt.next
 
