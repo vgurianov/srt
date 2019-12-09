@@ -3,16 +3,16 @@
 
 import math
 
-import mms
+import mmsEx
 import ResacherInstruments as ri
 import printResult
 import graths
 
 class originalToolkit(ri.DataProcessing):
     
-    def __init__(self, observer,particle_velocity, sizeTick, countTick):
+    def __init__(self, observer,particle_velosety, sizeTick, countTick):
         #super.__init__(sizeTick, countTick, observer)
-        ri.DataProcessing.__init__(self, observer, particle_velocity, sizeTick, countTick)
+        ri.DataProcessing.__init__(self, observer, particle_velosety, sizeTick, countTick)
 
     # incline calculate
     def incline(self):
@@ -49,7 +49,7 @@ class originalToolkit(ri.DataProcessing):
         
         # accurate: t'=sqrt(s^2+x^2)= sqrt((x/v)^2+x^2)= x*sqrt(1+1/v^2)
         # x=v*s->s=x/v
-        pv = float(self.particle_velocity)/float(self.sizeTick)
+        pv = float(self.particle_velosety)/float(self.sizeTick)
         k_an = math.sqrt(1.0+1.0/(pv*pv))
         print "Analytical incline k_an=",round(k_an,sgn), ",k_err%=", round(math.fabs(100*(k_an-k_ar)/k_an),sgn)
 
@@ -72,16 +72,16 @@ class originalPrint(printResult.TablePrint):
 
 
 
-class freeMotion(mms.Composite):
+class fullMotion(mmsEx.Composite):
     __foo = None
     
-    def __init__(self, sizeTick, countTick, particle_velocity, observer):
+    def __init__(self, sizeTick, countTick, particle_velocity, observer, frame_velocity):
         #super.__init__(sizeTick, countTick, observer)
-        mms.Composite.__init__(self, sizeTick, countTick, observer)
+        mmsEx.Composite.__init__(self, sizeTick, countTick, observer, frame_velocity)
         self.__foo = None
         # particle, initial condition
-        self.lst.contents = mms.Leaf(particle_velocity)
-        print "Particle velocity =",particle_velocity 
+        self.lst.contents = mmsEx.Leaf(particle_velocity)
+        # print "Particle velocity =",particle_velocity 
         self.carr = None
 
     def interaction(self, carIn):
@@ -96,27 +96,28 @@ lm = 1.0/c  # meter of light time
 lifetime = 2.6e-8  # seconds (26 nanoseconds)
 print "Estimated calculation for Pi+ meson (pion):"
 print " lifetime = ", lifetime, "seconds or ",lifetime/lm, " metres of light time"
-beta = 0.5
+beta = 0.0
 print " beta = v/c = ", beta 
 td = lifetime/math.sqrt(1.0 - beta*beta)
 print " time dilation = ",td, " seconds or ", td/lm, " metres of light time"
 print " distance = ", c*beta*td, "metres"
 print
 # Init parametrs section
-particle_velocity = 5 # particle_velosety < sizeTick
+particle_velocity = 0 # particle_velosety < sizeTick
+frame_velocity = 5 # 
 sizeTick = 10 # size of tick
 countTick = 8 # count of ticks
 print "Parameters:"
 print "countTick=",countTick, "sizeTick=", sizeTick
 print "Particle_velocity=",particle_velocity, ",i.e beta = v/c =", float(particle_velocity)/float(sizeTick)
+print "Frame_velocity=",frame_velocity, ",i.e beta = v/c =", float(frame_velocity)/float(sizeTick)
 
 # Run section
 observer = ri.Table()
-#xt= mms.Composite(sizeTick, countTick, particle_velosety, observer)
-xt = freeMotion(sizeTick, countTick, particle_velocity, observer)
+xt = fullMotion(sizeTick, countTick, particle_velocity, observer, frame_velocity)
 print type(xt)
 print
-print "Simulation of particle motion:"
+print "Simulation of frame motion:"
 xt.run()
 
 # Print section
@@ -133,7 +134,7 @@ pr = originalPrint(dp)
 pr.xtPrintPrettyTable()
 
 # incline calculation
-dp.incline()
+# dp.incline()
 print "Experimental error of measurement t is ", (1.0/float(sizeTick))/2.0
 
 # Plot section
