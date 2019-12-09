@@ -43,3 +43,20 @@ Trajectory of particle and time particle
 ## 2. The Principle of Invariant Light Speed  
   
   
+## 3. Description of experiment3 modul
+  
+### Class "freeMotion"  
+
+Description: the class is a simulation model  
+Bases: mms.Composite   
+`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+sizeTick | int | size of time tact
+countTick | int | count of tacts
+particle_velosety | int | inicial speed particle
+observer | Table instance | Detector and recorder
+
+
+Operations:
