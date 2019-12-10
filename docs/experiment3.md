@@ -4,7 +4,7 @@ Principle of relativity is the independence of physical laws  from the choice of
   
 
 ## 1. The Principle of Relativity
-Let \\(V)\\ be velocity a reference frame.  
+Let \\( V \\) be velocity a reference frame.  
 Parameters of experiment: 
 countTick= 8 sizeTick= 10  
 Particle_velocity= 0 ,i.e beta = v/c = 0.0  
