@@ -105,7 +105,7 @@ The operation appTemp(st) create new node of type Temp in cell and mark it as *s
 ![Fig5](Fig1-2-5.png)  
 Figure 5. 	Example of linked list tmp for cells 20 and 80  
   
-If a reference frame has uniform translatory motion then base of space has shift. Let *V* be velocity a reference frame then formula \\(ct = \sqrt(s^2 + (Vs -x)^2) \\) define the rule of marking.
+If a reference frame has uniform translatory motion then base of space has shift. Let *V* be velocity a reference frame then formula \\( ct = \sqrt{s^2 + (Vs -x)^2} \\) define the rule of marking.
   
  
 
