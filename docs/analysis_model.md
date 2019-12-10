@@ -104,6 +104,10 @@ i.e. used formula is  \\( ct = \sqrt{s^2 + x^2}  \\).
 The operation appTemp(st) create new node of type Temp in cell and mark it as *st* (see Fig.5).
 ![Fig5](Fig1-2-5.png)  
 Figure 5. 	Example of linked list tmp for cells 20 and 80  
+  
+If a reference frame has uniform translatory motion then base of space has shift. Let *V* be velocity a reference frame then formula \\(ct = \sqrt(s^2 + (Vs -x)^2) \\) define the rule of marking.
+  
+ 
 
 
 
@@ -143,7 +147,6 @@ If the particle isn't active then particle time has shift and the particle has i
 Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
 The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
 If *j* = 0 then time and interaction as in classical mechanics. If  \\( 0 < j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
- 
 
 ## 5. Measurements
 All epistemology entities has standard types (int, bool, and itc.).  
