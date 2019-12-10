@@ -1,6 +1,6 @@
 # Principle of relativity
 Modul mms.experiment3 simulate uniform translatory motion of a reference frame.  
-Principle of relativity is the independence of physical laws  from the choice of inertial system. It especially important the constancy of the speed of light.  
+Principle of relativity is the independence of physical laws  from the choice of inertial system. It especially important is the constancy of the speed of light.  
   
 
 ## 1. The Principle of Relativity
