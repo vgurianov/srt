@@ -5,9 +5,9 @@ Principle of relativity is the independence of physical laws  from the choice of
 
 ## 1. The Principle of Relativity
 Let \\( V \\) be velocity a reference frame.  
-Parameters of experiment: 
-countTick= 8 sizeTick= 10  
-Particle_velocity= 0 ,i.e beta = v/c = 0.0  
+Parameters of experiment:  
+countTick= 8 sizeTick= 10   
+Particle_velocity= 0 ,i.e beta = v/c = 0.0   
 Time count = 80  
 The reference frame velocity = 5  
   
@@ -52,11 +52,14 @@ We see that the results are identical.
   
 ## 3. Description of experiment3 modul
   
-### Class "freeMotion"  
-
+### Class "fullMotion"  
+  
+It is class like  class freeMotion (see Experiment1.py) but has new argument frame_velocity  
+and one has base class mmsEx.Composite.   
+  
 Description: the class is a simulation model  
-Bases: mms.Composite   
-`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
+Bases: mmsEx.Composite   
+`def __init__(self, sizeTick, countTick, particle_velosety, observer, frame_velocity)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
@@ -64,6 +67,27 @@ sizeTick | int | size of time tact
 countTick | int | count of tacts
 particle_velosety | int | inicial speed particle
 observer | Table instance | Detector and recorder
+frame_velocity | int | frame velocity
 
 
-Operations:
+### Class "mmsEx.Composite"  
+It is class like  class mms.Composit (see mms.py) but has new argument frame_vel.   
+`def __init__(self, sizeTick, countTick, observer, frame_vel)`  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+sizeTick | int | time tick size  
+countTick | int | ticks count   
+observer | Inctance of class Table | detector   
+frame_vel | int | frame velocity  
+  
+### New Attributes:  
+  
+Name | Type | Description  
+---- | ---- | ----------- 
+sTick | Inctance of class Temp | size tact (list) 
+sVel | Inctance of class Jump | frame velocity (list) 
+frame_velocity | int | frame velocity (magnitude)  
+  
+
+
