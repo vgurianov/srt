@@ -81,6 +81,9 @@ countTick | int | ticks count
 observer | Inctance of class Table | detector   
 frame_vel | int | frame velocity  
   
+Here changed the rule of marking.  
+Let *V* be velocity a reference frame then formula \\( ct = \sqrt{s^2 + (Vs -x)^2} \\) define the new rule of marking.  
+  
 ### New Attributes:  
   
 Name | Type | Description  
@@ -89,5 +92,7 @@ sTick | Inctance of class Temp | size tact (list)
 sVel | Inctance of class Jump | frame velocity (list) 
 frame_velocity | int | frame velocity (magnitude)  
   
-
+### Modified Operations:    
+**def run(self)**  (<<Exist>>)  
+It is added shift base of space (variable *lst*)   
 
