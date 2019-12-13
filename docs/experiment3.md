@@ -4,7 +4,6 @@ Principle of relativity is the independence of physical laws  from the choice of
   
 
 ## 1. The Principle of Relativity
-Let \\( V \\) be velocity a reference frame.  
 Parameters of experiment:  
 countTick= 8 sizeTick= 10   
 Particle_velocity= 0 ,i.e beta = v/c = 0.0   
@@ -48,11 +47,29 @@ We see that the results are identical.
 
 
 ## 2. The Principle of Invariant Light Speed  
+Let *frame_velocity* be velocity a reference frame, *sizeTick* size tact of time. 
+The speed limit is implemented by the following code  
   
+```
+        #Frame velocity
+        if self.frame_velocity<=0:
+            self.sVel = None
+        else:
+            if sizeTick - self.frame_velocity < 0:
+                print "Warning: frame_velocity > sizeTick" 
+            self.sVel = Jump()
+            sV = self.sVel
+            for i in range(1,sizeTick - self.frame_velocity):
+                sV.next = Jump()
+                sV = sV.next
+
+```  
+The list length sVel can't be more then the magnitude sizeTick.  
   
+
 ## 3. Description of experiment3 modul
   
-### Class "fullMotion"  
+### Class "irfMotion"  
   
 It is class like  class freeMotion (see Experiment1.py) but has new argument frame_velocity  
 and one has base class mmsEx.Composite.   
