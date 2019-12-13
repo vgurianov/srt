@@ -3,15 +3,25 @@ Modul mms.experiment3 simulate uniform translatory motion of a reference frame.
 Principle of relativity is the independence of physical laws  from the choice of inertial system. It especially important is the constancy of the speed of light.  
   
 
-## 1. The Principle of Relativity
-Parameters of experiment:  
-countTick= 8 sizeTick= 10   
-Particle_velocity= 0 ,i.e beta = v/c = 0.0   
+## 1. The Principle of Relativity  
+Let *sVel* be velocity a reference frame (list), *lst* is base of space.  
+Uniform translatory motion of a reference frame is implemented by the following code  
+  
+```
+sV = self.sVel
+while not (sV is None):
+  self.lst = self.lst.right
+  sV = sV.next
+```  
+  
+Parameters:  
+countTick= 8 sizeTick= 10  
+Particle_velocity= 0 ,i.e beta = v/c = 0.0  
+Frame_velocity= 5 ,i.e beta = v/c = 0.5  
 Time count = 80  
-The reference frame velocity = 5  
   
 ```  
-Trajectory of particle and time particle
+Uniform translatory motion of the reference frame
 +----+-----+-----+------+------+-----+
 | Tw |  x  |  t  |  ta  | err% |  tp |
 +----+-----+-----+------+------+-----+
@@ -23,7 +33,7 @@ Trajectory of particle and time particle
 | 5  | 2.5 | 5.6 | 5.59 | 0.18 | 5.0 |
 | 6  | 3.0 | 6.8 | 6.71 | 1.37 | 6.0 |
 | 7  | 3.5 | 7.9 | 7.83 | 0.94 | 7.0 |
-+----+-----+-----+------+------+-----+  
++----+-----+-----+------+------+-----+
 ```  
   
 We compare with Experimen1 result  
@@ -47,7 +57,7 @@ We see that the results are identical.
 
 
 ## 2. The Principle of Invariant Light Speed  
-Let *frame_velocity* be velocity a reference frame, *sizeTick* size tact of time. 
+Let *frame_velocity* be velocity a reference frame, *sizeTick* is size tact of time. 
 The speed limit is implemented by the following code  
   
 ```
