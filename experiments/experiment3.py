@@ -61,7 +61,7 @@ class originalPrint(printResult.TablePrint):
 
     def xtPrintPrettyTable(self):
         print
-        print "Trajectory of particle and time particle"
+        print "Uniform translatory motion of the reference frame"
         pt = printResult.PrettyTable(["Tw","x", "t", "ta", "err%", "tp"])
 
         for i in self.dt.obs.obtG:
@@ -71,8 +71,8 @@ class originalPrint(printResult.TablePrint):
 
 
 
-
-class fullMotion(mmsEx.Composite):
+# Inertial reference frame
+class irfMotion(mmsEx.Composite):
     __foo = None
     
     def __init__(self, sizeTick, countTick, particle_velocity, observer, frame_velocity):
@@ -114,7 +114,7 @@ print "Frame_velocity=",frame_velocity, ",i.e beta = v/c =", float(frame_velocit
 
 # Run section
 observer = ri.Table()
-xt = fullMotion(sizeTick, countTick, particle_velocity, observer, frame_velocity)
+xt = irfMotion(sizeTick, countTick, particle_velocity, observer, frame_velocity)
 print type(xt)
 print
 print "Simulation of frame motion:"
