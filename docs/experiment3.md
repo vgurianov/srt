@@ -74,7 +74,7 @@ The speed limit is implemented by the following code
                 sV = sV.next
 
 ```  
-The list length sVel can't be more then the magnitude sizeTick.  
+The list length *sVel* can't be more then the magnitude *sizeTick*.  
   
 
 ## 3. Description of experiment3 modul
