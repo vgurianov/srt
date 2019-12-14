@@ -12,6 +12,7 @@ sV = self.sVel
 while not (sV is None):
   self.lst = self.lst.right
   sV = sV.next
+ 
 ```  
   
 Parameters:  
@@ -61,17 +62,22 @@ Let *frame_velocity* be velocity a reference frame, *sizeTick* is size tact of t
 The speed limit is implemented by the following code  
   
 ```
-        #Frame velocity
-        if self.frame_velocity<=0:
-            self.sVel = None
-        else:
-            if sizeTick - self.frame_velocity < 0:
-                print "Warning: frame_velocity > sizeTick" 
-            self.sVel = Jump()
-            sV = self.sVel
-            for i in range(1,sizeTick - self.frame_velocity):
-                sV.next = Jump()
-                sV = sV.next
+# Resolution tact of time i.e. tick
+self.sTick = Jump()
+csv = self.sTick
+for i in range(1,sizeTick):
+  csv.next = Jump()
+  csv = csv.next  
+#Frame velocity
+self.frame_velocity = frame_vel
+if self.frame_velocity<=0:
+  self.sVel = None
+else:
+  if sizeTick - self.frame_velocity < 0:
+    print "Warning: frame_velocity > sizeTick" 
+  self.sVel = self.sTick
+  for i in range(1,sizeTick - self.frame_velocity+1):
+    self.sVel = self.sVel.next
 
 ```  
 The list length *sVel* can't be more then the magnitude *sizeTick*.  
@@ -115,7 +121,7 @@ Let *V* be velocity a reference frame then formula \\( ct = \sqrt{s^2 + (Vs -x)^
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sTick | Inctance of class Temp | size tact (list) 
+sTick | Inctance of class Jump | size tact (list) 
 sVel | Inctance of class Jump | frame velocity (list) 
 frame_velocity | int | frame velocity (magnitude)  
   
