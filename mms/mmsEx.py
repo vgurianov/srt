@@ -155,10 +155,10 @@ class Composite:
         #self.carr = Carrier()
 
         # Resolution tact of time i.e. tick
-        self.sTick = Temp(0)
+        self.sTick = Jump()
         csv = self.sTick
         for i in range(1,sizeTick):
-            csv.next = Temp(i)
+            csv.next = Jump()
             csv = csv.next
         
         #Frame velocity
@@ -168,11 +168,9 @@ class Composite:
         else:
             if sizeTick - self.frame_velocity < 0:
                 print "Warning: frame_velocity > sizeTick" 
-            self.sVel = Jump()
-            sV = self.sVel
-            for i in range(1,sizeTick - self.frame_velocity):
-                sV.next = Jump()
-                sV = sV.next
+            self.sVel = self.sTick
+            for i in range(1,sizeTick - self.frame_velocity+1):
+                self.sVel = self.sVel.next
 
         # Space & time
         self.lst = ListItem(0, observer)
