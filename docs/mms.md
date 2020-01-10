@@ -29,7 +29,7 @@ next | Inctance of class Jump | next node
   
 ## class Leaf  (<<Ontological Atom>>)  
 Description: Leaf of pattern *Composite*  
-Concept: a particle model  
+Concept: Particle  
 Bases: object    
 `def __init__(self, v)`
   
@@ -41,13 +41,13 @@ v | int | velocity of particle
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-headOfJump | Inctance of class Jump | list head
-currentOfJump | Inctance of class Jump | current node of list
+head_of_jump | Inctance of class Jump | list head
+current_jump | Inctance of class Jump | current node of list
 tick | int | time counter  
   
 ### Operations:  
 
-**def isActivity(self)**  
+**def is_active(self)**  
 Description: list *Jump* isn't *None* check  
 **def jumpp(self)**  
 Description: shift list *Jump*  
@@ -55,18 +55,25 @@ Description: shift list *Jump*
 Description: shift list *tmp*  
 **def reset(self)**  
 Description: set list *Jump* in start   
-**def doImpact(self, car)**  
+**def do_impact(self, car)**  
 Description: create node *Jump* and append in list   
 Parameters:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-car | Inctance of class Carrier | interaction carrier   
+car | Inctance of class Carrier | interaction carrier  
+**def interaction(self, car)**  
+Description: The particle impact to the interaction carrier   
+Parameters:  
   
+Name | Type | Description  
+---- | ---- | ----------- 
+car | Inctance of class Carrier | interaction carrier   
+   
 
 ## class Temp  
 Description: Linked list *tmp* node  
-Concept: the moments of time   
+Concept: Time interval   
 Bases: object    
    
 `def __init__(self, t)` 
@@ -81,12 +88,12 @@ Name | Type | Description
 ---- | ---- | ----------- 
 next | Inctance of class Temp | next node  
 t | int | time counter  
-marked  | Inctance of class Time | time marked  
-lb | bool | time counter  
+marker  | Inctance of class Time | time marked  
+dedicated_node | bool | time counter  
 
 ## class ListItem (<<Ontological Space>>)  
 Description: Linked list *lst* node  
-Concept: a cell of physical space  
+Concept: A cell of physical space  
 Bases: object    
 
 `def __init__(self, x, o)`  
@@ -105,29 +112,33 @@ left | Inctance of class ListItem | next node
 right| Inctance of class ListItem | next node
 contents| Inctance of class Leaf | content of cell
 tmp| Inctance of class Time | current node of list 
-temp | Inctance of class Time | head of list
-observer | Inctance of class Table | detector
-  
+count_tmp| int | length list tmp
+temp | Inctance of class Time | head of list  
+observer | Inctance of class Table | detector  
+_err_flag | bool | error indicator  
+
 ### Operations:    
-**def appTemp(self, tm)**  
+**def app_temp(self, tm)**  
 Description: append new node to linked list *tmp*  
 Parameters:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
 tm | Inctance of class Temp | current time moment  
+**def one_jump(self)**  
+Description: one jump of particle   
   
-**def ItemRun(self, tt, tGlob, c)**  
+**def item_run(self, tt, t_glob, c)**  
 Description: activity in physical cell  
 Parameters:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
 tt | Inctance of class Temp | current time moment  
-tGlob | int | current tick   
+t_glob| int | current tick   
 c | Inctance of class Carrier | interaction carrier   
   
-**def resetTmp(self)**  
+**def reset_tmp(self)**  
 Description: set list *tmp* in start   
     
     
@@ -136,12 +147,12 @@ Description: Composite of pattern *Composite*
 Concept: a physical space model  
 Bases: object    
 
-` def __init__(self, sizeTick, countTick, observer)`  
+` def __init__(self, size_tick, count_tick, observer)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | time tick size  
-countTick | int | ticks count   
+size_tick | int | time tick size  
+count_tick | int | ticks count   
 observer | Inctance of class Table | detector   
   
 ### Attributes:  
@@ -154,9 +165,9 @@ carr | Inctance of class Carrier | interaction carrier
 tick | int | counter time  
 
 ### Operations:    
-**def moveReset(self)**  
+**def move_reset(self)**  
 Description: all particles set list *Jump* in start   
-**def interaction(self, carIn)**  
+**def interaction(self, car_in)**  
 Description: interaction with  infinite mass  
 **def run(self)**  (<<Exist>>)  
 Description: activity run  
