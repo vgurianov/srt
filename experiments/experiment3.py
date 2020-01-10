@@ -1,18 +1,25 @@
-# -*- coding: cp1251 -*-
-# Clocks Run Slow modeling
+# -----------------------------------------------------------
+# Experiment 31: Inertial reference frame
+# ver. 1.0 (2020.01.10)
+#
+# (C) 2020 Vasyliy I. Gurianov, Russia
+# Released under MIT License
+# github:  https://github.com/vgurianov/srt
+# email:   vg2007sns@rambler.ru
+# -----------------------------------------------------------
 
 import math
 
-import mmsEx
-import ResacherInstruments as ri
-import printResult
-import graths
+import mms_ex
+import research_instruments as ri
+import print_results
+import drawing
+# -----------------------------------------------------------
 
-class originalToolkit(ri.DataProcessing):
+class OriginalToolkit(ri.DataProcessing):
     
-    def __init__(self, observer,particle_velosety, sizeTick, countTick):
-        #super.__init__(sizeTick, countTick, observer)
-        ri.DataProcessing.__init__(self, observer, particle_velosety, sizeTick, countTick)
+    def __init__(self, observer,particle_velosety, size_tick, count_tick):
+        ri.DataProcessing.__init__(self, observer, particle_velosety, size_tick, count_tick)
 
     # incline calculate
     def incline(self):
@@ -49,44 +56,43 @@ class originalToolkit(ri.DataProcessing):
         
         # accurate: t'=sqrt(s^2+x^2)= sqrt((x/v)^2+x^2)= x*sqrt(1+1/v^2)
         # x=v*s->s=x/v
-        pv = float(self.particle_velosety)/float(self.sizeTick)
+        pv = float(self.particle_velosety)/float(self.size_sick)
         k_an = math.sqrt(1.0+1.0/(pv*pv))
         print "Analytical incline k_an=",round(k_an,sgn), ",k_err%=", round(math.fabs(100*(k_an-k_ar)/k_an),sgn)
 
-# print
-class originalPrint(printResult.TablePrint):
+class OriginalPrint(print_results.TablePrint):
+    """ Data print. """
     def __init__(self, dp):
         #super.__init__(sizeTick, countTick, observer)
-        printResult.TablePrint.__init__(self, dp)
+        print_results.TablePrint.__init__(self, dp)
 
-    def xtPrintPrettyTable(self):
+    def xt_print_prettytable(self):
         print
         print "Uniform translatory motion of the reference frame"
-        pt = printResult.PrettyTable(["Tw","x", "t", "ta", "err%", "tp"])
+        pt = print_results.PrettyTable(["Tw","x", "t", "ta", "err%", "tp"])
 
-        for i in self.dt.obs.obtG:
-            tp = round(float(self.dt.obs.particleT[i]),1) 
+        for i in self.dt.obs.obt_g:
+            tp = round(float(self.dt.obs.particle_t[i]),1) 
             pt.add_row([i, round(self.dt.x[i],2), self.dt.t[i], round(self.dt.t_acc[i],2), round(self.dt.t_local_err[i],2),tp])   
         print pt
 
 
 
-# Inertial reference frame
-class irfMotion(mmsEx.Composite):
-    __foo = None
+class IrfMotion(mms_ex.Composite):
+    """ Concept = Inertial reference frame """
     
-    def __init__(self, sizeTick, countTick, particle_velocity, observer, frame_velocity):
+    def __init__(self, size_tick, count_tick, particle_velocity, observer, frame_velocity):
         #super.__init__(sizeTick, countTick, observer)
-        mmsEx.Composite.__init__(self, sizeTick, countTick, observer, frame_velocity)
+        mms_ex.Composite.__init__(self, size_tick, count_tick, observer, frame_velocity)
         self.__foo = None
         # particle, initial condition
-        self.lst.contents = mmsEx.Leaf(particle_velocity)
+        self.lst.contents = mms_ex.Leaf(particle_velocity)
         # print "Particle velocity =",particle_velocity 
         self.carr = None
 
-    def interaction(self, carIn):
-        carOut = carIn
-        return carOut
+    def interaction(self, car_in):
+        car_out = car_in
+        return car_out
 
         
 # Execute -------------------
@@ -105,16 +111,16 @@ print
 # Init parametrs section
 particle_velocity = 0 # particle_velosety < sizeTick
 frame_velocity = 5 # 
-sizeTick = 10 # size of tick
-countTick = 8 # count of ticks
+size_tick = 10 # size of tick
+count_tick = 8 # count of ticks
 print "Parameters:"
-print "countTick=",countTick, "sizeTick=", sizeTick
-print "Particle_velocity=",particle_velocity, ",i.e beta = v/c =", float(particle_velocity)/float(sizeTick)
-print "Frame_velocity=",frame_velocity, ",i.e beta = v/c =", float(frame_velocity)/float(sizeTick)
+print "count_tick=",count_tick, "size_tick=", size_tick
+print "particle_velocity=",particle_velocity, ",i.e beta = v/c =", float(particle_velocity)/float(size_tick)
+print "frame_velocity=",frame_velocity, ",i.e beta = v/c =", float(frame_velocity)/float(size_tick)
 
 # Run section
 observer = ri.Table()
-xt = irfMotion(sizeTick, countTick, particle_velocity, observer, frame_velocity)
+xt = IrfMotion(size_tick, count_tick, particle_velocity, observer, frame_velocity)
 print type(xt)
 print
 print "Simulation of frame motion:"
@@ -123,23 +129,23 @@ xt.run()
 # Print section
 print
 print "Data processing:"
-dp = originalToolkit(observer, particle_velocity, sizeTick, countTick)
-dp.baseCalculate()
+dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
+dp.base_calculate()
 print
 
 print
 print "Measurement result:"
-pr = originalPrint(dp)
+pr = OriginalPrint(dp)
 #pr.xtPrintSimple()
-pr.xtPrintPrettyTable()
+pr.xt_print_prettytable()
 
 # incline calculation
 # dp.incline()
-print "Experimental error of measurement t is ", (1.0/float(sizeTick))/2.0
+print "Experimental error of measurement t is ", (1.0/float(size_tick))/2.0
 
 # Plot section
 # Graphs
-visio =graths.Visualization(dp)
+visio =drawing.Visualization(dp)
 visio.trajectory1() # plot of motion
 
 

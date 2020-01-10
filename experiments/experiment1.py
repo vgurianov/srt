@@ -1,24 +1,36 @@
-# -*- coding: cp1251 -*-
-# Clocks Run Slow modeling
+# -----------------------------------------------------------
+# Experiment 1: Time dilation
+# ver. 1.0 (2020.01.10)
+#
+# (C) 2020 Vasyliy I. Gurianov, Russia
+# Released under MIT License
+# github:  https://github.com/vgurianov/srt
+# email:   vg2007sns@rambler.ru
+# -----------------------------------------------------------
 
 import math
-
 import mms
-import ResacherInstruments as ri
-import printResult
-import graths
+import research_instruments as ri
+import print_results
+import drawing
+# -----------------------------------------------------------
 
-class originalToolkit(ri.DataProcessing):
-    
-    def __init__(self, observer,particle_velocity, sizeTick, countTick):
-        #super.__init__(sizeTick, countTick, observer)
-        ri.DataProcessing.__init__(self, observer, particle_velocity, sizeTick, countTick)
+class OriginalToolkit(ri.DataProcessing):
+    """ Concept = Incline calculate  """   
+    def __init__(self, observer,particle_velocity, size_tick, count_tick):
+        ri.DataProcessing.__init__(self, observer, particle_velocity, size_tick, count_tick)
+        """
+        Parameters:
+        -----------
+        observer:   detector
+        particle_velocity: particle velocity
+        size_tick:  time tick size 
+        count_tick: ticks count
+        
+        """
 
-    # incline calculate
     def incline(self):
-        """
-        incline k calculate and error
-        """
+        """ Incline k calculate and error """
         sgn = 2  # afte point 0.00
 
         print "It is incline calculate"
@@ -27,7 +39,7 @@ class originalToolkit(ri.DataProcessing):
         dt=[]
         k_ar = 0.0
         print "Point couple method (d=4)"
-        for i in range(0,len(self.obs.obtG)-4,1):
+        for i in range(0,len(self.obs.obt_g)-4,1):
             dx.append(self.obs.obx[i+4]- self.obs.obx[i])
             dt.append(self.obs.obt[i+4]- self.obs.obt[i])
             k_ar1 = float(dt[i])/float(dx[i])
@@ -49,47 +61,55 @@ class originalToolkit(ri.DataProcessing):
         
         # accurate: t'=sqrt(s^2+x^2)= sqrt((x/v)^2+x^2)= x*sqrt(1+1/v^2)
         # x=v*s->s=x/v
-        pv = float(self.particle_velocity)/float(self.sizeTick)
+        pv = float(self.particle_velocity)/float(self.size_tick)
         k_an = math.sqrt(1.0+1.0/(pv*pv))
         print "Analytical incline k_an=",round(k_an,sgn), ",k_err%=", round(math.fabs(100*(k_an-k_ar)/k_an),sgn)
 
-# print
-class originalPrint(printResult.TablePrint):
+class OriginalPrint(print_results.TablePrint):
+    """ Data print. """
     def __init__(self, dp):
-        #super.__init__(sizeTick, countTick, observer)
-        printResult.TablePrint.__init__(self, dp)
+        print_results.TablePrint.__init__(self, dp)
 
-    def xtPrintPrettyTable(self):
+    def xt_print_prettytable(self):
         print
         print "Trajectory of particle and time particle"
-        pt = printResult.PrettyTable(["Tw","x", "t", "ta", "err%", "tp"])
+        pt = print_results.PrettyTable(["Tw","x", "t", "ta", "err%", "tp"])
 
-        for i in self.dt.obs.obtG:
-            tp = round(float(self.dt.obs.particleT[i]),1) 
+        for i in self.dt.obs.obt_g:
+            tp = round(float(self.dt.obs.particle_t[i]),1) 
             pt.add_row([i, round(self.dt.x[i],2), self.dt.t[i], round(self.dt.t_acc[i],2), round(self.dt.t_local_err[i],2),tp])   
         print pt
 
 
 
 
-class freeMotion(mms.Composite):
-    __foo = None
+class FreeMotion(mms.Composite):
+    """ Concept = Free motion of particle """
     
-    def __init__(self, sizeTick, countTick, particle_velocity, observer):
-        #super.__init__(sizeTick, countTick, observer)
-        mms.Composite.__init__(self, sizeTick, countTick, observer)
-        self.__foo = None
+    def __init__(self, size_tick, count_tick, particle_velocity, observer):
+        mms.Composite.__init__(self, size_tick, count_tick, observer)
+        """
+        Parameters:
+        -----------
+        size_tick:  time tick size 
+        count_tick: ticks count
+        particle_velocity: particle velocity
+        observer:   detector
+        
+        """
         # particle, initial condition
         self.lst.contents = mms.Leaf(particle_velocity)
-        print "Particle velocity =",particle_velocity 
+        print "Particle velocity = ",particle_velocity 
         self.carr = None
 
-    def interaction(self, carIn):
-        carOut = carIn
-        return carOut
+    def interaction(self, car_in):
+        # Concept = Interaction    
+        # no interaction   
+        car_out = car_in
+        return car_out
 
-        
-# Execute -------------------
+# Execute ---------------------------------------------------
+
 # Estimated calculation
 c = 2.997925e8 # m/s
 lm = 1.0/c  # meter of light time
@@ -103,18 +123,17 @@ print " time dilation = ",td, " seconds or ", td/lm, " metres of light time"
 print " distance = ", c*beta*td, "metres"
 print
 # Init parametrs section
-particle_velocity = 5 # particle_velosety < sizeTick
-sizeTick = 10 # size of tick
-countTick = 8 # count of ticks
+particle_velocity = 3 # particle_velosety < sizeTick
+size_tick = 10 # size of tick
+count_tick = 8 # count of ticks
 print "Parameters:"
-print "countTick=",countTick, "sizeTick=", sizeTick
-print "Particle_velocity=",particle_velocity, ",i.e beta = v/c =", float(particle_velocity)/float(sizeTick)
+print "count_tick=",count_tick, "size_tick=", size_tick
+print "particle_velocity=",particle_velocity, ",i.e beta = v/c =", float(particle_velocity)/float(size_tick)
 
 # Run section
 observer = ri.Table()
 #xt= mms.Composite(sizeTick, countTick, particle_velosety, observer)
-xt = freeMotion(sizeTick, countTick, particle_velocity, observer)
-print type(xt)
+xt = FreeMotion(size_tick, count_tick, particle_velocity, observer)
 print
 print "Simulation of particle motion:"
 xt.run()
@@ -122,23 +141,23 @@ xt.run()
 # Print section
 print
 print "Data processing:"
-dp = originalToolkit(observer, particle_velocity, sizeTick, countTick)
-dp.baseCalculate()
+dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
+dp.base_calculate()
 print
 
 print
 print "Measurement result:"
-pr = originalPrint(dp)
+pr = OriginalPrint(dp)
 #pr.xtPrintSimple()
-pr.xtPrintPrettyTable()
+pr.xt_print_prettytable()
 
 # incline calculation
 dp.incline()
-print "Experimental error of measurement t is ", (1.0/float(sizeTick))/2.0
+print "Experimental error of measurement t is ", (1.0/float(size_tick))/2.0
 
 # Plot section
 # Graphs
-visio =graths.Visualization(dp)
+visio =drawing.Visualization(dp)
 visio.trajectory1() # plot of motion
 
 
