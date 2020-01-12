@@ -1,11 +1,11 @@
-# mms.pint_result module
+# mms.pint_results module
 Description: modul is printer of experimental data  
   
 Modul use packedgs:
 - from external.prettytable import PrettyTable
 - import math
 
-## class ResultsPrint (self, dat)  
+## class TablePrint (self, dat)  
 Description: class is the data print  
 Bases: object    
 `def __init__(self, dat)`  
@@ -23,21 +23,21 @@ dp | Inctance of class “DataProcessing” | experiment data
   
 ### Operations:  
  
-**def xtPrintSimple(self) and def xtPrintPrettyTable(self)**  
+**def xt_print_simple(self) and def xtPrintPrettyTable(self)**  
 coordinates print  
 print dt.x[i], dt.t[i], dt.t_acc[i]
 
-**def velPrintSimple(self)**  
+**def vel_print_simple(self)**  
 velocity print
 
-**def engPrintSimple(self)**  
+**def eng_print_simple(self)**  
 energy print
 
-**def frompPrintPrettyTable(self)**
+**def fromp_print_prettytable(self)**
 velocity and energy print
   
   
-# mms.graths module  
+# mms.drawing module  
 Description: modul is builder of plots  
   
 Modul use packedgs:
@@ -49,17 +49,17 @@ Modul use packedgs:
 ## class Visualization  
 Description: class Visualization is the data visualizator  
 Bases: object    
-`def __init__(self, d)`    
+`def __init__(self, dat)`    
    
 Name | Type | Description  
 ---- | ---- | ----------- 
-d | Inctance of class “DataProcessing” | experiment data 
+dat | Inctance of class “DataProcessing” | experiment data 
 
 ### Attributes:  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-dp | Inctance of class “DataProcessing” | experiment data 
+dt | Inctance of class “DataProcessing” | experiment data 
   
   
 ### Operations:  
@@ -72,11 +72,11 @@ Parameters: None
 Description:  Treck and curve of invariant interval s  
 Parameters: None  
       
-**def vFromPfunction(self)**  
+**def v_from_p_function(self)**  
 Description:  velocity plot, particle velocity as function momentum   
 Parameters: None  
       
-**def eFromPfunction(self)**  
+**def e_from_p_function(self)**  
 Description:  energy plot, particle energy as function momentum  
 Parameters: None  
     
