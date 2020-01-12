@@ -18,7 +18,7 @@ dat | Inctance of class “DataProcessing” | experiment data
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-dp | Inctance of class “DataProcessing” | experiment data 
+dt | Inctance of class “DataProcessing” | experiment data 
   
   
 ### Operations:  
