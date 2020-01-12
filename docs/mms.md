@@ -58,10 +58,10 @@ Description: set list *Jump* in start
 **def do_impact(self, car)**  
 Description: create node *Jump* and append in list   
 Parameters:  
-  
-Name | Type | Description  
----- | ---- | ----------- 
-car | Inctance of class Carrier | interaction carrier  
+   
+Name | Type | Description   
+---- | ---- | -----------  
+car | Inctance of class Carrier | interaction carrier   
 **def interaction(self, car)**  
 Description: The particle impact to the interaction carrier   
 Parameters:  
@@ -123,7 +123,7 @@ Description: append new node to linked list *tmp*
 Parameters:  
   
 Name | Type | Description  
----- | ---- | ----------- 
+---- | ---- | -----------  
 tm | Inctance of class Temp | current time moment  
 **def one_jump(self)**  
 Description: one jump of particle   
