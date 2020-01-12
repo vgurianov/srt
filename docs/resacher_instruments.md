@@ -13,35 +13,35 @@ Bases: object
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-obtG | int | array of time in the rest frame
+obt_g | int | array of time in the rest frame
 obt | int | array of local time of cell, refined time obtG
 obx | int | array of particle location
-localT | int | array of local time of cell
-particleT | int | array of particle time
-  
+local_t | int | array of local time of cell
+particle_t | int | array of particle time
+pulse_t | int | interection acts
+ 
 ### Operations:  
-**def fixIt(self, tG, tt, xx, locT, prtT)**  
+**def fix_it(self, tg, tt, xx, loc_t, prt_t)**  
 Description: Operation of write data about time and location   
 Parameters:  
   
 Name | Type | Description  
 ---- | ---- | -----------  
-tG | int | moment of time in the rest frame  
+tg | int | moment of time in the rest frame  
 tt | int | moment of local time of cell, refined time obtG  
 xx | int | particle location  
-locT | int | moment of local time of cell  
-prtT | int | moment of particle time  
-pulseT | int | count of interaction acts  
+loc_t | int | moment of local time of cell  
+prt_t | int | moment of particle time  
   
 Returns: None  
   
-**detect(self, tG, c)**  
+**detect(self, tg, c)**  
 Description: Operation write data about intaraction  
 Parameters:
 
 Name | Type | Description  
 ---- | ---- | ----------- 
-tG | int | time in the rest frame
+tg | int | time in the rest frame
 c | Currer instance| Currer intaraction
 
 Return: None
@@ -64,10 +64,10 @@ Name | Type | Description
 ---- | ---- | ----------- 
 obs | Table instance | primary data table
 particle_velosety | int | initial velocity of particle
-sizeTick | int | size tick of time
-countTick | int | count tick of time
+size_tick | int | size tick of time
+count_tick | int | count tick of time
 mass | int | mass = 1.0, mass of particle
-lightVel | int | lightVel = 1.0 # light velocity
+light_vel | int | lightVel = 1.0 # light velocity
 nu_t | int | time coefficient of conversion
 nu_x | int | length coefficient of conversion
 nu_m | int | mass coefficient of conversion
@@ -78,7 +78,7 @@ t_acc | float | accurate time
 t_local_err | int | local error of time
 vel_t | int | experimental value of velocity
 vel_t_err | int | experimental error measurement
-velAnl | int | alytical velocity as function from momentum
+vel_anl | int | alytical velocity as function from momentum
 momentum_t | int | momentum of particle
 eng_t_acc | int | accurate energy
 eng_t | int | measurement energy
@@ -87,13 +87,13 @@ eng_t_err_sum | int | energy measurement error in sum
 
 
 ### Operations: 
-**def baseCalculate(self)**  
+**def base_calculate(self)**  
 Description: This operation call all operations from bottom. It is obligatory calculation.   
 Parameters: None  
 We will use International System of Units (SI) ([m], [s], [kg]).   
 Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the speed of light.
 
-**def xtCalculate(self)**  
+**def xt_calculate(self)**  
 Description: Operation calculate t and x in SI   
 Parameters: None  
   
@@ -110,7 +110,7 @@ $$
   
 where \\(\nu_{t}\\) is the variable value *nu_t*, \\(\nu_{x}\\) is the variable value *nu_x*,  
 t and x write to arrays *t* and *x* (class *DataProcessing*).  
-Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
+Further, we will assume that \\(\nu_{t}\\) = size_tick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
      
 Example:  
 If sizeTick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
@@ -118,12 +118,12 @@ For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).
 If particle in cell \\(\rho\\) = 10 then particle coordinate is 1 [m].
 
 
-**def xtAccurate(self)**  
+**def xt_accurate(self)**  
 Description: accurate t (analytical formula)  
 Parameters: None  
   
 Algorithm:  
-Let s be the variable value *tG* (class *Table*). It is an invariant interval.  
+Let s be the variable value *tg* (class *Table*). It is an invariant interval.  
 Then 
 
 $$
@@ -144,7 +144,7 @@ $$
   
 Value \\(\epsilon\\) write to array *t_local_err*. 
 
-**def velocityCalculate(self)**  
+**def velocity_calculate(self)**  
 Description: experimental value of velocity  
 Parameters: None
 
@@ -161,7 +161,7 @@ $$
   
 Value \\(v_{i}\\) write to array *vel_t*  
    
-**def velErrorCalculate(self, dt, dx)**  
+**def vel_error_calculate(self, dt, dx)**  
 Description: experimental error of velocity  measurement  
 Parameters:
 
@@ -193,7 +193,7 @@ $$
   
 Value \\(\Delta v\\) write to array *vel_t_err*. 
   
-**def momentumCalculate(self)**  
+**def momentum_calculate(self)**  
 Description: calculate particle momentum  
 Parameters: None  
   
@@ -218,16 +218,16 @@ $$
 Value \\(p_{i}\\) write to array *momentum_t*.  
   
   
-**def velAnalytical(self, p)**  
+**def vel_analytical(self, p)**  
 Description: velocity as function from momentum   
 Parameters: p is the calculated momentum of particle  
   
 Algorithm:  
 Using \\(p = \frac{m_{0} v}{\sqrt{1 - v^2 / c^2 } }  \\), we get \\(v = \frac{p}{\sqrt{m_{0}^2+p^2 / c^2 }}  \\).  
   
-Value \\(v\\) write to array *velAnl*.  
+Value \\(v\\) write to array *vel_anl*.  
   
-**def energeAccurate(self)**  
+**def energe_accurate(self)**  
 Description: energy as function from momentum   
 Parameters: None
   
@@ -243,7 +243,7 @@ $$
   
 Value \\(E_{acc}\\) write to array *eng_t_acc*.  
     
-**def energeCalculate(self)**  
+**def energe_calculate(self)**  
 Description: measured energy calculate   
 Parameters: None  
   
