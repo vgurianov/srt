@@ -113,7 +113,7 @@ t and x write to arrays *t* and *x* (class *DataProcessing*).
 Further, we will assume that \\(\nu_{t}\\) = size_tick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
      
 Example:  
-If sizeTick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
+If size_tick = 10 then \\(\nu_{t}\\) = 10 and \\(\nu_{x}\\) = 10
 For moment \\(\tau\\) = 10, t = 1 unit time (1/c second).  
 If particle in cell \\(\rho\\) = 10 then particle coordinate is 1 [m].
 
@@ -172,8 +172,8 @@ dx | float| change of coordinate (in SI)
   
   
 Algorithm:  
-In general case, coefficient \\(\nu_{t}\\) = k*sizeTick, where k is positive integer if you need high accuracy.  
-Further, we will assume that \\(\nu_{t}\\) = sizeTick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
+In general case, coefficient \\(\nu_{t}\\) = k*size_tick, where k is positive integer if you need high accuracy.  
+Further, we will assume that \\(\nu_{t}\\) = size_tick and \\(\nu_{x}\\) = \\(\nu_{t}\\).  
 Then absolute measurement errors are \\(\Delta t = \frac{1}{2} \frac{1}{sizeTick}\\) and \\(\Delta x = \Delta t\\).  
 Let \\(\Delta v\\) be the absolute measurement error of particle velocity v.   
 Then 
@@ -198,7 +198,7 @@ Description: calculate particle momentum
 Parameters: None  
   
 Algorithm:  
-Let \\(\iota_{i} \\) be the variable value *pulseT*. It is count of interaction acts in moment tG (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
+Let \\(\iota_{i} \\) be the variable value *pulse_t*. It is count of interaction acts in moment tg (interaction intensity). Interaction \\(\iota_{i} \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
   
 $$
