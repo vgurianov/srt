@@ -62,6 +62,7 @@ Parameters:
 Name | Type | Description   
 ---- | ---- | -----------  
 car | Inctance of class Carrier | interaction carrier   
+  
 **def interaction(self, car)**  
 Description: The particle impact to the interaction carrier   
 Parameters:  
@@ -125,6 +126,7 @@ Parameters:
 Name | Type | Description  
 ---- | ---- | -----------  
 tm | Inctance of class Temp | current time moment  
+  
 **def one_jump(self)**  
 Description: one jump of particle   
   
