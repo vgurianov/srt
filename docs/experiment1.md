@@ -11,7 +11,7 @@ Estimated calculation for \\(\pi ^+\\) meson (pion):
  i.e. we must consider grid 10 x 10.
   
 Parameters of experiment:  
-countTick= 8, sizeTick= 10  
+count_tick= 8, size_tick= 10  
 Particle_velosety= 5 ,i.e v/c = 0.5  
 Time count = 80  
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
@@ -59,13 +59,14 @@ We processing of data and calculate of incline k (green line)
   
 ```
 Experimental error of measurement t is  0.05
-pair points method (d=4)
+Point couple method (d=4)
 0 20 45 2.25
 1 20 44 2.2
 2 20 45 2.25
-Point count = 3
-Measurement incline k_ar= 2.23 
-k_ar = 2.23 +/- 0.017
+3 20 45 2.25
+Couple count = 4
+Measurement incline k_ar= 2.24
+k_ar = 2.24 +/- 0.012
 
 Analytical incline k_an= 2.24, k_err%= 0.12  
 
@@ -78,16 +79,16 @@ Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.3 \\)
   
 ## 3. Description of experiment1 modul
   
-### Class "freeMotion"  
+### Class "FreeMotion"  
 
 Description: the class is a simulation model  
 Bases: mms.Composite   
-`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
+`def __init__(self, size_tick, count_tick, particle_velosety, observer)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | size of time tact
-countTick | int | count of tacts
+size_tick | int | size of time tact
+count_tick | int | count of tacts
 particle_velosety | int | inicial speed particle
 observer | Table instance | Detector and recorder
 
@@ -98,7 +99,7 @@ def interaction(self, car)
 Description: none interaction
 Parameters: "car" is "Currer" instance  
 
-### Class "originalToolkit"
+### Class "OriginalToolkit"
 
 Description: new procedures join to processor of data
 Bases: ResacherInstruments.DataProcessing  
@@ -108,8 +109,8 @@ Name | Type | Description
 ---- | ---- | ----------- 
 observer | Table instance | Detector and recorder
 particle_velosety | int | inicial speed particle
-sizeTick | int | size of time tact
-countTick | int | count of tacts
+size_tick | int | size of time tact
+count_tick | int | count of tacts
   
 #### Operations:      
 **def incline(self)**  
@@ -119,7 +120,7 @@ Parameters: None
 Algorithm:  
 Analytical value of incline \\(k_{an}\\) can deduce from formula of invariant interval  
 \\( s^2 = c^2t^2 - x^2  \\)  
-Let \\(t'\\) be fix moment of time then distance be \\(x = vt \\).  
+Let \\(t'\\) be fix moment of time then distance be \\(x = vt' \\).  
 We have \\(s = ct' \\) if \\(x = 0 \\).  
 We obtain    
 \\( ct = \sqrt{s^2 + x^2} = \sqrt{(cx/v)^2 + x^2} = x \sqrt{1 + c^2/v^2} \\) .  
@@ -130,7 +131,7 @@ The experiment data processing is
 \\( \Delta t_{i} = t_{i} - t_{i-4}  \\)  
 \\( \Delta x_{i} = x_{i} - x_{i-4}  \\)  
 \\( k_{ar} = \frac{1}{N}\sum_{i=4}^{n} \Delta t_{i} / \Delta x_{i} \\),  
-wher N is count of pairs.  
+wher N is count of couples.  
 
 The standard deviation is  
 \\( sk_{ar} = \sqrt{\operatorname {Var}(k_{ar}) / (N-1)} \\), where \\(\operatorname {Var}(k_{ar}) \\)  is  variance and *N* is count of pair. 
@@ -140,6 +141,6 @@ The confidence interval is
 Then  
 \\( k_{ar} = k_{ar} \pm dk_{ar} \\)  
 
-### Class "originalPrint"
+### Class "OriginalPrint"
 Description: rewrite procedure xtPrintPrettyTable
-Bases: printResult.TablePrint
+Bases: print_results.TablePrint
