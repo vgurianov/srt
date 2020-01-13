@@ -4,19 +4,19 @@ Principle of relativity is the independence of physical laws  from the choice of
   
 
 ## 1. The Principle of Relativity  
-Let *sVel* be velocity a reference frame (list), *lst* is base of space.  
+Let *s_vel* be velocity a reference frame (list), *lst* is base of space.  
 Uniform translatory motion of a reference frame is implemented by the following code  
   
 ```
-sV = self.sVel
+sv = self.s_vel
 while not (sV is None):
   self.lst = self.lst.right
-  sV = sV.next
+  sv = sv.next
  
 ```  
   
 Parameters:  
-countTick= 8 sizeTick= 10  
+count_tick= 8 size_tick= 10  
 Particle_velocity= 0 ,i.e beta = v/c = 0.0  
 Frame_velocity= 5 ,i.e beta = v/c = 0.5  
 Time count = 80  
@@ -58,59 +58,59 @@ We see that the results are identical.
 
 
 ## 2. The Principle of Invariant Light Speed  
-Let *frame_velocity* be velocity a reference frame, *sizeTick* is size tact of time. 
+Let *frame_velocity* be velocity a reference frame, *size_tick* is size tact of time. 
 The speed limit is implemented by the following code  
   
 ```
 # Resolution tact of time i.e. tick
-self.sTick = Jump()
-csv = self.sTick
-for i in range(1,sizeTick):
+self.s_tick = Jump()
+csv = self.s_tick
+for i in range(1,size_tick):
   csv.next = Jump()
   csv = csv.next  
 #Frame velocity
 self.frame_velocity = frame_vel
 if self.frame_velocity<=0:
-  self.sVel = None
+  self.s_vel = None
 else:
-  if sizeTick - self.frame_velocity < 0:
-    print "Warning: frame_velocity > sizeTick" 
-  self.sVel = self.sTick
-  for i in range(1,sizeTick - self.frame_velocity+1):
-    self.sVel = self.sVel.next
+  if size_tick - self.frame_velocity < 0:
+    print "Warning: frame_velocity > size_tick" 
+  self.s_vel = self.s_tick
+  for i in range(1,size_tick - self.frame_velocity+1):
+    self.s_vel = self.s_vel.next
 
 ```  
-The list length *sVel* can't be more then the magnitude *sizeTick*.  
+The list length *s_vel* can't be more then the magnitude *size_tick*.  
   
 
 ## 3. Description of experiment3 modul
   
-### Class "irfMotion"  
+### Class "IrfMotion"  
   
-It is class like  class freeMotion (see Experiment1.py) but has new argument frame_velocity  
+It is class like  class freeMotion (see experiment1.py) but has new argument frame_velocity  
 and one has base class mmsEx.Composite.   
   
 Description: the class is a simulation model  
 Bases: mmsEx.Composite   
-`def __init__(self, sizeTick, countTick, particle_velosety, observer, frame_velocity)`  
+`def __init__(self, size_tick, count_tick, particle_velosety, observer, frame_velocity)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | size of time tact
-countTick | int | count of tacts
+size_tick | int | size of time tact
+count_tick | int | count of tacts
 particle_velosety | int | inicial speed particle
 observer | Table instance | Detector and recorder
 frame_velocity | int | frame velocity
 
 
-### Class "mmsEx.Composite"  
+### Class "mms_ex.Composite"  
 It is class like  class mms.Composit (see mms.py) but has new argument frame_vel.   
 `def __init__(self, sizeTick, countTick, observer, frame_vel)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | time tick size  
-countTick | int | ticks count   
+size_tick | int | time tick size  
+count_tick | int | ticks count   
 observer | Inctance of class Table | detector   
 frame_vel | int | frame velocity  
   
@@ -121,8 +121,8 @@ Let *V* be velocity a reference frame then formula \\( ct = \sqrt{s^2 + (Vs -x)^
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sTick | Inctance of class Jump | size tact (list) 
-sVel | Inctance of class Jump | frame velocity (list) 
+s_tick | Inctance of class Jump | size tact (list) 
+s_vel | Inctance of class Jump | frame velocity (list) 
 frame_velocity | int | frame velocity (magnitude)  
   
 ### Modified Operations:    
