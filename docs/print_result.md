@@ -65,11 +65,11 @@ dt | Inctance of class “DataProcessing” | experiment data
 ### Operations:  
   
 **def trajectory(self)**  
-Description: Treck of particle  
+Description: Track of particle  
 Parameters: None  
   
 **def trajectory1(self)**  
-Description:  Treck and curve of invariant interval s  
+Description:  Track and curve of invariant interval s  
 Parameters: None  
       
 **def v_from_p_function(self)**  
