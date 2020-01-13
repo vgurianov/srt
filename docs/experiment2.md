@@ -36,10 +36,10 @@ We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. We introduce new
 and \\(f = 0.1, \nu_{t} = 10, \nu_{x} = 10\\)  
   
 Variable values:  
-countTick= 8, sizeTick= 10  
-Particle velosety = 0  (initial velocity)  
+count_tick= 8, size_tick= 10  
+particle_velosety = 0  (initial velocity)  
 nu_t = 10.0 , nu_x = 10.0 , nu_m = 1.0  
-mass = 1 , lightVel = 1.0  
+mass = 1 , light_vel = 1.0  
   
 With this resolution, you can perform 8 clock cycles of the system (if Tw = 9 then an error typical of relativistic models arises, which can be called “synchronization failure”).  
 
@@ -135,19 +135,20 @@ c^2 m &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\
 $$  
   
 Combination of right side has dimension of work and we may by \\(E_{0}\\) denote string \\(\tau_{d}  c \Delta t f \\).  
+So, the rest energy is the result of a delay in the start of particle motion.  
   
   
 ## 3. Description of experiment3 modul
 
-### Class "simpleIteraction"
+### Class "SimpleIteraction"
 Description: the class is a simulation model  
 Bases: mms.Composite    
-`def __init__(self, sizeTick, countTick, particle_velosety, observer)`  
+`def __init__(self, size_tick, count_tick, particle_velosety, observer)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-sizeTick | int | size of time tact
-countTick | int | count of tacts
+size_tick | int | size of time tact
+count_tick | int | count of tacts
 particle_velosety | int | inicial speed particle
 observer | Table instance | Detector and recorder
   
@@ -156,28 +157,28 @@ def interaction(self, car)
 Description:  action of electric field  
 Parameters: "car" is "Currer" instance  
     
-### Class "originalToolkit"   
+### Class "OriginalToolkit"   
 Description: new procedures join to processor of data  
-Bases: ResacherInstruments.DataProcessing    
+Bases: resacher_instruments.DataProcessing    
 `def __init__(self, observer,particle_velosety, sizeTick, countTick)`  
   
 Name | Type | Description  
 ---- | ---- | ----------- 
 observer | Table instance | Detector and recorder
 particle_velosety | int | inicial speed particle
-sizeTick | int | size of time tact
-countTick | int | count of tacts
+size_tick | int | size of time tact
+count_tick | int | count of tacts
 
 #### Attributes: 
   
 Name | Type | Description  
 ---- | ---- | ----------- 
-xAtrack | int array | x, analitical solution  
-xNtrack | int array| x, numerical solution 
-pA | int array| momentum, analitical solution  
-vA | int array| velocity, analitical solution  
-vN | int array| velocity, numerical solution
-eN | int array| energy, numerical solution
+xa_track | int array | x, analitical solution  
+xn_track | int array| x, numerical solution 
+pa | int array| momentum, analitical solution  
+va | int array| velocity, analitical solution  
+vn | int array| velocity, numerical solution
+en | int array| energy, numerical solution
   
   
 #### Operations: 
@@ -213,7 +214,7 @@ $$
   
 where \\(p_{0} = 0\\), \\(v_{0} = 0\\),  \\(e_{0} = m_{0}c^2\\).  
   
-Value \\(x_{i}\\) write to array *xNtrack*, value \\(v_{i}\\) write to array *vN*, value \\(e_{i}\\) write to array *eN*.  
+Value \\(x_{i}\\) write to array *xn_track*, value \\(v_{i}\\) write to array *vn*, value \\(e_{i}\\) write to array *en*.  
     
 
     
