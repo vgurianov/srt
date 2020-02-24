@@ -2,7 +2,7 @@
 
 Now, simulation models are widely used in logistics, healthcare, technology, and much other areas. However, in scientific research, preference is given to numerical modeling.  
   
-The reason for this is as follows. In simulation modeling, conceptual models describe as formalism DES or as ontologies, for example, on ontoUML. It is non-numerical modeling.  
+The reason for this is as follows. In simulation modeling, conceptual models describe as formalism DEVS or as ontologies, for example, on ontoUML. It is non-numerical modeling.  
 If we will use simulation, for example, in nanotechnology then we must be able to simulate of relativistic and quantum effects, and it is't clear. There is no clear understanding of how to build such simulation models.  
   
 Here, we introduce MMS, an implementation on Python of simulation model of spacetime for the special relativity theory. This package  is intended to demonstration of possible of relativistic effect simulation. The package also demonstration production numerical data from non-numerical model. All numerical results is result of measurement on data structurs.  
