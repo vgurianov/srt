@@ -21,7 +21,8 @@ If you has matplotlib then install mms from source:
   
 $ git clone https://github.com/vgurianov/srt/mms  
 $ git clone https://github.com/vgurianov/srt/experiments/  
-$ cd mms  
+  
+You must make directory  
 [HOME]  
 	\mms  
 		... modules ...
@@ -34,7 +35,7 @@ You can execute modules, for example
   
 python experiment1.py or in IDLE  
   
-Detales see in documentation [documentation](https://vgurianov.github.io/srt/)  
+Detales see in the [documentation](https://vgurianov.github.io/srt/)  
 
 
   
