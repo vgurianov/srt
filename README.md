@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+   
 # MMS: The Minkowski Metric Simulation
 
 Now, simulation models are widely used in logistics, healthcare, technology, and much other areas. However, in scientific research, preference is given to numerical modeling.  
@@ -9,14 +11,14 @@ Here, we introduce MMS, an implementation on Python of simulation model of space
   
 We used Python on two reasons. First, the Python is object-orientred language and it is can use ontology. Second, the Python is interpretation language and it is do flexy change code.In documentation, we present package API.  
   
-We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation model. It is a profile of UML. UML2 SP models are do not depend on the programming language.  
-In documentation, we present description two experiments. The experiments demonstration the time dilation and dynamic relativistic effects. 
+We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation model. It is a profile of UML. UML2 SP models are do not depend on a programming language.  
+In documentation, we present description some experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
 # Installation  
-The following dependencies are required to install  
+The following dependency is required to install  
   
 [matplotlib](https://matplotlib.org/) (>= 1.4)   
-- for module drawing.py  
+for module drawing.py  
   
 If you has matplotlib then install MMS from source:
   
@@ -35,9 +37,11 @@ You must make directory
 	experiment3.py  
 ```  
 
-You can executed modules, for example  
+You can executed modules, for example in command line  
   
+cd HOME
 python experiment1.py  
+  
 or in IDLE  
   
 Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html)  
