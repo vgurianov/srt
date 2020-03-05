@@ -41,7 +41,7 @@ You must make directory
 	experiment3.py  
 ```  
 
-You can executed modules, for example in command line  
+You can executed modules, for example, in command line  
   
 cd HOME  
 python experiment1.py  
