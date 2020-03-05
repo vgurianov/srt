@@ -15,22 +15,24 @@ We propose simulation model of spacetime as the discrete model of physical space
 In documentation, we present description some experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
 # Installation  
+Currently, only Python 2.7 is supported.  
+  
 The following dependency is required to install  
   
 [matplotlib](https://matplotlib.org/) (>= 1.4)   
   
-for module drawing.py  
+for module drawing.py.  
   
 If you has matplotlib then install MMS from source:
   
-$ git clone --recursive https://github.com/vgurianov/srt.git  
-or Download ZIP  
+$ git clone https://github.com/vgurianov/srt.git [HOME] 
+or Download ZIP.  
   
-Take the package *mms* and files from the *experiments* directory  
+Take the package *pymms* and files from the *experiments* directory  
 You must make directory  
 ```
 [HOME]  
-	\mms  
+	\pymms  
 		... modules ...
   
 	experiment1.py  
@@ -43,9 +45,9 @@ You can executed modules, for example in command line
 cd HOME  
 python experiment1.py  
   
-or in IDLE  
+or in IDLE.  
   
-Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html)  
+Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
 
 
   
