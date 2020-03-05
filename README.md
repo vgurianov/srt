@@ -15,13 +15,15 @@ In documentation, we present description two experiments. The experiments demons
 # Installation  
 The following dependencies are required to install  
   
-[matplotlib](https://matplotlib.org/) (>= 1.4)   - for module drawing.py
+[matplotlib](https://matplotlib.org/) (>= 1.4)   
+- for module drawing.py  
   
 If you has matplotlib then install MMS from source:
   
-$ git clone --recursive https://github.com/vgurianov/srt.git 
-or Download ZIP
+$ git clone --recursive https://github.com/vgurianov/srt.git  
+or Download ZIP  
   
+Take the package *mms* and files from the *experiments* directory  
 You must make directory  
 ```
 [HOME]  
@@ -35,9 +37,10 @@ You must make directory
 
 You can executed modules, for example  
   
-python experiment1.py or in IDLE  
+python experiment1.py  
+or in IDLE  
   
-Also you may install MMS from PyPI [https://vgurianov.github.io/srt/started.html](https://vgurianov.github.io/srt/started.html)  
+Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html)  
 
 
   
