@@ -23,9 +23,10 @@ The following dependency is required to install
   
 for module drawing.py.  
   
+   
 If you has matplotlib then install MMS from source:
   
-$ git clone https://github.com/vgurianov/srt.git [HOME] 
+$ git clone https://github.com/vgurianov/srt.git [HOME]  
 or Download ZIP.  
   
 Take the package *pymms* and files from the *experiments* directory  
