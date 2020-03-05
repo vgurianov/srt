@@ -18,6 +18,7 @@ In documentation, we present description some experiments. Experiments demonstra
 The following dependency is required to install  
   
 [matplotlib](https://matplotlib.org/) (>= 1.4)   
+  
 for module drawing.py  
   
 If you has matplotlib then install MMS from source:
@@ -39,7 +40,7 @@ You must make directory
 
 You can executed modules, for example in command line  
   
-cd HOME
+cd HOME  
 python experiment1.py  
   
 or in IDLE  
