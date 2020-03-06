@@ -34,7 +34,7 @@ You must make directory
 ```
 [SRC]
    ├──+\pymms  
-   │	     └── ... modules ...
+   │      └── ... modules ...  
    │
    ├── experiment1.py  
    ├── experiment2.py  
