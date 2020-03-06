@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-270/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
    
 # MMS: The Minkowski Metric Simulation
 
@@ -14,7 +14,7 @@ We used Python on two reasons. First, the Python is object-orientred language an
 We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation model. It is a profile of UML. UML2 SP models are do not depend on a programming language.  
 In documentation, we present description some experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
-# Installation  
+## Installation  
 Currently, only Python 2.7 is supported.  
   
 The following dependency is required to install  
@@ -32,16 +32,16 @@ or Download ZIP.
 Take the package *pymms* and files from the *experiments* directory  
 You must make directory  
 ```
-[HOME]  
-	\pymms  
-		... modules ...
-  
-	experiment1.py  
-	experiment2.py  
-	experiment3.py  
+[HOME]
+    ├──+\pymms  
+    │	    └── ... modules ...
+    │
+    ├──	experiment1.py  
+    ├── experiment2.py  
+    └── experiment3.py  
 ```  
 
-You can executed modules, for example, in command line  
+You can executed experiments, for example, in command line  
   
 cd HOME  
 python experiment1.py  
