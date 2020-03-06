@@ -33,12 +33,12 @@ Take the package *pymms* and files from the *experiments* directory
 You must make directory  
 ```
 [SRC]
-    ├──+\pymms  
-    │	    └── ... modules ...
-    │
-    ├──	experiment1.py  
-    ├── experiment2.py  
-    └── experiment3.py  
+   ├──+\pymms  
+   │	     └── ... modules ...
+   │
+   ├── experiment1.py  
+   ├── experiment2.py  
+   └── experiment3.py  
 ```  
 
 You can executed experiments, for example, in command line  
