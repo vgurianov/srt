@@ -50,7 +50,7 @@ or in IDLE.
   
 Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
 
-## Citing
+## Publication
 Gurianov V.I. Direct measurement procedure of particle energy-momentum in model of the discrete space-time // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
 E-mail: vg2007sns@rambler.ru  
   
