@@ -44,7 +44,7 @@ You must make directory
 You can executed experiments, for example, in command line  
   
 cd src  
-python experiment1.py  
+python experiment1.py  ,etc.   
   
 or in IDLE.  
   
