@@ -29,7 +29,7 @@ If you has matplotlib then install MMS from source:
 $ git clone https://github.com/vgurianov/srt.git   
 or Download ZIP.  
   
-Take the package *pymms* and files from the *experiments* directory  
+You must take the package *pymms* and files from the *experiments* directory.  
 You must make directory  
 ```
 [SRC]
