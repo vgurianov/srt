@@ -3,9 +3,10 @@ Currently, only Python 2.7 is supported.
   
 ## Dependencies  
    
-The following dependency is required to install and use pymms:  
+The following dependency is required to install and use PyMMS:  
   
-[matplotlib](https://matplotlib.org/) (>= 1.4) for module drawing.py.  
+[matplotlib](https://matplotlib.org/) (>= 1.4)  
+for module drawing.py.  
   
 ## Installation
 
@@ -37,8 +38,8 @@ or in IDLE.
 
  
 ### 2. Use pip to install  
-Also you may install PyMMS from PyPI. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/)    
-Install pymms with pip::  
+Also you may install PyMMS from PyPI. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/).    
+Install PyMMS with pip::  
   
 ```$ pip install pymms```
   
@@ -51,6 +52,7 @@ $ pip install or $ python setup.py install
 ```  
   
 You can find modules in directory ...\Python27\Lib\site-packages  
+  
 Usege command  
  
 ```$ python -m pip show pymms```
