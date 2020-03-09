@@ -21,12 +21,13 @@ The following dependency is required to install
   
 [matplotlib](https://matplotlib.org/) (>= 1.4)   
   
-for module drawing.py.  
+for the module drawing.py.  
   
    
 If you has matplotlib then install MMS from source:
   
-$ git clone https://github.com/vgurianov/srt.git   
+```$ git clone https://github.com/vgurianov/srt.git```   
+  
 or Download ZIP.  
   
 You must take the package *pymms* and files from the *experiments* directory.  
@@ -43,9 +44,11 @@ You must make directory
 
 You can executed experiments, for example, in command line  
   
+```
 $ cd src  
 $ python experiment1.py  ,etc.   
-  
+```  
+   
 or in IDLE.  
   
 Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
