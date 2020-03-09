@@ -3,7 +3,7 @@ Currently, only Python 2.7 is supported.
   
 ## Dependencies  
    
-The following dependencies are required to install and use mms:  
+The following dependency is required to install and use pymms:  
   
 [matplotlib](https://matplotlib.org/) (>= 1.4) for module drawing.py.  
   
@@ -11,7 +11,7 @@ The following dependencies are required to install and use mms:
 
 ### 1. Installation to a directory
 This package is intended to demonstration of possible of relativistic effect simulation and we recommendation simle install in some directory.   
-If you has matplotlib then install MMS from source:
+If you has matplotlib then install PyMMS from source:
   
 ```$ git clone https://github.com/vgurianov/srt.git```   
 or Download ZIP.  
@@ -37,7 +37,7 @@ or in IDLE.
 
  
 ### 2. Use pip to install  
-Also you may install MMS from PyPI   
+Also you may install PyMMS from PyPI. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/)    
 Install pymms with pip::  
   
 ```$ pip install pymms```
@@ -57,5 +57,5 @@ Usege command
 
 for more information.  
   
-About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/)  
+ 
   
