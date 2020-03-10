@@ -46,7 +46,7 @@ You can executed experiments, for example, in command line
   
 ```
 $ cd src  
-$ python experiment1.py  ,etc.   
+$ python experiment1.py  ,and etc.   
 ```  
    
 or in IDLE.  
@@ -54,7 +54,7 @@ or in IDLE.
 Also you may install MMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
 
 ## Publication
-Gurianov V.I. Direct measurement procedure of particle energy-momentum in model of the discrete space-time // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
+Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete space-time model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
 E-mail: vg2007sns@rambler.ru  
   
 
