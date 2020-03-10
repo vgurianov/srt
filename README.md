@@ -33,8 +33,8 @@ or Download ZIP.
 You must take the package *pymms* and files from the *experiments* directory.  
 You must make directory  
 ```
-[SRC]
-   ├──+\pymms  
+src/
+   ├──+pymms/  
    │      └── ... modules ...  
    │
    ├── experiment1.py  
