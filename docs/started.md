@@ -40,14 +40,14 @@ or in IDLE.
 Also you may install PyMMS from PyPI then dependencies install is automatic. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/).    
 Install PyMMS with pip:  
   
-```$ pip install pymms```
+```$ python -m pip install pymms```
   
 or from source:  
   
 ```  
 $ git clone https://github.com/vgurianov/srt.git
 $ cd src
-$ pip install  
+$ python -m pip install  
 ```  
   
 You can find package in directory ...\Python27\Lib\site-packages  
