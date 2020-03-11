@@ -24,11 +24,8 @@ The following dependency is required to install
 for the module drawing.py.  
   
    
-If you has matplotlib then install PyMMS from source:
-  
-```$ git clone https://github.com/vgurianov/srt.git```   
-  
-or Download ZIP.  
+If you has matplotlib then install PyMMS from source.  
+Go to https://github.com/vgurianov/srt/ and click the green button "Clone or download", then click "Download ZIP" to download the whole repository.  
   
 You must take the package *pymms* and files from the *experiments* directory.  
 You must make directory  
