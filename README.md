@@ -14,7 +14,7 @@ We used Python on two reasons. First, the Python is object-orientred language an
 We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation model. It is a profile of UML. UML2 SP models are do not depend from programming languages.  
 In documentation, we present description some experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
-## Installation PyMMS  
+## Getting started with PyMMS  
 Currently, only Python 2.7 is supported.  
   
 The following dependency is required to install  
