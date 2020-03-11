@@ -43,11 +43,9 @@ Install PyMMS with pip:
 You can find package in directory ...\Python27\Lib\site-packages  
   
 Usege command  
- 
 ```$ python -m pip show pymms```
-
 for more information.  
   
-For uninstall package use
+For uninstall package use command   
 ```$ python -m pip uninstall pymms```
   
