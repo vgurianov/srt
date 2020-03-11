@@ -10,7 +10,7 @@ for module drawing.py.
   
 ## Installation PyMMS
 
-### 1. Installation to a directory
+### 1. Download to a directory
 This package is intended to demonstration of the simulation code and we recommendation simple load in some directory, i.e. without installing the package.   
 If you has matplotlib then install PyMMS from source:
   
