@@ -8,8 +8,6 @@ The following dependency is required to install and use PyMMS:
 [matplotlib](https://matplotlib.org/) (>= 1.4)  
 for module drawing.py.  
   
-## Installation PyMMS
-
 ### 1. Download to a directory
 This package is intended to demonstration of the simulation code and we recommendation simple load in some directory, i.e. without installing the package.   
 If you has matplotlib then install PyMMS from source:
@@ -42,14 +40,6 @@ Install PyMMS with pip:
   
 ```$ python -m pip install pymms```
   
-or from source:  
-  
-```  
-$ git clone https://github.com/vgurianov/srt.git
-$ cd src
-$ python -m pip install  
-```  
-  
 You can find package in directory ...\Python27\Lib\site-packages  
   
 Usege command  
@@ -58,5 +48,6 @@ Usege command
 
 for more information.  
   
- 
+For uninstall package use
+```$ python -m pip uninstall pymms```
   
