@@ -1,0 +1,10 @@
+language: python
+  - "2.7"
+
+env:
+  - matplotlib >=1.4.3
+  
+install:
+  - pip install pymms
+  
+script: python test_simple.py
