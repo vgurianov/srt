@@ -1,10 +1,14 @@
 language: python
+python:
   - "2.7"
 
 env:
   - matplotlib >=1.4.3
   
+# command to install dependencies
 install:
-  - pip install pymms
-  
-script: python test_simple.py
+  - python setup.py install
+
+# command to run tests
+script:  
+  - test_simple
