@@ -10,7 +10,7 @@ class PyMmsTestCase(TestCase):
     def test_run(self):
         observer = ri.Table()
         xt= mms.Composite( 10, 1, observer)
-        dp = ri.DataProcessing()
+        dp = ri.DataProcessing(observer, 5, 10, 10)
         pr = print_results.TablePrint(dp)
         visio = drawing.Visualization(dp)
         self.assertEqual(xt.runtest(), 'Test mms')
