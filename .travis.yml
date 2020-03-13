@@ -5,7 +5,8 @@ python:
 # command to install dependencies
 install:
   - python setup.py install
+  - pip install pytest-cov
 
 # command to run tests
 script:  
-  - test_simple
+  - pytest --cov=pymms/
