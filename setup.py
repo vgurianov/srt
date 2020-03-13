@@ -12,7 +12,7 @@ setup(
     url='https://vgurianov.github.io/srt/mms/',    
     packages=find_packages(exclude=['experiments']),
     install_requires=[
-        'matplotlib >=1.4.3'
+        'matplotlib ==2.2.4'
     ],
     long_description=open('README.md').read(),
     zip_safe=False,
