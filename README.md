@@ -19,7 +19,7 @@ Currently, only Python 2.7 is supported.
   
 The following dependency is required to install  
   
-[matplotlib](https://matplotlib.org/) (>= 1.4)   
+[matplotlib](https://matplotlib.org/) (>= 1.4, advise 2.2.4)   
   
 for the module drawing.py.  
   
