@@ -11,7 +11,7 @@ Here, we introduce MMS, an implementation on Python of simulation model of space
   
 We used Python on two reasons. First, the Python is object-orientred language and it is can use ontology. Second, the Python is interpretation language and it is do flexy change code.In documentation, we present package API.  
   
-We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation model. It is a profile of UML. UML2 SP models are do not depend from programming languages.  
+We propose simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile)  used to development of simulation models. It is a profile of UML. UML2 SP models are do not depend from programming languages.  
 In documentation, we present description some experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
 ## Getting started with PyMMS  
@@ -24,7 +24,7 @@ The following dependency is required to install
 for the module drawing.py.  
   
    
-If you has matplotlib then install PyMMS from source.  
+If you has matplotlib then take PyMMS from source.  
 Go to https://github.com/vgurianov/srt/ and click the green button "Clone or download", then click "Download ZIP" to download the whole repository.  
   
 You must take the package *pymms* and files from the *experiments* directory.  
