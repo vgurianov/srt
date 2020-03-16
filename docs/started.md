@@ -6,11 +6,11 @@ Currently, only Python 2.7 is supported.
 The following dependency is required to install and use PyMMS:  
   
 [matplotlib](https://matplotlib.org/) (>= 1.4)  
-for module drawing.py.  
+for module drawing.py. We usage version 2.2.4.  
   
 ### 1. Download to a directory
 This package is intended to demonstration of the simulation code and we recommendation simple load in some directory, i.e. without installing the package.   
-If you has matplotlib then install PyMMS from source:
+If you has matplotlib then take PyMMS from source:
   
 ```$ git clone https://github.com/vgurianov/srt.git```   
 or Download ZIP.  
@@ -35,7 +35,7 @@ or in IDLE.
 
  
 ### 2. Use pip to install  
-Also you may install PyMMS from PyPI then dependencies install is automatic. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/).    
+Also you may install PyMMS from [PyPI](https://pypi.org/project/pymms/#history) then dependencies install is automatic. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/).    
 Install PyMMS with pip:  
   
 ```$ python -m pip install pymms```
