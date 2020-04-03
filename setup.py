@@ -10,7 +10,7 @@ setup(
     author='Vasyliy I. Gurianov',
     author_email='vg2007sns@rambler.ru',
     url='https://vgurianov.github.io/srt/mms/',    
-    packages=find_packages(exclude=['experiments','paper']),
+    packages=find_packages(exclude=['experiments']),
     install_requires=[
         'matplotlib ==2.2.4'
     ],
