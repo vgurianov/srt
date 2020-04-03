@@ -9,7 +9,7 @@ setup(
     license='MIT',
     author='Vasyliy I. Gurianov',
     author_email='vg2007sns@rambler.ru',
-    url='https://vgurianov.github.io/srt/pymms/',    
+    url='https://vgurianov.github.io/srt',    
     packages=find_packages(exclude=['experiments']),
     install_requires=[
         'matplotlib ==2.2.4'
