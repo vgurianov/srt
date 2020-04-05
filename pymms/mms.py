@@ -161,9 +161,9 @@ class ListItem:
 
     def item_run(
         self,
-        tt,
-        t_glob,
-        c,
+        tt, # current time moment
+        t_glob, # current tick
+        c, # interaction carrier
         ):
         """ Concept = One step local time of the cell """
 
@@ -219,7 +219,7 @@ class Composite:
 
     def __init__(
         self,
-        size_tick,
+        size_tick, 
         count_tick,
         observer,
         ):
