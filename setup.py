@@ -17,5 +17,5 @@ setup(
     long_description=open('README.md').read(),
     zip_safe=False,
     # test_suite='test',
-    python_requires='==2.7',
+    python_requires='==2.7.15',
 )
