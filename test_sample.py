@@ -12,4 +12,5 @@ def test_run():
     dp = ri.DataProcessing(observer, 5, 10, 10)
     pr = print_results.TablePrint(dp)
     visio = drawing.Visualization(dp)
+    
     assert xt.runtest() == 'Test mms'
