@@ -6,8 +6,8 @@ python:
 install:
   pip install .
   #- python setup.py install
-  #- pip install pytest-cov
+  - pip install pytest-cov
 
 # command to run tests
-#script:  
-  #- pytest --cov=pymms/  
+script:  
+  - pytest --cov=pymms/  
