@@ -34,7 +34,7 @@ $ python experiment1.py  ,and etc.
 or in IDLE.  
 
  
-### 2. Use pip to install  
+### 2. Use pip to install (for Python 2.7 must be pip ver.19.0.3)  
 Also you may install PyMMS from [PyPI](https://pypi.org/project/pymms/#history) then dependencies install is automatic. About *pip* see [hear](https://packaging.python.org/tutorials/installing-packages/).    
 Install PyMMS with pip:  
   
@@ -60,7 +60,9 @@ Install PyMMS:
   
 ```  
 $ cd src  
-$ python setup.py install   
+$ python setup.py install   (for Python 2.7.10)
+or
+$ pip install .  (for Python 2.7.15)
 ```  
   
 Usege command  
