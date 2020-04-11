@@ -9,13 +9,13 @@ The following dependency is required to install and use PyMMS:
 for module drawing.py. We usage version 2.2.4.  
   
 ### 1. Download to a directory
-This package is intended to demonstration of the simulation code and we recommendation simple load in some directory, i.e. without installing the package.   
-If you has matplotlib then take PyMMS from source:
+This package is intended to demonstrate the simulation code and we recommendation simple load in some directory, i.e. without installing the package.   
+If you have matplotlib then take PyMMS from source:
   
 ```$ git clone https://github.com/vgurianov/srt.git```   
 or Download ZIP.  
   
-You must take the package *pymms* and files from the *experiments* directory and make directory  
+You must take the package *pymms* and files from the *experiments* directory and make a directory  
 ```
 src/
    ├──+pymms/  
@@ -26,7 +26,7 @@ src/
    └── experiment3.py  
 ```  
 
-You can executed experiments, for example, in command line  
+You can execute experiments, for example, in the command line  
 ```  
 $ cd src  
 $ python experiment1.py  ,and etc.   
@@ -40,13 +40,13 @@ Install PyMMS with pip:
   
 ```$ python -m pip install pymms```
   
-You can find package in directory ...\Python27\Lib\site-packages  
+You can find the package in the directory ...\Python27\Lib\site-packages  
   
-Usege command  
+Usage command  
 ```$ python -m pip show pymms```  
 for more information.  
   
-For uninstall package use command   
+For uninstall the package use command   
 ```$ python -m pip uninstall pymms```  
   
 ### 3. Install from source  
@@ -65,11 +65,11 @@ or
 $ pip install .  (for Python 2.7.15)
 ```  
   
-Usege command  
+Usage command  
 ```$ python -m pip show pymms```  
 for more information.  
   
-For uninstall package use command   
+For uninstall the package use command   
 ```$ python -m pip uninstall pymms```  
   
   
