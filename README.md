@@ -24,7 +24,7 @@ The following dependency is required to install
 for the module drawing.py.  
   
    
-If you has matplotlib then take PyMMS from source.  
+If you have matplotlib then take PyMMS from source.  
 Go to https://github.com/vgurianov/srt/ and click the green button "Clone or download", then click "Download ZIP" to download the whole repository.  
   
 You must take the package *pymms* and files from the *experiments* directory.  
@@ -39,7 +39,7 @@ src/
    └── experiment3.py  
 ```  
 
-You can executed experiments, for example, in command line  
+You can execute experiments, for example, in the command line  
   
 ```
 $ cd src  
@@ -48,7 +48,7 @@ $ python experiment1.py  ,and etc.
    
 or in IDLE.  
   
-Also you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
+Also, you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
 
 ## Publication
 Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete space-time model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
