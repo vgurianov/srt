@@ -1,10 +1,11 @@
 # Use-Case model
-Use case modeling is a form of requirements engineering. Use Case model define functional requirements to softvare.   
+Use case modeling is a form of requirements engineering. Use Case model defines functional requirements for software.   
 
 ![Fig1](Fig1-1-1.png)  
 Figure 2. Use-Case diagram 
   
-    
+The main script is Use-Case "Run".  
+  
 ## Use case: Run
    
 * **Short description:** execution experiment
@@ -17,7 +18,7 @@ Figure 2. Use-Case diagram
 2.2. control print  
 2.3. next moment of time   
 * **Postconditions:** Data table is full  
-* **Secondary scenarios:**  
+* **Alternative script:**  
 1. syncError  
 
   
