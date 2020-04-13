@@ -1,11 +1,11 @@
 # Analysis model
-In UML2 SP, simulation model described as ontology. Classes are considered as the Minsky frames. The language details  view on site  [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
+In UML2 SP, a simulation model described as ontology. Classes are considered as the Minsky frames. The language details  view on-site  [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
   
 ## 1. Ontology of Special Relativity Theory  
 Semantic net definition.  
 Classical mechanics concepts can view [here](https://vgurianov.github.io/uml-sp/case_studies/newton/newton).  
-In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is synchronization rule of  time of mechanical system and local time of cells.  
-Main concepts are Physical space-time, Cell of space, Interval of time, Local Time (it is attribute frame ListItem) , and Synchronization (fig.1). 
+In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is a synchronization rule of time of a mechanical system and local time of cells.  
+The main concepts are Physical space-time, Cell of space, Interval of time, Local Time (it is attribute frame ListItem) , and Synchronization (fig.1). 
   
 ![Fig1](Fig1-2-1.png)
 Figure 1. Ontology of Special Relativity Theory   
@@ -19,8 +19,8 @@ Use case "Run" realization is depicted in Fig.2.
 ![Fig2](Fig1-2-2.png)  
 Figure 2. Communication diagram of operation "Run"  
   
-The operation Run() has base cycle on a linked list *tmp*. For each node t, there executed cycle on linked list *lst* and each node *item* get message *itemRun()*.  
-If node t has t.lb = true then it is called "bearing" moment of time. Nodes number beatween "bearing" moments is called resolution of tackt of time (\\(\tau_{R} \\)). Variable *tick* is count of "bearing" moments (Tw).  
+The operation Run() has the base cycle on a linked list *tmp*. For each node t, there executed cycle on linked list *lst* and each node *item* get message *itemRun()*.  
+If node t has t.lb = true then it is called "bearing" moment of time. Nodes number between "bearing" moments is called resolution of tact of time (\\(\tau_{R} \\)). Variable *tick* is the count of "bearing" moments (Tw).  
 If node t is "bearing" moment then there executed operation *moveReset()* and *interaction()*. 
   
 ```
@@ -53,13 +53,13 @@ t = t->next;
 ```
   
 ## 3. Spacetime model  
-We propose a following model of Minkowski spacetime (Fig.3).  
-"Composite" class is a model of a physical spacetime. We will view one-dimension space. Physical space is linked list, where lst attribute is base of space (In general case, "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space). Attribute "tmp" is one-direction linked list and it is a model of physical time. Attribute "tmp" is instance of class Temp.  
-Class "ListItem" is model of a physical space cell. The cell has a local time; it is "tmp" attribute.  
-The time of "Composite" class and the time "ListItem" class must be synchronization.   
+We propose the following model of Minkowski spacetime (Fig.3).  
+"Composite" class is a model of a physical spacetime. We will view the one-dimension space. Physical space is linked list, where "lst" attribute is base of space (In the general case, "headOfList" attribute is base of space, and "tailOfList" is the anchor point and specify the direction in the physical space). Attribute "tmp" is a one-direction linked list and it is a model of physical time. Attribute "tmp" is an instance of class Temp.  
+Class "ListItem" is a model of a physical space cell. The cell has a local time; it is "tmp" attribute.  
+The time of "Composite" class and the time "ListItem" class must be synchronized.   
 ![Fig3](Fig1-2-3.png)
 Figure 3. Minkowski spacetime model
-
+//////
 The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node tt of linked list "tmp" sended message runItem(tt) to all cells of space (Fig.4).  
 ![Fig4](Fig1-2-4.png)  
 Figure 4. 	Communication process of synchronization
