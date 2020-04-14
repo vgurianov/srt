@@ -59,13 +59,13 @@ Class "ListItem" is a model of a physical space cell. The cell has a local time;
 The time of "Composite" class and the time "ListItem" class must be synchronized.   
 ![Fig3](Fig1-2-3.png)
 Figure 3. Minkowski spacetime model
-//////
-The synchronization mechanism is a following process. Operation “Run” of class Composite has cycle by linked list “tmp”. For each node tt of linked list "tmp" sended message runItem(tt) to all cells of space (Fig.4).  
+  
+The synchronization mechanism is the following process. Operation “Run” of class Composite has the cycle by linked list “tmp”. For each node tt of linked list "tmp" sent message runItem(tt) to all cells of space (Fig.4).  
 ![Fig4](Fig1-2-4.png)  
 Figure 4. 	Communication process of synchronization
 
 
-In procedure runItem(tt), tt compared with attribute "marked" of current node of "tmp" (lt on Fig.4). If tt equals "marked" then linked list "tmp"  shift to next node (operation nextTemp() on Fig.4). This is jump (tick) of local time of cell. If cell has the particle then time of particle also make shift (operation Run() on Fig.4).
+In procedure runItem(tt), tt compared with attribute "marked" of current node of "tmp" (lt on Fig.4). If tt equals "marked" then linked list "tmp"  shift to next node (operation nextTemp() on Fig.4). This is jump (tick) of the local time of the cell. If the cell has the particle then the time of particle also makes shift (operation Run() on Fig.4).
 ```  
 void ItemRun(Temp *tt, int tGlob, Carrier *c) {
   if (tmp != NULL) {
@@ -77,8 +77,8 @@ void ItemRun(Temp *tt, int tGlob, Carrier *c) {
   };
 }
 ```      
-Both Newton's time and time of special relativity has same synchronization mechanism but different rule of define "marked" label. In Newton's mechanics, the time of "Composite" class and the time "ListItem" class have same lengths of linked list "temp" and label "marked" has same number with number of node "temp".    
-Time of special relativity has following rule. We take more details grid. Let *size* be resolution of one time tact then  *k x size* is length list *tmp*. Each *size* node *tmp* is marked as lb = true; it is "bearing" node.   
+Both Newton's time and time of special relativity has the same synchronization mechanism but different rule of define "marked" label. In Newton's mechanics, the time of "Composite" class and the time "ListItem" class has the same lengths of linked list "temp" and label "marked" has the same number with the number of node "temp".    
+Time of special relativity has following rule. We take more details grid. Let *size* be resolution of one-time tact then  *k x size* is length list *tmp*. Each *size* node *tmp* is marked as lb = true; it is "bearing" node.   
 Further, cells mark as
 ```  
 Temp *tt; ListItem *ll; int s,t,x; Temp *st;
@@ -101,7 +101,7 @@ tt = tt->next;
 };
 ```  	
 i.e. used formula is  \\( ct = \sqrt{s^2 + x^2}  \\).  
-The operation appTemp(st) create new node of type Temp in cell and mark it as *st* (see Fig.5).
+The operation appTemp(st) create a new node of type Temp in cell and mark it as *st* (see Fig.5).
 ![Fig5](Fig1-2-5.png)  
 Figure 5. 	Example of linked list tmp for cells 20 and 80  
   
@@ -113,12 +113,12 @@ If a reference frame has uniform translatory motion then base of space has shift
 
 ## 4. Mechanical motion  and interaction  
 
-If local time has shift and cell has particle then possible motion particle and interaction.   
+If local time has shift and cell has a particle then possible motion particle and interaction.   
 Mechanical motion and interaction are depicted in fig.6.   
 ![Fig6](Fig1-2-6.png)  
 Figure 6. 	Mechanical motion and interaction 
    
-In Pseudo code, we have  
+In Pseudocode, we have  
   
  ```  
 void ItemRun(Temp *tt, int tGlob, Carrier *c) {
@@ -142,21 +142,21 @@ void ItemRun(Temp *tt, int tGlob, Carrier *c) {
 }
 ```  
   
-If the particle is active then the particle remove from cell 1 and place in cell 2. 
+If the particle is active then the particle removes from cell 1 and place in cell 2. 
 If the particle isn't active then particle time has shift and the particle has interaction.  
 Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
 The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
 If *j* = 0 then time and interaction as in classical mechanics. If  \\( 0 < j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
 
 ## 5. Measurements
-All epistemology entities has standard types (int, bool, and itc.).  
-We define the unprimed system foolow.  
+All epistemology entities have standard types (int, bool, and itc.).  
+We define the unprimed system to follow.  
 - Space cells marked numbers from 0 to Nmax. It is variable x class ItemList.  
 - Time interval marked number from 0 to Nmax. It is variable t class Temp.  
 - Counter of bearing (abutting) node (lb = true) is variable "tick". 
-- In all cells put detector of location and interaction. It is variable "observer" of class Table.  
+- In all cells put detector of location and interaction. It is the variable "observer" of the class Table.  
   
-We define time of particle (the primed system) as variable "tick" class Component.  
+We define the time of particle (the primed system) as the variable "tick" the class Component.  
   
 Operation of measurement is depicted in Fig.7  
 ![Fig7](Fig1-2-7.png)  
@@ -164,8 +164,8 @@ Figure 7. 	The measurement
   
 Message fixIt() send if cell isn't empty and tt = tmp.lb. Operation fixIt() write x,t, and other variable to table.  
   
-Main measurement is count. Absolute error of measurement then is 0.5.  
-A unit of measurement is "thing" or "piece". A dimensional unit is dimensionless quantity.  
+The main measurement is count. The absolute error of measurement then is 0.5.  
+A unit of measurement is "thing" or "piece". A dimensional unit is a dimensionless quantity.  
 This system of measurement we call "natural" units, SI and CGS is called "standard" units.    
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
 By \\(\tau_{R} \\) denote the resolution of tackt of time.  
@@ -181,7 +181,7 @@ $$
   
 where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
 Kinematics.  
-Velocity measure in tackts:
+Velocity will measure in tacts:
   
 $$
 \begin{equation}
@@ -189,9 +189,9 @@ $$
 \end{equation}
 $$   
   
-where k is count tackts, \\(\rho\\) is traveled distance.  
+where k is count tacts, \\(\rho\\) is traveled distance.  
 Dynamics.  
-Let \\(\iota_{i} \\) be count of interaction acts on tackt *i* (interaction intensity).  
+Let \\(\iota_{i} \\) be count of interaction acts in tackt *i* (interaction intensity).  
 Force *f* is  
   
 $$
