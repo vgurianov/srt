@@ -13,7 +13,7 @@ Classes are placed in four modules. Component diagram is depicted in Fig.2
 ![Fig2](Fig1-3-3.png)  
 Figure 2. Component diagram   
   
-Module *mms* include Jump, Carrier, Leaf, Temp, and Composite classes.
+Module *mms* include Jump, Carrier, Leaf, Temp, and Composite classes.  
 Module *resacher_instruments*  include Table and DataProcessing classes.  
 Module *print_results*  include TablePrint  class.  
 Module *drawing* include Visualization class.  
