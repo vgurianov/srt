@@ -78,7 +78,7 @@ t_acc | float | accurate time
 t_local_err | int | local error of time
 vel_t | int | experimental value of velocity
 vel_t_err | int | experimental error measurement
-vel_anl | int | alytical velocity as function from momentum
+vel_anl | int | analytical velocity as function from momentum
 momentum_t | int | momentum of particle
 eng_t_acc | int | accurate energy
 eng_t | int | measurement energy
