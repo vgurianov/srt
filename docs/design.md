@@ -1,7 +1,7 @@
 # Design model  
   
 ## 1. Class diagram
-Disign model make to Python. The class diagram depicted in Fig.1   
+The design model is made for Python. The class diagram depicted in Fig.1   
 
 ![Fig1](Fig1-3-1.png)
   
@@ -15,12 +15,12 @@ Figure 2. Component diagram
   
 Module mms include Jump, Carrier, Leaf, Temp, and Composite classes.
 Module resacher_instruments  include Table and DataProcessing classes.  
-Module print_result  include TablePrint  class.  
-Module graphs  include Visualization  class.  
+Module print_results  include TablePrint  class.  
+Module drawing include Visualization class.  
   
   
 ## 3. Sync errors  
-Error in moment Tw = 8 (World time) is  
+Error in moment Tw = 8 is  
   
 ```
 Parameters:
@@ -30,20 +30,20 @@ Time count = 100
 Particle velosety = 5
 
 ...
-World time = 7
+Tw = 7
 Particle tick=: 7
 ListItem is act: for tt=marked= 79 ListItem= 35 tloc= 7
-World time = 8
-World time = 9
+Tw = 8
+Tw = 9
 Sync error: Particle reset but cell= 40  not sync
 Particle tick=: 8
 ListItem is act: for tt=marked= 92 ListItem= 45 tloc= 8
 
 ```  
-The cause of the error is shown in fig. 3  
+The cause of the error is shown in Fig. 3  
 ![Fig3](Fig1-3-2.png)  
 Figure 3. Sync error  
   
-If particle move is end then time of particle is sync.  
-This error has if  \\(\sqrt{T_{w}^2+x_{i}^2} > T_{w}+1\\). In moment \\(T_{w}+1\\) has operation *resetMove()* and particle has move again. We used variable *key* to spy the error.  
-This problem has solution.  
+If particle move is ends then the time of particle is sync.  
+This error appear if  \\(\sqrt{T_{w}^2+x_{i}^2} > T_{w}+1\\). In moment \\(T_{w}+1\\) has operation *resetMove()* and particle has move again. We used variable *_err_flag* to spy the error.  
+This problem has a solution.  
