@@ -1,7 +1,7 @@
 # mms.pint_results module
-Description: modul is printer of experimental data  
+Description: module is printer of experimental data  
   
-Modul use packedgs:
+Modul use packages:
 - from external.prettytable import PrettyTable
 - import math
 
@@ -38,16 +38,16 @@ velocity and energy print
   
   
 # mms.drawing module  
-Description: modul is builder of plots  
+Description: module is abuilder of plots  
   
-Modul use packedgs:
+Module use packages:
 - import math
 - import matplotlib.pyplot
 - import matplotlib.ticker
 - import pylab
 
 ## class Visualization  
-Description: class Visualization is the data visualizator  
+Description: class Visualization is the data visualization  
 Bases: object    
 `def __init__(self, dat)`    
    
@@ -69,7 +69,7 @@ Description: Track of particle
 Parameters: None  
   
 **def trajectory1(self)**  
-Description:  Track and curve of invariant interval s  
+Description:  Track and curve of invariant intervals  
 Parameters: None  
       
 **def v_from_p_function(self)**  
