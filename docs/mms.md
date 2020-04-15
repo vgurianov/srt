@@ -1,7 +1,7 @@
 # mms.mms module
-Description: modul is definition of base classes  
+Description: module is the definition of base classes
   
-Modul use packedgs:
+Module use packages:
 - import math
   
   
@@ -64,7 +64,7 @@ Name | Type | Description
 car | Inctance of class Carrier | interaction carrier   
   
 **def interaction(self, car)**  
-Description: The particle impact to the interaction carrier   
+Description: The particle impact on the interaction carrier   
 Parameters:  
   
 Name | Type | Description  
@@ -120,7 +120,7 @@ _err_flag | bool | error indicator
 
 ### Operations:    
 **def app_temp(self, tm)**  
-Description: append new node to linked list *tmp*  
+Description: append a new node to linked list *tmp*  
 Parameters:  
   
 Name | Type | Description  
