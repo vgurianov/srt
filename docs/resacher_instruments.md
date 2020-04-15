@@ -1,7 +1,7 @@
 # resacher_instruments module
-This module contains classes to measurement and data processing.  
+This module contains classes for measurement and data processing.  
 Description:
-  - class *Table* is model of detector and data recorder
+  - class *Table* is a model of detector and data recorder
   - class *DataProcessing* is a processor of data.  
   
 ## Class "Table"
@@ -18,7 +18,7 @@ obt | int | array of local time of cell, refined time obtG
 obx | int | array of particle location
 local_t | int | array of local time of cell
 particle_t | int | array of particle time
-pulse_t | int | interection acts
+pulse_t | int | interaction acts
  
 ### Operations:  
 **def fix_it(self, tg, tt, xx, loc_t, prt_t)**  
@@ -36,13 +36,13 @@ prt_t | int | moment of particle time
 Returns: None  
   
 **detect(self, tg, c)**  
-Description: Operation write data about intaraction  
+Description: Operation write data about interaction  
 Parameters:
 
 Name | Type | Description  
 ---- | ---- | ----------- 
 tg | int | time in the rest frame
-c | Currer instance| Currer intaraction
+c | Currer instance| Currer interaction
 
 Return: None
 
@@ -88,7 +88,7 @@ eng_t_err_sum | int | energy measurement error in sum
 
 ### Operations: 
 **def base_calculate(self)**  
-Description: This operation call all operations from bottom. It is obligatory calculation.   
+Description: This operation call all operations from the bottom. It is an obligatory calculation.   
 Parameters: None  
 We will use International System of Units (SI) ([m], [s], [kg]).   
 Time we will measurement in unit 1[m]/c[m/s] (light seconds), where c is the speed of light.
