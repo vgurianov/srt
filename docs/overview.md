@@ -1,5 +1,5 @@
 # Package Overview
-Both Experiment1 and  Experiment2 moduls are run moduls. Modules use other modules for execution, Gig.5. 
+All  *Experiment* modules are executing modules. Modules use other modules for work, Fig.5.  
 
 ![GitHub Logo](Fig2-1-1.png)
   
@@ -10,8 +10,9 @@ The run modules include six sections, it are
 - execution section;
 - data processing section;
 - print section;
-- visualisation section.
+- visualization section.
 
-see code of modules^
+see code of modules
 - Experiment1.py
 - Experiment2.py
+- Experiment3.py
