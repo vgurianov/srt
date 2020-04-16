@@ -14,6 +14,7 @@ The analysis model is a simulation model. It is an ontology of mechanical motion
 - Synchronization    
 - Motion and Interaction  
 - Measurements  
+  
 We present class diagrams and communication diagrams, and pseudocode C++.  
 
 1.3. Design Model  
