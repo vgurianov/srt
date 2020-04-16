@@ -11,10 +11,10 @@ The Use-Case model is function requirements to software.
 
 1.2. Analysis Model  
 The analysis model is a simulation model. It is an ontology of mechanical motion. This semantic net define follow concept:  
-		- Synchronization    
-		- Motion and Interaction  
-		- Measurements  
-We present class diagrams and communication diagrams, and pseudo-code C++.  
+- Synchronization    
+- Motion and Interaction  
+- Measurements  
+We present class diagrams and communication diagrams, and pseudocode C++.  
 
 1.3. Design Model  
 Design model developed for Python.
