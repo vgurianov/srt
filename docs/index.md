@@ -32,7 +32,7 @@ It is classes of measurements and process of data
 2.4. pymms.pint_result module  
 It is output data to print  
 
-2.5. pymms.graths module  
+2.5. pymms.drawing module  
 It is output data in plot forms
 
 
