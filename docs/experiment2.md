@@ -1,5 +1,5 @@
 # Velocity, momentum, and energy
-Modul experiment3.py simulate dynamic relativistic effects.  
+Module experiment3.py simulated dynamic relativistic effects.  
   
 ## 1. Experiment description
 We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
@@ -46,7 +46,7 @@ With this resolution, you can perform 8 clock cycles of the system (if Tw = 9 th
 
 ## 2. Results of experiment
 
-The results experiment are shown in Table 1. It is trajectory of particle. 
+The results experiment are shown in Table 1. It is the trajectory of the particle. 
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
@@ -64,13 +64,13 @@ Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
 ```  
 Values t,x,p, and v are measurement data, values xa, pa, va are analitical solution (see class "originalToolkit"), xe - numerical solution.  
-Following is plot of trajectory (Fig.1).
+Following is the plot of the trajectory (Fig.1).
 ![Fig1](Fig3-2-1.png)  
 Figure 1. Motion plot  
   
 The data are presented so that speed and energy can be considered as functions of the momentum.  
 ```  
-Velocity end energy of particle as function from momentum  
+Velocity end energy of the particle as a function from momentum  
 +----+------+------+------+--------+------+------+--------+
 | Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
 +----+------+------+------+--------+------+------+--------+
@@ -87,16 +87,16 @@ Velocity end energy of particle as function from momentum
 ```  
    
 The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in %.  
-Plot of the dependence of speed on momentum are shown in Fig. 2.  
+The plot of the dependence of speed on momentum is shown in Fig. 2.  
 ![Fig2](Fig3-2-2.png)  
 Figure 2. Velocity as function from momentum  
   
-Points are measurement data, a continuous line is an analytical curved. Dash line is numerical solution (Euler method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
-Plot of the dependence of energy on momentum are shown in Fig. 3.  
+Points are measurement data, a continuous line is an analytical curved. The dash line is a numerical solution (Euler's method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
+The plot of the dependence of energy on momentum is shown in Fig. 3.  
 ![Fig3](Fig3-2-3.png)  
 Figure 3. Energy as function from momentum  
   
-Points are measurement data. Dash line is numerical solution (Euler method). The continuous line is an analytical curved and compute on formule (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
+Points are measurement data. The dash line is a numerical solution (Euler's method). The continuous line is an analytical curved and compute on formula (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
   
 $$
 \begin{equation}  
@@ -141,7 +141,7 @@ So, the rest energy is the result of a delay in the start of particle motion.
 ## 3. Description of experiment3 modul
 
 ### Class "SimpleIteraction"
-Description: the class is a simulation model  
+Description: The class is a simulation model  
 Bases: mms.Composite    
 `def __init__(self, size_tick, count_tick, particle_velosety, observer)`  
   
@@ -165,7 +165,7 @@ Bases: resacher_instruments.DataProcessing
 Name | Type | Description  
 ---- | ---- | ----------- 
 observer | Table instance | Detector and recorder
-particle_velosety | int | inicial speed particle
+particle_velosety | int | initial speed particle
 size_tick | int | size of time tact
 count_tick | int | count of tacts
 
@@ -198,7 +198,7 @@ $$
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
 **def numSolution(self)**  
-Description: numerical solution of motion differential equation  (Euler method)   
+Description: numerical solution of motion differential equation  (Euler's method)   
 Parameters: None  
   
 Algorithm: 
