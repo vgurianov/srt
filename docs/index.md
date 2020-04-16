@@ -29,7 +29,7 @@ It is base modules of the simulation model
 2.3. pymms.resacher_instruments module  
 It is classes of measurements and process of data  
 
-2.4. pymms.pint_result module  
+2.4. pymms.print_results module  
 It is output data to print  
 
 2.5. pymms.drawing module  
