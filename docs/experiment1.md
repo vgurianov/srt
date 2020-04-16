@@ -1,5 +1,5 @@
 # Time dilation
-Modul mms.experiment1 is simulate kinematic relitivistic effects.
+Modul mms.experiment1 is simulated kinematic relativistic effects.
   
 ## 1. Experiment description  
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
@@ -37,7 +37,7 @@ Trajectory of particle and time particle
 +----+-----+-----+------+------+-----+
 ```
   
-Column *Tw* is number of tact of model time.  Column x - coordinate of particle in moment *Tw*. Column *tp* is time of particle.  We observe time dilation. In particle, elapse *tp* units of time but in rest frame of reference register *t* units of time.  
+Column *Tw* is the number of tact of model time.  Column x - coordinate of the particle in moment *Tw*. Column *tp* is the time of the particle.  We observe time dilation. In particle, elapse *tp* units of time but in the rest frame of reference register *t* units of time.  
 Column *ta* is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . 
 Value *ta* compare with *t*  
   
@@ -49,7 +49,7 @@ $$
   
 It is column *err%*.  
   
-This result is depicted in Fig.1. Black "o" is result of measurement. The red line is analytical value.   
+This result is depicted in Fig.1. Black "o" is the result of the measurement. The red line is analytical value.   
 
 
 ![Fig1](Fig3-1-1.png)  
@@ -108,7 +108,7 @@ Bases: ResacherInstruments.DataProcessing
 Name | Type | Description  
 ---- | ---- | ----------- 
 observer | Table instance | Detector and recorder
-particle_velosety | int | inicial speed particle
+particle_velosety | int | initial speed particle
 size_tick | int | size of time tact
 count_tick | int | count of tacts
   
@@ -118,7 +118,7 @@ Description: incline k calculate and error
 Parameters: None  
   
 Algorithm:  
-Analytical value of incline \\(k_{an}\\) can deduce from formula of invariant interval  
+The analytical value of incline \\(k_{an}\\) can deduce from the formula of the invariant interval  
 \\( s^2 = c^2t^2 - x^2  \\)  
 Let \\(t'\\) be fix moment of time then distance be \\(x = vt' \\).  
 We have \\(s = ct' \\) if \\(x = 0 \\).  
