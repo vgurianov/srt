@@ -10,7 +10,7 @@ We use the Unified Process and it is reflected in the structure of the site. Uni
 The Use-Case model is function requirements to software.
 
 1.2. Analysis Model  
-The analysis model is a simulation model. It is an ontology of mechanical motion. This semantic net define follow concept:  
+The analysis model is a simulation model. It is an ontology of mechanical motion. This semantic net define follow concepts:  
 - Synchronization    
 - Motion and Interaction  
 - Measurements  
