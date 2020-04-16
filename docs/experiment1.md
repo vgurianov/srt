@@ -1,5 +1,5 @@
 # Time dilation
-Modul mms.experiment1 is simulated kinematic relativistic effects.
+Module mms.experiment1 is simulated kinematic relativistic effects.
   
 ## 1. Experiment description  
 Estimated calculation for \\(\pi ^+\\) meson (pion):  
