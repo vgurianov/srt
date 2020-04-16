@@ -1,6 +1,6 @@
 # Inertial reference frame
-Modul mms.experiment3 simulate uniform translatory motion of a reference frame.  
-Principle of relativity is the independence of physical laws  from the choice of inertial system. It especially important is the constancy of the speed of light.  
+Module mms.experiment3 simulate uniform translatory motion of a reference frame.  
+The principle of relativity is the independence of physical laws from the choice of the inertial system. It especially important is the constancy of the speed of light.  
   
 
 ## 1. The Principle of Relativity  
@@ -80,17 +80,17 @@ else:
     self.s_vel = self.s_vel.next
 
 ```  
-The list length *s_vel* can't be more then the magnitude *size_tick*.  
+The list length *s_vel* can't be more than the magnitude *size_tick*.  
   
 
 ## 3. Description of experiment3 modul
   
 ### Class "IrfMotion"  
   
-It is class like  class freeMotion (see experiment1.py) but has new argument frame_velocity  
+It is class like class freeMotion (see experiment1.py) but has new argument frame_velocity  
 and one has base class mmsEx.Composite.   
   
-Description: the class is a simulation model  
+Description: The class is a simulation model  
 Bases: mmsEx.Composite   
 `def __init__(self, size_tick, count_tick, particle_velosety, observer, frame_velocity)`  
   
@@ -98,13 +98,13 @@ Name | Type | Description
 ---- | ---- | ----------- 
 size_tick | int | size of time tact
 count_tick | int | count of tacts
-particle_velosety | int | inicial speed particle
+particle_velosety | int | initial speed particle
 observer | Table instance | Detector and recorder
 frame_velocity | int | frame velocity
 
 
 ### Class "mms_ex.Composite"  
-It is class like  class mms.Composit (see mms.py) but has new argument frame_vel.   
+It is a class like class mms.Composit (see mms.py) but has new argument frame_vel.   
 `def __init__(self, sizeTick, countTick, observer, frame_vel)`  
   
 Name | Type | Description  
