@@ -11,11 +11,11 @@ toc:
     subfolderitems:
       - page: Package Overview  
         url: /srt/overview.html
-      - page: mms.mms module
+      - page: pymms.mms module
         url: /srt/mms.html
-      - page: mms.resacher_instruments module
+      - page: pymms.resacher_instruments module
         url: /srt/resacher_instruments.html
-      - page: mms.print_results and mms.drawing modules
+      - page: pymms.print_results and mms.drawing modules
         url: /srt/print_result.html
   - title: 3. Experiments
     subfolderitems:
