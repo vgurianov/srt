@@ -15,7 +15,7 @@ toc:
         url: /srt/mms.html
       - page: pymms.resacher_instruments module
         url: /srt/resacher_instruments.html
-      - page: pymms.print_results and mms.drawing modules
+      - page: pymms.print_results and pymms.drawing modules
         url: /srt/print_result.html
   - title: 3. Experiments
     subfolderitems:
