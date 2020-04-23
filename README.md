@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/vgurianov/srt.svg?branch=master)](https://travis-ci.org/vgurianov/srt) [![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-270/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
    
-# MMS: The Minkowski Metric Simulation
+# PyMMS: The Minkowski Metric Simulation
 
 Now, simulation models are widely used in logistics, healthcare, technology, and many other areas. However, in scientific research, preference is given to numerical modeling.   
   
@@ -52,6 +52,6 @@ Also, you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.g
 
 ## Publication
 Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete space-time model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
-E-mail: vg2007sns@rambler.ru  
+e-mail: vg2007sns@rambler.ru  
   
 
