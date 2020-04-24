@@ -1,5 +1,5 @@
-# MMS: The Minkowski Metric Simulation
-MMS is a software package that can be used to simulate the Minkowski metric.  
+# PyMMS: The Minkowski Metric Simulation
+PyMMS is a software package that can be used to simulate the Minkowski metric.  
 The simulation model is described on [UML2 SP](https://vgurianov.github.io/uml-sp/) and implemented in Pothon.    
 
 
