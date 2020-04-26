@@ -58,8 +58,9 @@ Also, you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.g
 We welcome contributions to the srt repo.  
 Some suggested types of contributions include:
   
-Bug fixes  
-Documentation improvements  
+- Bug fixes  
+- Documentation improvements  
+- Extensions to the algorithm  
   
 If you encounter a problem using pymms, or have an idea for an extension, feel free to raise an issue.  
 
