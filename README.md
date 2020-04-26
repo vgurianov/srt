@@ -14,6 +14,10 @@ We used Python for two reasons. First, the Python is an object-oriented language
 We propose a simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile) used to development of simulation models. It is a profile of UML. UML2 SP models do not depend on programming languages.  
 In the documentation, we present a description of several experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
+## Publication
+Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete space-time model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
+e-mail: vg2007sns@rambler.ru  
+  
 ## Getting started with PyMMS  
 Currently, only Python 2.7 is supported.  
   
@@ -49,9 +53,13 @@ $ python experiment1.py  ,and etc.
 or in IDLE.  
   
 Also, you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.github.io/srt/started.html).  
-
-## Publication
-Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete space-time model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
-e-mail: vg2007sns@rambler.ru  
   
+## Contributing  
+We welcome contributions to the srt repo.  
+Some suggested types of contributions include:
+  
+Bug fixes  
+Documentation improvements  
+  
+If you encounter a problem using pymms, or have an idea for an extension, feel free to raise an issue.  
 
