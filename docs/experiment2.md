@@ -182,7 +182,7 @@ en | int array| energy, numerical solution
   
   
 #### Operations: 
-**def anlSolution(self)**  
+**def anl_solution(self)**  
 Description: accurate x (analytical formula)  
 Parameters: None  
   
@@ -197,7 +197,7 @@ $$
   
 References: Charles Kittel, Walter D.Knight, Malvin A. Ruderman, Mechanics. Berkeley physics course. Vol.1, McGraw-Hill book company. 1965  
   
-**def numSolution(self)**  
+**def num_solution(self)**  
 Description: numerical solution of motion differential equation  (Euler's method)   
 Parameters: None  
   
