@@ -1,4 +1,4 @@
-# mms.pint_results module
+# print_results module
 Description: module is printer of experimental data  
   
 Modul use packages:
@@ -37,7 +37,7 @@ energy print
 velocity and energy print
   
   
-# mms.drawing module  
+# drawing module  
 Description: module is abuilder of plots  
   
 Module use packages:
