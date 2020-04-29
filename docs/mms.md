@@ -1,4 +1,4 @@
-# mms.mms module
+# mms module
 Description: module is the definition of base classes
   
 Module use packages:
