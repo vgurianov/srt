@@ -16,7 +16,7 @@ We propose a simulation model of spacetime as the discrete model of physical spa
 In the documentation, we present a description of several experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
 ## Publication
-Gurianov V.I. Direct procedure for measuring particle energy-momentum in a discrete spacetime model // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 62-67.  
+Gurianov V.I. Direct measurement procedure of particle energy-momentum in model of the discrete space-time // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 64-69.  
 e-mail: vg2007sns@rambler.ru  
   
 ## Getting started with PyMMS  
