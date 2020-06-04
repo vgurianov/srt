@@ -143,7 +143,7 @@ class DataProcessing:
         self.size_tick = st
         self.count_tick = ct
 
-        # it is define of coefficient of conversion
+        # it is define of coefficient of  conversion
 
         self.nu_m = 1.0  # mass coefficient of conversion
         self.nu_t = float(st)  # time coefficient of conversion, 2
