@@ -1,5 +1,5 @@
 # Velocity, momentum, and energy
-Module experiment3.py simulated dynamic relativistic effects.  
+Module experiment2.py simulated dynamic relativistic effects.  
   
 ## 1. Experiment description
 We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
@@ -138,7 +138,7 @@ Combination of right side has dimension of work and we may by \\(E_{0}\\) denote
 So, the rest energy is the result of a delay in the start of particle motion.  
   
   
-## 3. Description of experiment3 modul
+## 3. Description of experiment2 modul
 
 ### Class "SimpleIteraction"
 Description: The class is a simulation model  
