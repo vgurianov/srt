@@ -7,7 +7,7 @@ Now, simulation models are widely used in logistics, healthcare, technology, and
 The reason for this is as follows. In simulation modeling, conceptual models describe as formalism DEVS or as ontologies, for example, on ontoUML. It is non-numerical modeling.  
 If we will use simulation, for example, in nanotechnology then we must be able to simulate relativistic and quantum effects, and it isn't clear. There is no clear understanding of how to build such simulation models.  
   
-Here, we introduce PyMMS, an implementation of Python of simulation model of spacetime for the special relativity theory. This package is intended to demonstrate the possibility of relativistic effect simulation. The package also demonstration production numerical data from the non-numerical model. All numerical data is a result of measurement on data structures.  
+Here, we introduce PyMMS, an implementation of Python of simulation model of spacetime for the special relativity theory. This package is intended to demonstrate the possibility of relativistic effect simulation in OOS (object-oriented simulation) and ABS (agent-based simulation). The package also demonstration production numerical data from the non-numerical model. All numerical data is a result of measurement on data structures.  
   
 We used Python for two reasons. First, the Python is an object-oriented language and it is can use ontology. Second, the Python is an interpreted language and it does flexy change code. In documentation, we present the package API.  
   
