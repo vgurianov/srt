@@ -25,7 +25,7 @@ The reason for this is as follows. In simulation modeling, conceptual models are
   
 If we use simulation, for example, in nanotechnology, then we must be able to simulate relativistic and quantum effects, and there is no clear understanding of how to build such simulation models.  
 
-Here, we would like to introduce a PyMMS package, a Python implementation of a simulation model of spacetime for the special relativity theory. This package is intended for the demonstration of the possibility of simulating the relativistic effect. The package also demonstrates the production numerical data from the non-numerical model. All numerical data is a result of measurement in data structures.
+Here, we would like to introduce a PyMMS package, a Python implementation of a simulation model of spacetime for the special relativity theory. This package is intended for the demonstration of the possibility of simulating the relativistic effect in OOS (object-oriented simulation) and ABS (agent-based simulation). The package also demonstrates the production numerical data from the non-numerical model. All numerical data is a result of measurement in data structures.
 
 We used Python for two reasons. First, Python is an object-oriented language, which makes it posible for it to use ontology. Second, Python is an interpreted language, which makes it posible to flexibly change code. We provide the package API in the documentation.
 
