@@ -1,5 +1,5 @@
 ---
-title: 'PyMMS: Implementation of a non-numeric spacetime model with the Minkovsky metric'
+title: 'PyMMS: Implementation of a non-numeric spacetime model with the Minkowski metric'
 tags:
   - special relativity theory
   - the Minkowski metric
