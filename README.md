@@ -5,13 +5,13 @@
 Now, simulation models are widely used in logistics, healthcare, technology, and many other areas. However, in scientific research, preference is given to numerical modeling.   
   
 The reason for this is as follows. In simulation modeling, conceptual models describe as formalism DEVS or as ontologies, for example, on ontoUML. It is non-numerical modeling.  
-If we will use simulation, for example, in nanotechnology then we must be able to simulate relativistic and quantum effects, and it isn't clear. There is no clear understanding of how to build such simulation models.  
+If we will use simulation, for example, in nanotechnology, then we must be able to simulate relativistic and quantum effects, and it isn't clear. There is no clear understanding of how to build such simulation models.  
   
 Here, we introduce PyMMS, an implementation of Python of simulation model of spacetime for the special relativity theory. This package is intended to demonstrate the possibility of relativistic effect simulation in OOS (object-oriented simulation) and ABS (agent-based simulation). The package also demonstration production numerical data from the non-numerical model. All numerical data is a result of measurement on data structures.  
   
-We used Python for two reasons. First, the Python is an object-oriented language and it is can use ontology. Second, the Python is an interpreted language and it does flexy change code.  We present the package API in documentation.  
+We used Python for two reasons. First, the Python is an object-oriented language and it is can use ontology. Second, the Python is an interpreted language and it does flexy change code.  We present the package API in the [documentation](https://vgurianov.github.io/srt/).  
   
-We propose a simulation model of spacetime as the discrete model of physical space. The simulation model described as ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). This paper has relationship to the program by Stephen Wolfram [(arXiv:2004.08210)](https://arxiv.org/abs/2004.08210). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile) used to development of simulation models. It is a profile of UML. UML2 SP models do not depend on programming languages.  
+We propose a simulation model of spacetime as a discrete model of physical space. The simulation model described as an ontology. A detailed description of this model can be found in the [documentation](https://vgurianov.github.io/srt/). This paper has relationship to the program by Stephen Wolfram [(arXiv:2004.08210)](https://arxiv.org/abs/2004.08210). We use the [UML2 SP](https://vgurianov.github.io/uml-sp/). The UML2 SP (UML Scientific Profile) used to development of simulation models. It is a profile of UML. UML2 SP models do not depend on programming languages.  
   
 In the documentation, we present a description of several experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
