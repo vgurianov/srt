@@ -57,6 +57,7 @@ Also, you may install PyMMS from PyPI, see [Getting Started](https://vgurianov.g
   
 ## Contributing  
 We welcome contributions to the srt repo.  
+The goal of this project is to present code that is as clear as possible to understanding. We sacrifice versatility, optimality and even error protection.  
 Some suggested types of contributions include:
   
 - Bug fixes  
