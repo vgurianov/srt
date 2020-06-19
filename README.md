@@ -62,7 +62,7 @@ Some suggested types of contributions include:
   
 - Bug fixes  
 - Documentation improvements  
-- Extensions to the algorithm  
+- Extensions to the experiments  
   
 If you encounter a problem using pymms, or have an idea for an extension, feel free to raise an issue.  
 
