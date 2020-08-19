@@ -30,7 +30,7 @@ for the module drawing.py.
   
    
 If you have matplotlib then take PyMMS from source.  
-Go to https://github.com/vgurianov/srt/ and click the green button "Clone or download", then click "Download ZIP" to download the whole repository.  
+Go to https://github.com/vgurianov/srt/ and click the green button "Code", then click "Download ZIP" to download the whole repository.  
   
 You must take the package *pymms* and files from the *experiments* directory.  
 You must make directory  
