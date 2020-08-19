@@ -70,7 +70,7 @@ Figure 1. Motion plot
   
 The data are presented so that speed and energy can be considered as functions of the momentum.  
 ```  
-Velocity end energy of the particle as a function from momentum  
+Velocity and energy of the particle as a function from momentum  
 +----+------+------+------+--------+------+------+--------+
 | Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
 +----+------+------+------+--------+------+------+--------+
