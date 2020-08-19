@@ -22,7 +22,7 @@ mass = 1 , lightVel = 1.0
 In table is depicted result of simulation.  
   
 ```
-Trajectory of particle and time particle
+Trajectory of particle and time of the particle
 +----+-----+-----+------+------+-----+
 | Tw |  x  |  t  |  ta  | err% |  tp |
 +----+-----+-----+------+------+-----+
