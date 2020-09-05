@@ -2,7 +2,7 @@
 Module experiment2.py simulated dynamic relativistic effects.  
   
 ## 1. Experiment description
-We consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
+Let us consider motion of charge *q* in constant electric field \\( \mathcal{E} \\). Motion equation is  
 
 \begin{equation}
     \frac{dp}{dt} = q \mathcal{E}  ,\\ 
@@ -46,7 +46,7 @@ With this resolution, you can perform 8 clock cycles of the system (if Tw = 9 th
 
 ## 2. Results of experiment
 
-The results experiment are shown in Table 1. It is the trajectory of the particle. 
+The results of the experiment are presented in Table 1. It is the trajectory of the particle. 
 ```
 Analytical (xa, pa, va) and numerical (xe) solution
 +----+-----+-----+------+------+------+------+-----+------+
@@ -70,7 +70,7 @@ Figure 1. Motion plot
   
 The data are presented so that speed and energy can be considered as functions of the momentum.  
 ```  
-Velocity and energy of the particle as a function from momentum  
+Velocity and energy of the particle as a function of momentum  
 +----+------+------+------+--------+------+------+--------+
 | Tw |  p   |  v   |  va  | v,err% |  E   |  Ea  | E,err% |
 +----+------+------+------+--------+------+------+--------+
@@ -86,17 +86,18 @@ Velocity and energy of the particle as a function from momentum
 +----+------+------+------+--------+------+------+--------+
 ```  
    
-The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - relative error of energy measurement in %.  
+The following notation is introduced in this table: Tw is the system time step number, p is the measured pulse, v is the measured speed, va is the exact value of the speed, v, err% is the relative error of the speed measurement in%, E is the measured energy, Ea is the exact energy value, E, err% - the relative error of the energy measurement in %.  
 The plot of the dependence of speed on momentum is shown in Fig. 2.  
 ![Fig2](Fig3-2-2.png)  
-Figure 2. Velocity as function from momentum  
+Figure 2. Velocity as function of momentum  
   
 Points are measurement data, a continuous line is an analytical curved. The dash line is a numerical solution (Euler's method). For clarity, a plot of the dependence of speed on momentum for the classical case is also given (straight line).  
-The plot of the dependence of energy on momentum is shown in Fig. 3.  
+The plot of the dependence of energy on momentum is presented in Fig. 3.  
 ![Fig3](Fig3-2-3.png)  
-Figure 3. Energy as function from momentum  
+Figure 3. Energy as function of momentum  
   
-Points are measurement data. The dash line is a numerical solution (Euler's method). The continuous line is an analytical curved and compute on formula (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
+Points are measurement data. The dash line is 
+ numerical solution (Euler's method). The continuous line is an analytical curved and compute on formula (see operation engCalculation of class mms.ResacherInstruments.DataProcessing)
   
 $$
 \begin{equation}  
@@ -135,7 +136,7 @@ c^2 m &= c^2 \frac{1}{\nu_{m}} \times \frac{\tau_{d}}{\tau_{R}} \times \iota  \\
 $$  
   
 Combination of right side has dimension of work and we may by \\(E_{0}\\) denote string \\(\tau_{d}  c \Delta t f \\).  
-So, the rest energy is the result of a delay in the start of particle motion.  
+Thus, the rest energy is the result of a delay in the start of particle motion.  
   
   
 ## 3. Description of experiment2 modul
