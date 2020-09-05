@@ -37,8 +37,7 @@ Trajectory of particle and time of the particle
 +----+-----+-----+------+------+-----+
 ```
   
-Column *Tw* is the number of tact of model time.  Column x - coordinate of the particle in moment *Tw*. Column *tp* is the time of the particle.  We observe time dilation. In particle, elapse *tp* units of time but in the rest frame of reference register *t* units of time.  
-Column *ta* is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . 
+Column *Tw* is the number of tick of model time.  Column x - is the coordinate of the particle in moment *Tw*. Column *tp* is the time of the particle.  We can observe dilation of time. In the particle, *tp* units of time elapse, but, in the rest frame of reference *t* units of time are registered . Column *ta* is analytic calculation to formula \\(ta = \sqrt{s^2+x^2}\\) . 
 Value *ta* compare with *t*  
   
 $$
@@ -53,7 +52,7 @@ This result is depicted in Fig.1. Black "o" is the result of the measurement. Th
 
 
 ![Fig1](Fig3-1-1.png)  
-Figure 1. A Minkowski spacetime diagram for \\(\beta  =  0.5\\)    
+Figure 1. Minkowski spacetime diagram for \\(\beta  =  0.5\\)    
 
 We processing of data and calculate of incline k (green line)  
   
@@ -74,7 +73,7 @@ Analytical incline k_an= 2.24, k_err%= 0.12
 
 In case of small velocity, plot depicted in Fig.2.
 ![Fig2](Fig3-1-2.png)  
-Figure 2. A Minkowski spacetime diagram for \\(\beta =  0.3 \\)    
+Figure 2. Minkowski spacetime diagram for \\(\beta =  0.3 \\)    
   
   
 ## 3. Description of experiment1 modul
