@@ -1,10 +1,10 @@
 # Analysis model
-In UML2 SP, a simulation model described as ontology. Classes are considered as the Minsky frames. The language details  view on-site  [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
+In UML2 SP, a simulation model described as an ontology. Classes are considered as the Minsky frames. The language details  view on-site  [https://vgurianov.github.io/uml-sp/](https://vgurianov.github.io/uml-sp/)  
   
-## 1. Ontology of Special Relativity Theory  
+## 1. Ontology of the Special Relativity Theory  
 Semantic net definition.  
 Classical mechanics concepts can view [here](https://vgurianov.github.io/uml-sp/case_studies/newton/newton).  
-In relativistic mechanics, concepts similar concepts of classical mechanics but there are differences. It is a synchronization rule of time of a mechanical system and local time of cells.  
+Concepts in relativistic mechanics are similar to the concepts of classical mechanics, but there are differences. It is a synchronization rule of time of a mechanical system and local time of cells.  
 The main concepts are Physical space-time, Cell of space, Interval of time, Local Time (it is attribute frame ListItem) , and Synchronization (fig.1). 
   
 ![Fig1](Fig1-2-1.png)
@@ -20,8 +20,8 @@ Use case "Run" realization is depicted in Fig.2.
 Figure 2. Communication diagram of operation "Run"  
   
 The operation Run() has the base cycle on a linked list *tmp*. For each node t, there executed cycle on linked list *lst* and each node *item* get message *itemRun()*.  
-If node t has t.lb = true then it is called "bearing" moment of time. Nodes number between "bearing" moments is called resolution of tact of time (\\(\tau_{R} \\)). Variable *tick* is the count of "bearing" moments (Tw).  
-If node t is "bearing" moment then there executed operation *moveReset()* and *interaction()*. 
+If node t has t.lb = true then it is called "bearing" moment of time. Nodes number between bearing moments is called resolution of tick of time (\\(\tau_{R} \\)). Variable *tick* is the count of "bearing" moments (Tw).  
+If node t is bearing moment then there executed operation *moveReset()* and *interaction()*. 
   
 ```
 void Run() {
@@ -144,9 +144,9 @@ void ItemRun(Temp *tt, int tGlob, Carrier *c) {
   
 If the particle is active then the particle removes from cell 1 and place in cell 2. 
 If the particle isn't active then particle time has shift and the particle has interaction.  
-Let \\(\tau_{R}\\) be the resolution of tackt of time and  \\( j \\) list length *Jump*.  
-The particle not can has velocity more then light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
-If *j* = 0 then time and interaction as in classical mechanics. If  \\( 0 < j <  \tau_{R} \\) then particle time is slows down and intensivity of interaction is falls.  
+Let \\(\tau_{R}\\) be the resolution of tick of time and  \\( j \\) the list length *Jump*.  
+The particle may not have a velocity of more than light speed as count jumps are not more than \\( \tau_{R} \\) even if \\( j > \tau_{R} \\). If  \\( j =  \tau_{R} \\) then particle time is stop and interaction is inpossible.  
+If *j* = 0 then time and interaction are as in classical mechanics. If  \\( 0 < j <  \tau_{R} \\) then particle time is slows down and intensity of interaction falls.  
 
 ## 5. Measurements
 All epistemology entities have standard types (int, bool, and itc.).  
@@ -168,8 +168,8 @@ The main measurement is count. The absolute error of measurement then is 0.5.
 A unit of measurement is "thing" or "piece". A dimensional unit is a dimensionless quantity.  
 This system of measurement we call "natural" units, SI and CGS is called "standard" units.    
 Let \\(\tau\\) be the time, \\(\rho\\) distance, and \\(\mu \\) mass in natural units.  
-By \\(\tau_{R} \\) denote the resolution of tackt of time.  
-Then time \\(t\\), distance \\(d\\), and mass in standard units calculate as  
+By \\(\tau_{R} \\) denote the resolution of tick of time.  
+Then, time \\(t\\), distance \\(d\\), and mass in standard units calculated as  
   
 $$    
 \begin{align}    
@@ -179,9 +179,9 @@ $$
 \end{align}  
 $$  
   
-where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficient of conversion time,distance, and mass.   
+where \\(\nu_{t}, \nu_{x}, \nu_{m} \\) are the coefficients of the conversion time, distance, and mass.   
 Kinematics.  
-Velocity will measure in tacts:
+Velocity will measure in ticks:
   
 $$
 \begin{equation}
@@ -191,7 +191,7 @@ $$
   
 where k is count tacts, \\(\rho\\) is traveled distance.  
 Dynamics.  
-Let \\(\iota_{i} \\) be count of interaction acts in tackt *i* (interaction intensity).  
+Let \\(\iota_{i} \\) be the number of interaction acts in tick *i* (interaction intensity).  
 Force *f* is  
   
 $$
@@ -200,7 +200,7 @@ f_{i}/c = \frac{1}{\nu_{m}} \frac{\nu_{t}}{\tau_{R}^2} \iota_{i} \\
 \end{equation} 
 $$  
   
-Formula output.  
+The output of the formula.  
 Interaction \\(\iota \\) change list *Jump* and, сonsequently, particle velocity.   
 We have  
   
