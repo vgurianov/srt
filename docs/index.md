@@ -40,5 +40,5 @@ It is output data in plot forms
 3.1. Getting Started  
 Install and execute.  
 3.2. The time dilation (experiment1.py module)  
-3.3. Velocity as function momentum and energy as function momentum (experiment2.py module)  
+3.3. Velocity as function of momentum and energy as function of momentum (experiment2.py module)  
 3.4. The inertial reference frame is a simulate uniform translatory motion of a reference frame (experiment3.py module)  
