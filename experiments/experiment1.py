@@ -136,68 +136,68 @@ class FreeMotion(mms.Composite):
 
 
 # Execute ---------------------------------------------------
+if __name__ == "__main__":
+    # Estimated calculation
 
-# Estimated calculation
-
-c = 2.997925e8  # m/s
-lm = 1.0 / c  # meter of light time
-lifetime = 2.6e-8  # seconds (26 nanoseconds)
-print 'Estimated calculation for Pi+ meson (pion):'
-print ' lifetime = ', lifetime, 'seconds or ', lifetime / lm, \
+    c = 2.997925e8  # m/s
+    lm = 1.0 / c  # meter of light time
+    lifetime = 2.6e-8  # seconds (26 nanoseconds)
+    print 'Estimated calculation for Pi+ meson (pion):'
+    print ' lifetime = ', lifetime, 'seconds or ', lifetime / lm, \
     ' metres of light time'
-beta = 0.5
-print ' beta = v/c = ', beta
-td = lifetime / math.sqrt(1.0 - beta * beta)
-print ' time dilation = ', td, ' seconds or ', td / lm, \
+    beta = 0.5
+    print ' beta = v/c = ', beta
+    td = lifetime / math.sqrt(1.0 - beta * beta)
+    print ' time dilation = ', td, ' seconds or ', td / lm, \
     ' metres of light time'
-print ' distance = ', c * beta * td, 'metres'
-print
+    print ' distance = ', c * beta * td, 'metres'
+    print
 
-# Init parametrs section
+    # Init parametrs section
 
-particle_velocity = 5  # particle_velosety < sizeTick
-size_tick = 10  # size of tick
-count_tick = 8  # count of ticks
-print 'Parameters:'
-print 'count_tick=', count_tick, 'size_tick=', size_tick
-print 'particle_velocity=', particle_velocity, ',i.e beta = v/c =', \
+    particle_velocity = 5  # particle_velosety < sizeTick
+    size_tick = 10  # size of tick
+    count_tick = 8  # count of ticks
+    print 'Parameters:'
+    print 'count_tick=', count_tick, 'size_tick=', size_tick
+    print 'particle_velocity=', particle_velocity, ',i.e beta = v/c =', \
     float(particle_velocity) / float(size_tick)
 
-# Run section
+    # Run section
 
-observer = ri.Table()
+    observer = ri.Table()
 
-# xt= mms.Composite(sizeTick, countTick, particle_velosety, observer)
+    # xt= mms.Composite(sizeTick, countTick, particle_velosety, observer)
 
-xt = FreeMotion(size_tick, count_tick, particle_velocity, observer)
-print
-print 'Simulation of particle motion:'
-xt.run()
+    xt = FreeMotion(size_tick, count_tick, particle_velocity, observer)
+    print
+    print 'Simulation of particle motion:'
+    xt.run()
 
-# Print section
+    # Print section
 
-print
-print 'Data processing:'
-dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
-dp.base_calculate()
-print
+    print
+    print 'Data processing:'
+    dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
+    dp.base_calculate()
+    print
 
-print
-print 'Measurement result:'
-pr = OriginalPrint(dp)
+    print
+    print 'Measurement result:'
+    pr = OriginalPrint(dp)
 
-# pr.xtPrintSimple()
+    # pr.xtPrintSimple()
 
-pr.xt_print_prettytable()
+    pr.xt_print_prettytable()
 
-# incline calculation
+    # incline calculation
 
-dp.incline()
-print 'Experimental error of measurement t is ', 1.0 / float(size_tick) \
+    dp.incline()
+    print 'Experimental error of measurement t is ', 1.0 / float(size_tick) \
     / 2.0
 
-# Plot section
-# Graphs
+    # Plot section
+    # Graphs
 
-visio = drawing.Visualization(dp)
-visio.trajectory1()  # plot of motion
+    visio = drawing.Visualization(dp)
+    visio.trajectory1()  # plot of motion

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 # -----------------------------------------------------------
 # Experiment 2: Energy and momentum of a particle
@@ -181,76 +181,77 @@ class simple_iteraction(mms.Composite):
 
 
 # Execute ------------------- ------------------------------
-# Estimated calculation
+if __name__ == "__main__":
+    # Estimated calculation
 
-c = 2.997925e8  # m/s
-lm = 1.0 / c
-print 'Estimated calculation for electron:'
-m = 9.1e-31  # mass of electron, kg
-e = 1.602e-19  # C - Coulomb, e electric charge of electron
-nu_m = 1.0 / m
-nu_t = 10 * c
-f = 1.0 / nu_m * (nu_t / 10.0) * (1.0 / 10.0)
-ef = f / e
-print 'm= ', m, ' kg, e= ', e, 'C'
-print 'nu_m = ', nu_m, 'nu_t = ', nu_t
-print 'f=', f, ' N, E=', ef, ' V/m'
-tk = m * c / f
-d = m * c / f * (math.sqrt(1.0 + f * tk / (m * c) * (f * tk / (m * c)))
+    c = 2.997925e8  # m/s
+    lm = 1.0 / c
+    print 'Estimated calculation for electron:'
+    m = 9.1e-31  # mass of electron, kg
+    e = 1.602e-19  # C - Coulomb, e electric charge of electron
+    nu_m = 1.0 / m
+    nu_t = 10 * c
+    f = 1.0 / nu_m * (nu_t / 10.0) * (1.0 / 10.0)
+    ef = f / e
+    print 'm= ', m, ' kg, e= ', e, 'C'
+    print 'nu_m = ', nu_m, 'nu_t = ', nu_t
+    print 'f=', f, ' N, E=', ef, ' V/m'
+    tk = m * c / f
+    d = m * c / f * (math.sqrt(1.0 + f * tk / (m * c) * (f * tk / (m * c)))
                  - 1.0)
-print 'z = ', tk, 's ', ' d = ', d, ' m'
-print ' must grid ', tk, 'x', d, ' s x m'
-print
-print 'In c = 1, m =1 system, f =', f / (c * m)
-print
+    print 'z = ', tk, 's ', ' d = ', d, ' m'
+    print ' must grid ', tk, 'x', d, ' s x m'
+    print
+    print 'In c = 1, m =1 system, f =', f / (c * m)
+    print
 
-# Init parametrs section
+    # Init parametrs section
 
-particle_velocity = 0  # particle_velocity < sizeTick
-size_tick = 10  # size of tact (1 tick)
-count_tick = 9  # count of ticks
-print 'Parameters:'
-print 'count_tick=', count_tick, 'size_tick=', size_tick
+    particle_velocity = 0  # particle_velocity < sizeTick
+    size_tick = 10  # size of tact (1 tick)
+    count_tick = 9  # count of ticks
+    print 'Parameters:'
+    print 'count_tick=', count_tick, 'size_tick=', size_tick
 
-# Run section
+    # Run section
 
-observer = ri.Table()
-xt = simple_iteraction(size_tick, count_tick, particle_velocity,
+    observer = ri.Table()
+    xt = simple_iteraction(size_tick, count_tick, particle_velocity,
                        observer)
-print
-print 'Simulation of particle motion:'
-xt.run()
-print
+    print
+    print 'Simulation of particle motion:'
+    xt.run()
+    print
 
-# Data processing
+    # Data processing
 
-print 'Data processing:'
-dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
-dp.base_calculate()
-dp.anl_solution()
-dp.num_solution()
-print
+    print 'Data processing:'
+    dp = OriginalToolkit(observer, particle_velocity, size_tick, count_tick)
+    dp.base_calculate()
+    dp.anl_solution()
+    dp.num_solution()
+    print
 
-# Print section
+    # Print section
 
-print 'Measurement result:'
-pr = OriginalPrint(dp)
+    print 'Measurement result:'
+    pr = OriginalPrint(dp)
 
-pr.xt_print_prettytable()
-print
-pr.sol_print_prettytable()
+    pr.xt_print_prettytable()
+    print
+    pr.sol_print_prettytable()
 
-print 'Dynamic:'
+    print 'Dynamic:'
 
-# pr.velPrintSimple()
-# pr.engPrintSimple()
-# pr.engPrintPrettyTable()
+    # pr.velPrintSimple()
+    # pr.engPrintSimple()
+    # pr.engPrintPrettyTable()
 
-pr.fromp_print_prettytable()
+    pr.fromp_print_prettytable()
 
-# Plot section
+    # Plot section
 
-visio = drawing.Visualization(dp)
-visio.trajectory()  # plot of motion
-visio.v_from_p_function()  # velocety-momentum
-visio.e_from_p_function()  # energy-momentum
+    visio = drawing.Visualization(dp)
+    visio.trajectory()  # plot of motion
+    visio.v_from_p_function()  # velocety-momentum
+    visio.e_from_p_function()  # energy-momentum
