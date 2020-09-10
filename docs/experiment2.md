@@ -27,7 +27,7 @@ f = 2.7e-23  N, \\( \mathcal{E} \\) = 1.7e-04  V/m,
 z =  10.0 s, d =  4.14  m  
  
   
-We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. We introduce new  variables \\(t' = ct\\) and \\(p' = p/m_{0}\\). If we replace \\(t\\) by \\(t/c\\) and \\(p\\) by \\(m_{0} p\\) in motion equation, we obtain  
+We will be calculated motition in \\(c = 1, m_{0} = 1\\) units. We introduce new  variable \\(p' = p/(m_{0}с)\\). If we replace  \\(p\\) by \\(m_{0}с p\\) in motion equation, we obtain  
   
 \begin{equation}
     \frac{dp}{dt} = \frac{q \mathcal{E}}{m_{0}c}  
