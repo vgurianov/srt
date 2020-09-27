@@ -16,8 +16,8 @@ We propose a simulation model of spacetime as a discrete model of physical space
 In the documentation, we present a description of several experiments. Experiments demonstrating the time dilation and dynamic relativistic effects.  
   
 ## Publication
-Gurianov V.I. Direct measurement procedure of particle energy-momentum in model of the discrete space-time // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 64-69.  
-e-mail: vg2007sns@rambler.ru  
+1. Gurianov V.I. Direct measurement procedure of particle energy-momentum in model of the discrete space-time // Mathematical models and their applications: Sat. sci. tr. Issue. 21. - Cheboksary: Publishing house Chuvash. Univ., 2019. - P. 64-69.  
+2. [Gurianov V.I. Simulation model of spacetime with the Minkowski metric, arXiv:2009.10689 [cs.CE], 2020](https://arxiv.org/abs/2009.10689)
   
 ## Getting started with PyMMS  
 Currently, only Python 2.7 is supported.  
@@ -65,4 +65,5 @@ Some suggested types of contributions include:
 - Extensions to the experiments  
   
 If you encounter a problem using pymms, or have an idea for an extension, feel free to raise an issue.  
+e-mail: vg2007sns@rambler.ru  
 
