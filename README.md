@@ -64,6 +64,6 @@ Some suggested types of contributions include:
 - Documentation improvements  
 - Extensions to the experiments  
   
-If you encounter a problem using pymms, or have an idea for an extension, feel free to raise an issue.  
+The feedback is very welcome   
 e-mail: vg2007sns@rambler.ru  
 
